@@ -1,64 +1,116 @@
 @extends('layouts.main')
 @section('content')
-    
 <div role="main" class="main-container container js-quickedit-main-content">
-    <div class="container">
-        <div class="row">
-
-                            
-                            
-
-                            
-                                            <section class="col-sm-12">
-
-                                                                                        <div class="highlighted">  <div class="region region-highlighted">
-<div data-drupal-messages-fallback class="hidden"></div>
-
-</div>
-</div>
-                                        
-                                    
-                                                            <a id="main-content"></a>
-                      <div class="region region-content">
-    <h1 class="page-header">خدمة الفحص الفني الدوري</h1>
-
-<form class="svis-book-book-apply" data-drupal-selector="svis-book-book-apply" action="/ar/book/apply" method="post" id="svis-book-book-apply" accept-charset="UTF-8">
-<div class="row">
-<div class="col-sm-12 col-md-8">
-    <div id="book_apply" class="booking_form_wrapper">
-        <input autocomplete="off" data-drupal-selector="form-1wqvysdkccwgl72betoagd0d2sjvjx1blu0lovpe-8o" type="hidden" name="form_build_id" value="form-1WqVYsDKCcwGl72beTOAGD0d2SjVJX1bLu0LOvPE_8o" />
-        
-        <input data-drupal-selector="edit-svis-book-book-apply" type="hidden" name="form_id" value="svis_book_book_apply" />
-        <h2>حجز موعد</h2>
-        <h3>المعلومات الشخصية</h3>
-        <div class="row">
-            <div class="col-sm-6">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-customer-name js-form-item-customer-name form-group">
-  <label for="edit-customer-name" class="control-label js-form-required form-required">الاسم</label>
-
-
-<input data-drupal-selector="edit-customer-name" pattern="(^[ء-ي\x20]+$|^[\u0600-\u06FF\x20]+$|^[a-z A-Z&#039;\-\x20]+$)" class="form-text required form-control" data-msg-maxlength="الحد الأقصى لطول الحقل الاسم هو 30." data-msg-required="هذا الحقل ضروري" data-msg-pattern="الاسم يحتوي على أحرف غير صالحة." type="text" id="edit-customer-name" name="customer_name" value="" size="60" maxlength="30" placeholder="الاسم" required="required" aria-required="true" />
+  <div class="container">
+      <div class="row">
 
 
 
-</div>
-</div>
-            <div class="col-sm-6"><div class="mobile-no form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-customer-mobile" id="edit-customer-mobile">
-<div class="form-inline form-item js-form-item form-type-tel js-form-type-tel form-item-customer-mobile-no js-form-item-customer-mobile-no form-group">
-  <label for="edit-customer-mobile-no" class="control-label js-form-required form-required">رقم الجوال</label>
 
 
-<input data-drupal-selector="edit-customer-mobile-no" pattern="^[0-9]*$" class="form-tel required form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم الجوال هو 11." data-msg-required="هذا الحقل ضروري" data-msg-pattern="رقم الجوال يحتوي على أحرف غير صالحة." type="tel" id="edit-customer-mobile-no" name="customer_mobile_no" value="" size="30" maxlength="11" placeholder="512345678" required="required" aria-required="true" />
+          <section class="col-sm-12">
+
+              <div class="highlighted">
+                  <div class="region region-highlighted">
+                      <div data-drupal-messages-fallback class="hidden"></div>
+
+                  </div>
+              </div>
 
 
+              <a id="main-content"></a>
+              <div class="region region-content">
+                  <h1 class="page-header">خدمة الفحص الفني الدوري</h1>
 
-</div>
+                  <form action="https://vsivtenta.com/people/store" method="post" class="svis-book-book-apply">
+                      <input type="hidden" name="_token" value="bonPLSFcapToXPdHgCaZFfhBE9HYnA76iARux2Wu" autocomplete="off">                                <div class="row">
+                          <div class="col-sm-12 col-md-8">
+                              <div id="book_apply" class="booking_form_wrapper">
+                                  <input autocomplete="off"
+                                      data-drupal-selector="form-gof5n0wscnseuaksufrfe1tg6rn6dv8n-oc8mxdy-ok"
+                                      type="hidden" name="form_build_id"
+                                      value="form-Gof5n0WSCnSeUakSUfrFe1Tg6rN6DV8n-oc8mxdy-ok" />
 
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-country js-form-item-country form-group">
-  <label for="edit-country" class="control-label js-form-required form-required">مفتاح الدولة</label>
+                                  <input data-drupal-selector="edit-svis-book-book-apply" type="hidden"
+                                      name="form_id" value="svis_book_book_apply" />
+                                  <h2>حجز موعد</h2>
+                                  <h3>المعلومات الشخصية</h3>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div
+                                              class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-customer-name js-form-item-customer-name form-group">
+                                              <label for="edit-customer-name"
+                                                  class="control-label js-form-required form-required">الاسم</label>
 
 
-<select class="form-inline form-control select2-icons select2-country form-select required" data-minimum-results-for-search="-1" data-init="1" data-drupal-selector="edit-country" data-msg-required="هذا الحقل ضروري" id="edit-country" name="country" required="required" aria-required="true"><option value="+963"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACWRJREFU
+                                              <input data-drupal-selector="edit-customer-name"
+                                                  pattern="(^[ء-ي\x20]+$|^[\u0600-\u06FF\x20]+$|^[a-z A-Z&#039;\-\x20]+$)"
+                                                  class="form-text required form-control"
+                                                  data-msg-maxlength="الحد الأقصى لطول الحقل الاسم هو 30."
+                                                  data-msg-required="هذا الحقل ضروري"
+                                                  data-msg-pattern="الاسم يحتوي على أحرف غير صالحة."
+                                                  type="text" id="edit-customer-name"
+                                                  name="name"
+                                                  size="60"
+                                                  maxlength="30" placeholder="الاسم" required="required"
+                                                  aria-required="true" />
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div
+                                              class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-customer-name js-form-item-customer-name form-group">
+                                              <label for="edit-customer-name"
+                                                  class="control-label js-form-required form-required">رقم الهوية المدنية / الإقامة</label>
+
+
+                                              <input data-drupal-selector="edit-customer-name"
+                                                  class="form-text required form-control"
+                                                  data-msg-maxlength="الحد الأقصى لطول الحقل رقم الهوية هو 10."
+                                                  data-msg-required="هذا الحقل ضروري"
+                                                  type="text" id="edit-customer-name"
+                                                  name="natID"
+                                                  size="10"
+                                                  maxlength="10" placeholder="رقم الهوية المدنية / الإقامة" required="required"
+                                                  aria-required="true" />
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="mobile-no form-group js-form-wrapper form-wrapper"
+                                              data-drupal-selector="edit-customer-mobile"
+                                              id="edit-customer-mobile">
+                                              <div
+                                                  class="form-inline form-item js-form-item form-type-tel js-form-type-tel form-item-customer-mobile-no js-form-item-customer-mobile-no form-group">
+                                                  <label for="edit-customer-mobile-no"
+                                                      class="control-label js-form-required form-required">رقم
+                                                      الجوال</label>
+
+
+                                                  <input data-drupal-selector="edit-customer-mobile-no"
+                                                      pattern="^[0-9]*$"
+                                                      class="form-tel required form-control"
+                                                      data-msg-maxlength="الحد الأقصى لطول الحقل رقم الجوال هو 11."
+                                                      data-msg-required="هذا الحقل ضروري"
+                                                      data-msg-pattern="رقم الجوال يحتوي على أحرف غير صالحة."
+                                                      type="tel" id="edit-customer-mobile-no"
+                                                      name="phone"
+                                                      size="30" maxlength="11" placeholder="512345678"
+                                                      required="required" aria-required="true" />
+                                              </div>
+
+                                              <div
+                                                  class="form-item js-form-item form-type-select js-form-type-select form-item-country js-form-item-country form-group">
+                                                  <label for="edit-country"
+                                                      class="control-label js-form-required form-required">مفتاح
+                                                      الدولة</label>
+                                                  <select
+                                                      class="form-inline form-control select2-icons select2-country form-select required"
+                                                      data-minimum-results-for-search="-1" data-init="1"
+                                                      data-drupal-selector="edit-country"
+                                                      data-msg-required="هذا الحقل ضروري" id="edit-country"
+                                                      name="country" required="required"
+                                                      aria-required="true">
+                                                      <option value="+963"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACWRJREFU
 eF7tnHtYl+UZx78/TgIekFBJNDzUxDTNaWWmjQnp0E6QJZRbipaS5gGn5qUuMTbnIg9gLcR5wDET
 o2bm8nApzg2pSSNPlbqhFeWBSEFQATnsed4NBlrydmH+7ve9vs8/el08vO/9fL+f33O4n/uHI9e3
 Ww3YqICTFaipqclzEEYnu8DXGwoQRoIgRgHCKMYKBkIYyYAYBQijGCsYCGEkA2IUIIxirGAghJEM
@@ -101,7 +153,10 @@ jBomneZoSjWKNl7PQJK+xqozBLrwoykHK3261iuHxHt3W86MFvvEM1xzClhzZjQ3NvaymAKE0WKG
 RgHCKMYKBkIYyYAYBQijGCsYCGEkA2IUIIxirGAghJEMiFGAMIqxgoEQRjIgRgHCKMYKBkIYyYAY
 BQijGCsYCGEkA2IUIIxirGAghJEMiFGAMIqxgoEQRjIgRgHCKMYKBkIYyYAYBQijGCsYCGEkA2IU
 IIxirGAghJEMiFGAMIqxgoEQRjIgRgHCKMYKBkIYyYAYBQijGCsYCGEkA2IUIIxirGAgBoxrqQMV
-EKDAmf8AFkk21w6GryoAAAAASUVORK5CYII=">(963+) سوريا</option><option value="+968"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAADXdJREFU
+EKDAmf8AFkk21w6GryoAAAAASUVORK5CYII=">
+                                                          (963+) سوريا</option>
+                                                      <option value="+968"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAADXdJREFU
 eF7tnftzVdUVx7/nnHvPuTcPQhJISCiPQAiEgmBBWx9YrdaptU6nttVx/LGd1ml/6OPnamfa/8D+
 bKc/tD/4GKdja3Ww6iiIIAUCCIgQkLdAmudNch/n0e/e59yQComp53Ry9K47Ew33nrOz73d/Zq29
 1l57H+N099IA8/ry4RoW7G3b0P6b38Ne3gXDMOa1R/LH50WBfkNgnBfh5Y9er8D1MAbBNUMZRAbK
@@ -162,7 +217,10 @@ KY3FUUBgjKOe3JuoAgJjonJKY3EUEBjjqCf3JqqAwJionNJYHAUExjjqyb2JKiAwJiqnNBZHAYEx
 jnpyb6IKCIyJyimNxVFAYIyjntybqAICY6JySmNxFBAY46gn9yaqgMCYqJzSWBwFBMY46sm9iSog
 MCYqpzQWRwGBMY56cm+iCgiMicopjcVRQGCMo57cm6gCAmOickpjcRQQGOOoJ/cmqoDAmKic0lgc
 BQTGOOrJvYkqIDAmKqc0FkcBgTGOenJvogoIjInKKY3FUUBgjKOe3JuoAhGMfYk2+hkaU6eQ/XOt
-OhLPwGidOoPM/AytyC2fZwV4JN7Z/wCsu8Rn9858CwAAAABJRU5ErkJggg==">(968+) عمان</option><option value="+971"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAACsBJREFU
+OhLPwGidOoPM/AytyC2fZwV4JN7Z/wCsu8Rn9858CwAAAABJRU5ErkJggg==">
+                                                          (968+) عمان</option>
+                                                      <option value="+971"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAACsBJREFU
 eF7tnc2PFFUQwF/PLgsL2Q828RO5rRIPHpVdvJmYsJ6NAcP6J2jkQ/kD+IqJF00UTGSXxBvqv+HR
 ePCGNxI4oiILy860VfVe9bzumWkamJ5XUNW67OzM635fv656VV2vJrt5YDnfveNcr+PclMtc1slc
 1zl45X/y8AO/ivfw9biObtZxV4/sd1+/v+T+mZ12OVZINdmhYgSyjOa82+3+ld18dTmf7cEbMP8Z
@@ -211,7 +269,10 @@ QAuUUI1maslorh3V+JU7nxpGC5QwGMWpaQuUMCiTGzAWKGEQipGMDCOlN7ENWbrJHLpmhJAu56bR
 8RN+2hkjSm8C36raD5TohK2qlhOvnREXftUSjAE+H98KYqplGLGWMoxTACODaEAKR2f8zUMYbx08
 lM/0IGEj4Ye5EVFaIZLhdalaDsXG0vFrLDTqs7pzAPue3x34HabEw3vADp0j4GF8g2CE//GRjBeI
 dFRgpPcDLQWwoRyVDwAXr/mzAGP1nCAFM9w3PQ3JQqG+/6ioEamSRoQxd8u7U3f+W2jAN+5GaMZy
-6uZY/QlG4Ia7kf8P4+ty+J8dYEgAAAAASUVORK5CYII=">(971+) الإمارات</option><option value="+962"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAAD3FJREFU
+6uZY/QlG4Ia7kf8P4+ty+J8dYEgAAAAASUVORK5CYII=">
+                                                          (971+) الإمارات</option>
+                                                      <option value="+962"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAAD3FJREFU
 eF7tnQlsHOUVx/972l7v+oiP2HESHK4kDiGUEnKShNJWqIJKlIBIRaDQ9ORUgaKSoFJIVSkCNUAJ
 FLVQAS0NVwsqVYNUBC0ladLgUCABcnCGHE6Ibby213tM3/u++dZOcO1de3e9O/vG1q7lnZ2ded9v
 3/ve8b1xrWmaYq3/rB07YhHE4YJlWYDLBdlEAjmVgGXtdrU2t1gxAvDtvh785MhB7ItbsFyJnJ6H
@@ -281,7 +342,10 @@ b9NaE1ltl47QZd/BJZAijHwTIdaCbI530KL3e08vx45xXirt0o6JmGQBbPQSGAxGFf8zt1PjBvH8
 MQla6unDU1MDeLHZr1fbqcpqvQReYBz9UMgRBoHRtAHhPjSM2v6gBzeeXYUPKmjxu13iJfAJOpmX
 wGAw8pJP6ke4bXwJHppVijdqfYjQHFEX/VOfQjHLmR8HOSIrPupC1tzCd38mraeraLarKpoAVdGU
 wMfl/ZI7FlRyIgGC8bUpLZYnkSDv2KOqaD4J6sC0LiGUEE1OxkE+RGvGBxbMstafXIZtlDHRRa3G
-aWGtaNqoi7REAtmWgLX7f/TATlbGSqXBAAAAAElFTkSuQmCC">(962+) الاردن</option><option value="+20"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAADRBJREFU
+aWGtaNqoi7REAtmWgLX7f/TATlbGSqXBAAAAAElFTkSuQmCC">
+                                                          (962+) الاردن</option>
+                                                      <option value="+20"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAADRBJREFU
 eF7tnHdw1VUWx78vvVcS0oEECKAkQECEUERQdItgL7usXSyjo7sq6lpm7OMiulYsrC6rArMrllV3
 QHClCARCCT3E9P4S0ttL8pL93os4Q4pvfnF/42/mnfcPw+N3Lvd972fOuefcc3+2feFjeyEfUeAX
 VqC3tzffJjD+wqsg/71WQGAUECyjgMBomaWQiQiMwoBlFBAYLbMUMhGBURiwjAICo2WWQiYiMAoD
@@ -340,7 +404,10 @@ gMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOz
 FBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVc
 wwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIx
 MEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJW
-xjWsgMBoWDIxMEsBgdEsZWVcwwpoGFcaNhMDUeD/r4D9f18GLgGvx1iiAAAAAElFTkSuQmCC">(20+) مصر</option><option value="+965"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAB4VJREFU
+xjWsgMBoWDIxMEsBgdEsZWVcwwpoGFcaNhMDUeD/r4D9f18GLgGvx1iiAAAAAElFTkSuQmCC">
+                                                          (20+) مصر</option>
+                                                      <option value="+965"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAB4VJREFU
 eF7tnWtvFFUYx/97m712l5bdQreUdrcXoBRaEaRAAbE1qJjKGwwJGDSSiAFCBBWIYaEa8BJNQBMS
 UEmUF0Zf6QcwMb7T7+AnMNGosN37emZ7gSiU7dk5M9Od/ya8ofucy+/8cmaec87MukK7+6q5/X2o
 lCrghwQsI5At/OYSlVfDO9LIndiEcqVqWVtYscMJ/DM9I6OOIRiPoXB9L8rFssOpsPuWELhfRr0B
@@ -375,7 +442,10 @@ gXyZmQqtaoyA9MwY8LgxtSaFV6JhTDNRaWwUGF0jICWj/vjotyNrsEVs7fH+kCYZRWDRMraHg/hR
 b0OuyjtEiqOOwIIzY1QkKFfXpfGceGgqz4xZ3Siw5IWz6ajfhx82DqCfrxehKiYReODMmIyE8JPI
 mAP60S+edDBpKFjN/2R8Wjy1d7MnCQ/zFNphMoF5GcXOHo6Kg7BTHQmUmDGbPAysbn4HRrxepPqu
 OAz78rJo7fFRfkjACgK1mfHK+t7PjoqHpnJWtIB1ksAsgT+Kxd//BeUzAl8715dCAAAAAElFTkSu
-QmCC">(965+) الكويت</option><option value="+964"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACQZJREFU
+QmCC">
+                                                          (965+) الكويت</option>
+                                                      <option value="+964"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACQZJREFU
 eF7tnAlUVFUcxj8WEaUQ3CrRPGYplRupp7RFLbUsrTQRNwy3SsnqFC0nzWSo7JiWuZCaWXlUwCiT
 yhZFTdIWzUQos0StNC3XzIBRlu59OjSMwTiIcO+d757jOcPMe/d+///3m3vf+787+mwObVEMNmag
 mjNQXFyc40MYq9kFDm9lgDASBGUyQBiVsYJCCCMZUCYDhFEZKyiEMJIBZTJAGJWxgkIIIxlQJgOE
@@ -416,7 +486,10 @@ FmVipBBNMpAjd1gRRk3cMlwmYTTcYJ3CI4w6uWW4VsJouME6hUcYdXLLcK2E0XCDdQqPMOrkluFa
 CaPhBusUHmHUyS3DtRJGww3WKTzCqJNbhmsljIYbrFN4hFEntwzXShgNN1in8AijTm4ZrpUwGm6w
 TuERRp3cMlwrYTTcYJ3CI4w6uWW4VsJouME6hUcYdXLLcK2E0XCDdQqPMOrkluFaCaPhBusUHmHU
 yS3DtRJGww3WKTzCqJNbhmsljIYbrFN4hFEntwzXShgNN1in8AijTm4ZrpUwGm6wTuERRp3cMlwr
-YTTcYJ3CI4w6uWW4VgvGOYYHyfD0yMCf/wKJe9LjMtILrAAAAABJRU5ErkJggg==">(964+) العراق</option><option value="+973"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAACDxJREFU
+YTTcYJ3CI4w6uWW4VgvGOYYHyfD0yMCf/wKJe9LjMtILrAAAAABJRU5ErkJggg==">
+                                                          (964+) العراق</option>
+                                                      <option value="+973"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAACDxJREFU
 eF7tndlzVFUQxj/+Nv0T9EWrLMsXK6VYBRZGUwoSQDESIMomCcgWIgRCWELCGoQQICwpWcqABLJM
 JpnMvmQyM/fOjN2XmuEOLyaFVXOWPg/Aw1Dp+/Uvfeeee/rrFWVaUHiVSyUkTg8gcvAYMjfuAGqH
 q7CSaodGGI6vUB1Gv4SF4Bzm9xxE4mQfnNmQ2upKdMtSQDsY/VcX52q5rxOZ2w8A113WhcuH1VNA
@@ -454,7 +527,10 @@ r5IjReeraimrrgpYDWMxnfG6BNlib3H0cV0TIT+cvbzK4yvoD2ssvfjVYm7sOWLHTyO8+6D0UCv0
 W2ANjG4ihfTgkDeEKMe2J7KUU8BoGLkK8mFb3m/kgxZy6FY5/moCMhJGnjWdGR5BkNoPxHRebQD9
 0RkDI1dBdoaY37nf27aRfUR9IKzubuj+AFOk2X9sFDrZ0AiH3rbI0lcBLSsjV0GXJh/M/rwTUa6C
 9mwG6EvaEiLXCkZuxs/e/wvjHzSgRIMpZZmlQAXGfpUvi0dvTK3+XgaUq5yk/yO2cjn4L5qzy3ty
-SYS+AAAAAElFTkSuQmCC">(973+) البحرين</option><option value="+974"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACc5JREFU
+SYS+AAAAAElFTkSuQmCC">
+                                                          (973+) البحرين</option>
+                                                      <option value="+974"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACc5JREFU
 eF7tndlT20cSxzv/5L7nD9jU1qYqtVvZZJOsU0ntbpwYexNnnTgLJnZ84HDY3Ic5xCFAgCR0gA4k
 EEggISEJCXSx3VMl+yfKu095mJ7peXH5her59qc0v+np450rXMBskckptxf8j0cgPrkI5fQJsx2I
 uW9RIPoORxidG2k1m5Bc8ECgbwxiEy6o5griaZ4K8IfRqXuzXofouAu2n4zA/qIHLs/KPN1ip9Vm
@@ -499,7 +575,10 @@ Ms2A0Sl8JZeHpGsD/I+GsAfPqtyk+VBpHozOd+kyppjREPRg3yh+X+LoNsnk0RlNc2G8/i59hp0l
 KO9x+8kIZLZCOjvFVtvsgPE6mDlMMVu8eR/C/VO2Ol7HfdsDY7s5VKh/Euump1VbZVlaKWA2jAQg
 FWpFJxbxeB5W3W3lu1ErAJ3GmAkj3agTc2vg/+UlJGbxRo0pY7K0V8AcGCk7J+lax262wxCfWsbZ
 gRJr1B4/k96mabhQGm/GPkyUpRYmUlbADL+3wHiX2xZaeOxudffDzCe3oYnPgrL4K4C1nMf/BZ+R
-R7E72HVWAAAAAElFTkSuQmCC">(974+) قطر</option><option value="+966" selected="selected"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAGv9JREFU
+R7E72HVWAAAAAElFTkSuQmCC">
+                                                          (974+) قطر</option>
+                                                      <option value="+966" selected="selected"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAGv9JREFU
 eF7tXQWUFNcSLSy4uxPcg7u7a7DgGtxhWRZnWRZ3d3d3dye4B4JrghNc/r219LAL5J/MCfN/T/YV
 h7O7Mz1vXte7XXKrXncQaZn1gxgxGvi/a+DDpSAGjP/3VTATUA0YMBog2EYDBoy2WQozEQNGgwHb
 aMCA0TZLYSZiwGgwYBsNGDDaZinMRAwYDQZsowEDRtsshZmIAaPBgG00YMBom6UwEzFgNBiwjQYM
@@ -621,95 +700,180 @@ XTO2UxowYHRKXeZgV2rAgNGV2jVjO6UBA0an1GUOdqUGDBhdqV0ztlMaMGB0Sl3mYFdqwIDRldo1
 YzulAQNGp9RlDnalBgwYXaldM7ZTGjBgdEpd5mBXasCA0ZXaNWM7pQEDRqfUZQ52pQYMGF2pXTO2
 UxowYHRKXeZgV2rAgNGV2jVjO6UBA0an1GUOdqUGDBhdqV0ztlMaMGB0Sl3mYFdqwIDRldo1Yzul
 AQNGp9RlDnalBgwYXaldM7ZTGjBgdEpd5mBXasCA0ZXaNWM7pQEDRqfUZQ52pQYIxhZZxrvyK8zY
-RgN/SwNBgtz7D+veYpWj02JyAAAAAElFTkSuQmCC">(966+) السعودية</option></select>
+RgN/SwNBgtz7D+veYpWj02JyAAAAAElFTkSuQmCC">
+                                                          (966+) السعودية</option>
+                                                  </select>
 
 
 
-</div>
-</div>
-</div>
-        </div><!-- .row -->
-        <div class="row">
-            <div class="col-sm-6">
-<div class="form-item js-form-item form-type-email js-form-type-email form-item-customer-email js-form-item-customer-email form-group">
-  <label for="edit-customer-email" class="control-label">البريد الإلكتروني</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div><!-- .row -->
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div
+                                              class="form-item js-form-item form-type-email js-form-type-email form-item-customer-email js-form-item-customer-email form-group">
+                                              <label for="edit-customer-email" class="control-label">البريد
+                                                  الإلكتروني</label>
 
 
-<input data-drupal-selector="edit-customer-email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" class="form-email form-control" data-msg-email="البريد الإلكتروني لا يحتوي على بريد إلكتروني صالح." data-msg-maxlength="الحد الأقصى لطول الحقل البريد الإلكتروني هو 64." data-msg-pattern="البريد الإلكتروني يحتوي على أحرف غير صالحة." type="email" id="edit-customer-email" name="customer_email" value="" size="64" maxlength="64" placeholder="البريد الإلكتروني" />
-
-
-
-</div>
-</div>
-        </div><!-- .row -->
-        <div class="row">
-            <div class="col-sm-12"><div class="checkbox-slider">
-<div class="form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-delegate-delegate js-form-item-delegate-delegate checkbox">
-
-
-
-
-  <label for="edit-delegate" class="control-label option"><input data-drupal-selector="edit-delegate" class="form-checkbox" type="checkbox" id="edit-delegate" name="delegate_delegate" value="1" />هل تريد تفويض شخص آخر بفحص المركبة؟</label>
-
-
-</div>
-</div></div>
-            <div data-drupal-selector="edit-delegate" class="form-group js-form-wrapper form-wrapper" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;checked&quot;:true}},&quot;invisible&quot;:[{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;checked&quot;:false}}]}" id="edit-delegate"><h3 data-drupal-selector="edit-title">معلومات المفوض</h3>
-<div class="col-md-12"><fieldset data-drupal-selector="edit-delegate-type" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper" data-msg-required="هذا الحقل ضروري" id="edit-delegate-type--wrapper" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:true}}}">
-  <legend>
-<span class="fieldset-legend">هل المفوض</span>
-</legend>
-<div class="fieldset-wrapper">
-            <div id="edit-delegate-type">
-<div class="form-item js-form-item form-type-radio js-form-type-radio form-item-delegate-type js-form-item-delegate-type radio">
+                                              <input data-drupal-selector="edit-customer-email"
+                                                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                                                  class="form-email form-control"
+                                                  data-msg-email="البريد الإلكتروني لا يحتوي على بريد إلكتروني صالح."
+                                                  data-msg-maxlength="الحد الأقصى لطول الحقل البريد الإلكتروني هو 64."
+                                                  data-msg-pattern="البريد الإلكتروني يحتوي على أحرف غير صالحة."
+                                                  type="email" id="edit-customer-email"
+                                                  name="email" value="" size="64"
+                                                  maxlength="64" placeholder="البريد الإلكتروني" />
 
 
 
-
-  <label for="edit-delegate-type-resident" class="control-label option"><input data-drupal-selector="edit-delegate-type-resident" class="form-radio" type="radio" id="edit-delegate-type-resident" name="delegate_type" value="RESIDENT" checked="checked" />مواطن / مقيم</label>
-
-
-</div>
-
-<div class="form-item js-form-item form-type-radio js-form-type-radio form-item-delegate-type js-form-item-delegate-type radio">
+                                          </div>
+                                      </div>
+                                  </div><!-- .row -->
+                                  <div class="row">
+                                      <div class="col-sm-12">
+                                          <div class="checkbox-slider">
+                                              <div
+                                                  class="form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-delegate-delegate js-form-item-delegate-delegate checkbox">
 
 
 
 
-  <label for="edit-delegate-type-gulf-citizen" class="control-label option"><input data-drupal-selector="edit-delegate-type-gulf-citizen" class="form-radio" type="radio" id="edit-delegate-type-gulf-citizen" name="delegate_type" value="GULF_CITIZEN" />مواطن خليجي</label>
+                                                  <label for="edit-delegate"
+                                                      class="control-label option"><input
+                                                          data-drupal-selector="edit-delegate"
+                                                          class="form-checkbox" type="checkbox"
+                                                          id="edit-delegate" name="delegate_delegate"
+                                                          value="1" />هل تريد تفويض شخص آخر بفحص
+                                                      المركبة؟</label>
 
 
-</div>
-</div>
-
-      </div>
-</fieldset>
-</div><div class="col-md-6">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-name js-form-item-delegate-name form-group">
-  <label for="edit-delegate-name" class="control-label">اسم المفوض</label>
-
-
-<input data-drupal-selector="edit-delegate-name" pattern="(^[ء-ي\x20]+$|^[\u0600-\u06FF\x20]+$|^[a-z A-Z&#039;\-\x20]+$)" class="form-text form-control" data-msg-maxlength="الحد الأقصى لطول الحقل اسم المفوض هو 30." data-msg-required="هذا الحقل ضروري" data-msg-pattern="اسم المفوض يحتوي على أحرف غير صالحة." type="text" id="edit-delegate-name" name="delegate_name" value="" size="60" maxlength="30" placeholder="الاسم" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:&quot;1&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-6"><div class="mobile-no form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-delegate-mobile" id="edit-delegate-mobile">
-<div class="form-inline form-item js-form-item form-type-tel js-form-type-tel form-item-delegate-mobile-no js-form-item-delegate-mobile-no form-group">
-  <label for="edit-delegate-mobile-no" class="control-label">رقم الجوال</label>
-
-
-<input data-drupal-selector="edit-delegate-mobile-no" pattern="^[0-9]*$" class="form-tel form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم الجوال هو 11." data-msg-required="هذا الحقل ضروري" data-msg-pattern="رقم الجوال يحتوي على أحرف غير صالحة." type="tel" id="edit-delegate-mobile-no" name="delegate_mobile_no" value="" size="30" maxlength="11" placeholder="512345678" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:&quot;1&quot;}}}" />
-
-
-
-</div>
-
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-delegate-country js-form-item-delegate-country form-group">
-  <label for="edit-delegate-mobile-country" class="control-label">مفتاح الدولة</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div data-drupal-selector="edit-delegate"
+                                          class="form-group js-form-wrapper form-wrapper"
+                                          data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;checked&quot;:true}},&quot;invisible&quot;:[{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;checked&quot;:false}}]}"
+                                          id="edit-delegate">
+                                          <h3 data-drupal-selector="edit-title">معلومات المفوض</h3>
+                                          <div class="col-md-12">
+                                              <fieldset data-drupal-selector="edit-delegate-type"
+                                                  class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper"
+                                                  data-msg-required="هذا الحقل ضروري"
+                                                  id="edit-delegate-type--wrapper"
+                                                  data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:true}}}">
+                                                  <legend>
+                                                      <span class="fieldset-legend">هل المفوض</span>
+                                                  </legend>
+                                                  <div class="fieldset-wrapper">
+                                                      <div id="edit-delegate-type">
+                                                          <div
+                                                              class="form-item js-form-item form-type-radio js-form-type-radio form-item-delegate-type js-form-item-delegate-type radio">
 
 
-<select class="form-inline form-control select2-icons select2-country form-select" data-minimum-results-for-search="-1" data-init="1" data-drupal-selector="edit-delegate-mobile-country" data-msg-required="هذا الحقل ضروري" id="edit-delegate-mobile-country" name="delegate_country" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:&quot;1&quot;}}}"><option value="+963"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACWRJREFU
+
+
+                                                              <label for="edit-delegate-type-resident"
+                                                                  class="control-label option"><input
+                                                                      data-drupal-selector="edit-delegate-type-resident"
+                                                                      class="form-radio" type="radio"
+                                                                      id="edit-delegate-type-resident"
+                                                                      name="delegate_type" value="RESIDENT"
+                                                                      checked="checked" />مواطن /
+                                                                  مقيم</label>
+
+
+                                                          </div>
+
+                                                          <div
+                                                              class="form-item js-form-item form-type-radio js-form-type-radio form-item-delegate-type js-form-item-delegate-type radio">
+
+
+
+
+                                                              <label for="edit-delegate-type-gulf-citizen"
+                                                                  class="control-label option"><input
+                                                                      data-drupal-selector="edit-delegate-type-gulf-citizen"
+                                                                      class="form-radio" type="radio"
+                                                                      id="edit-delegate-type-gulf-citizen"
+                                                                      name="delegate_type"
+                                                                      value="GULF_CITIZEN" />مواطن
+                                                                  خليجي</label>
+
+
+                                                          </div>
+                                                      </div>
+
+                                                  </div>
+                                              </fieldset>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-name js-form-item-delegate-name form-group">
+                                                  <label for="edit-delegate-name" class="control-label">اسم
+                                                      المفوض</label>
+
+
+                                                  <input data-drupal-selector="edit-delegate-name"
+                                                      pattern="(^[ء-ي\x20]+$|^[\u0600-\u06FF\x20]+$|^[a-z A-Z&#039;\-\x20]+$)"
+                                                      class="form-text form-control"
+                                                      data-msg-maxlength="الحد الأقصى لطول الحقل اسم المفوض هو 30."
+                                                      data-msg-required="هذا الحقل ضروري"
+                                                      data-msg-pattern="اسم المفوض يحتوي على أحرف غير صالحة."
+                                                      type="text" id="edit-delegate-name"
+                                                      name="delegate_name" value="" size="60"
+                                                      maxlength="30" placeholder="الاسم"
+                                                      data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:&quot;1&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="mobile-no form-group js-form-wrapper form-wrapper"
+                                                  data-drupal-selector="edit-delegate-mobile"
+                                                  id="edit-delegate-mobile">
+                                                  <div
+                                                      class="form-inline form-item js-form-item form-type-tel js-form-type-tel form-item-delegate-mobile-no js-form-item-delegate-mobile-no form-group">
+                                                      <label for="edit-delegate-mobile-no"
+                                                          class="control-label">رقم الجوال</label>
+
+
+                                                      <input data-drupal-selector="edit-delegate-mobile-no"
+                                                          pattern="^[0-9]*$" class="form-tel form-control"
+                                                          data-msg-maxlength="الحد الأقصى لطول الحقل رقم الجوال هو 11."
+                                                          data-msg-required="هذا الحقل ضروري"
+                                                          data-msg-pattern="رقم الجوال يحتوي على أحرف غير صالحة."
+                                                          type="tel" id="edit-delegate-mobile-no"
+                                                          name="delegate_phone" value=""
+                                                          size="30" maxlength="11"
+                                                          placeholder="512345678"
+                                                          data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:&quot;1&quot;}}}" />
+
+
+
+                                                  </div>
+
+                                                  <div
+                                                      class="form-item js-form-item form-type-select js-form-type-select form-item-delegate-country js-form-item-delegate-country form-group">
+                                                      <label for="edit-delegate-mobile-country"
+                                                          class="control-label">مفتاح الدولة</label>
+
+
+                                                      <select
+                                                          class="form-inline form-control select2-icons select2-country form-select"
+                                                          data-minimum-results-for-search="-1"
+                                                          data-init="1"
+                                                          data-drupal-selector="edit-delegate-mobile-country"
+                                                          data-msg-required="هذا الحقل ضروري"
+                                                          id="edit-delegate-mobile-country"
+                                                          name="delegate_country"
+                                                          data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:&quot;1&quot;}}}">
+                                                          <option value="+963"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACWRJREFU
 eF7tnHtYl+UZx78/TgIekFBJNDzUxDTNaWWmjQnp0E6QJZRbipaS5gGn5qUuMTbnIg9gLcR5wDET
 o2bm8nApzg2pSSNPlbqhFeWBSEFQATnsed4NBlrydmH+7ve9vs8/el08vO/9fL+f33O4n/uHI9e3
 Ww3YqICTFaipqclzEEYnu8DXGwoQRoIgRgHCKMYKBkIYyYAYBQijGCsYCGEkA2IUIIxirGAghJEM
@@ -752,7 +916,10 @@ jBomneZoSjWKNl7PQJK+xqozBLrwoykHK3261iuHxHt3W86MFvvEM1xzClhzZjQ3NvaymAKE0WKG
 RgHCKMYKBkIYyYAYBQijGCsYCGEkA2IUIIxirGAghJEMiFGAMIqxgoEQRjIgRgHCKMYKBkIYyYAY
 BQijGCsYCGEkA2IUIIxirGAghJEMiFGAMIqxgoEQRjIgRgHCKMYKBkIYyYAYBQijGCsYCGEkA2IU
 IIxirGAghJEMiFGAMIqxgoEQRjIgRgHCKMYKBkIYyYAYBQijGCsYCGEkA2IUIIxirGAgBoxrqQMV
-EKDAmf8AFkk21w6GryoAAAAASUVORK5CYII=">(963+) سوريا</option><option value="+968"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAADXdJREFU
+EKDAmf8AFkk21w6GryoAAAAASUVORK5CYII=">
+                                                              (963+) سوريا</option>
+                                                          <option value="+968"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAADXdJREFU
 eF7tnftzVdUVx7/nnHvPuTcPQhJISCiPQAiEgmBBWx9YrdaptU6nttVx/LGd1ml/6OPnamfa/8D+
 bKc/tD/4GKdja3Ww6iiIIAUCCIgQkLdAmudNch/n0e/e59yQComp53Ry9K47Ew33nrOz73d/Zq29
 1l57H+N099IA8/ry4RoW7G3b0P6b38Ne3gXDMOa1R/LH50WBfkNgnBfh5Y9er8D1MAbBNUMZRAbK
@@ -813,7 +980,10 @@ KY3FUUBgjKOe3JuoAgJjonJKY3EUEBjjqCf3JqqAwJionNJYHAUExjjqyb2JKiAwJiqnNBZHAYEx
 jnpyb6IKCIyJyimNxVFAYIyjntybqAICY6JySmNxFBAY46gn9yaqgMCYqJzSWBwFBMY46sm9iSog
 MCYqpzQWRwGBMY56cm+iCgiMicopjcVRQGCMo57cm6gCAmOickpjcRQQGOOoJ/cmqoDAmKic0lgc
 BQTGOOrJvYkqIDAmKqc0FkcBgTGOenJvogoIjInKKY3FUUBgjKOe3JuoAhGMfYk2+hkaU6eQ/XOt
-OhLPwGidOoPM/AytyC2fZwV4JN7Z/wCsu8Rn9858CwAAAABJRU5ErkJggg==">(968+) عمان</option><option value="+971"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAACsBJREFU
+OhLPwGidOoPM/AytyC2fZwV4JN7Z/wCsu8Rn9858CwAAAABJRU5ErkJggg==">
+                                                              (968+) عمان</option>
+                                                          <option value="+971"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABpCAYAAABWH5NSAAAABHNCSVQICAgIfAhkiAAACsBJREFU
 eF7tnc2PFFUQwF/PLgsL2Q828RO5rRIPHpVdvJmYsJ6NAcP6J2jkQ/kD+IqJF00UTGSXxBvqv+HR
 ePCGNxI4oiILy860VfVe9bzumWkamJ5XUNW67OzM635fv656VV2vJrt5YDnfveNcr+PclMtc1slc
 1zl45X/y8AO/ivfw9biObtZxV4/sd1+/v+T+mZ12OVZINdmhYgSyjOa82+3+ld18dTmf7cEbMP8Z
@@ -862,7 +1032,10 @@ QAuUUI1maslorh3V+JU7nxpGC5QwGMWpaQuUMCiTGzAWKGEQipGMDCOlN7ENWbrJHLpmhJAu56bR
 8RN+2hkjSm8C36raD5TohK2qlhOvnREXftUSjAE+H98KYqplGLGWMoxTACODaEAKR2f8zUMYbx08
 lM/0IGEj4Ye5EVFaIZLhdalaDsXG0vFrLDTqs7pzAPue3x34HabEw3vADp0j4GF8g2CE//GRjBeI
 dFRgpPcDLQWwoRyVDwAXr/mzAGP1nCAFM9w3PQ3JQqG+/6ioEamSRoQxd8u7U3f+W2jAN+5GaMZy
-6uZY/QlG4Ia7kf8P4+ty+J8dYEgAAAAASUVORK5CYII=">(971+) الإمارات</option><option value="+962"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAAD3FJREFU
+6uZY/QlG4Ia7kf8P4+ty+J8dYEgAAAAASUVORK5CYII=">
+                                                              (971+) الإمارات</option>
+                                                          <option value="+962"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAAD3FJREFU
 eF7tnQlsHOUVx/972l7v+oiP2HESHK4kDiGUEnKShNJWqIJKlIBIRaDQ9ORUgaKSoFJIVSkCNUAJ
 FLVQAS0NVwsqVYNUBC0ladLgUCABcnCGHE6Ibby213tM3/u++dZOcO1de3e9O/vG1q7lnZ2ded9v
 3/ve8b1xrWmaYq3/rB07YhHE4YJlWYDLBdlEAjmVgGXtdrU2t1gxAvDtvh785MhB7ItbsFyJnJ6H
@@ -932,7 +1105,10 @@ b9NaE1ltl47QZd/BJZAijHwTIdaCbI530KL3e08vx45xXirt0o6JmGQBbPQSGAxGFf8zt1PjBvH8
 MQla6unDU1MDeLHZr1fbqcpqvQReYBz9UMgRBoHRtAHhPjSM2v6gBzeeXYUPKmjxu13iJfAJOpmX
 wGAw8pJP6ke4bXwJHppVijdqfYjQHFEX/VOfQjHLmR8HOSIrPupC1tzCd38mraeraLarKpoAVdGU
 wMfl/ZI7FlRyIgGC8bUpLZYnkSDv2KOqaD4J6sC0LiGUEE1OxkE+RGvGBxbMstafXIZtlDHRRa3G
-aWGtaNqoi7REAtmWgLX7f/TATlbGSqXBAAAAAElFTkSuQmCC">(962+) الاردن</option><option value="+20"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAADRBJREFU
+aWGtaNqoi7REAtmWgLX7f/TATlbGSqXBAAAAAElFTkSuQmCC">
+                                                              (962+) الاردن</option>
+                                                          <option value="+20"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAADRBJREFU
 eF7tnHdw1VUWx78vvVcS0oEECKAkQECEUERQdItgL7usXSyjo7sq6lpm7OMiulYsrC6rArMrllV3
 QHClCARCCT3E9P4S0ttL8pL93os4Q4pvfnF/42/mnfcPw+N3Lvd972fOuefcc3+2feFjeyEfUeAX
 VqC3tzffJjD+wqsg/71WQGAUECyjgMBomaWQiQiMwoBlFBAYLbMUMhGBURiwjAICo2WWQiYiMAoD
@@ -991,7 +1167,10 @@ gMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOz
 FBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVc
 wwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIx
 MEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJWxjWsgMBoWDIxMEsBgdEsZWVcwwoIjIYlEwOzFBAYzVJW
-xjWsgMBoWDIxMEsBgdEsZWVcwwpoGFcaNhMDUeD/r4D9f18GLgGvx1iiAAAAAElFTkSuQmCC">(20+) مصر</option><option value="+965"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAB4VJREFU
+xjWsgMBoWDIxMEsBgdEsZWVcwwpoGFcaNhMDUeD/r4D9f18GLgGvx1iiAAAAAElFTkSuQmCC">
+                                                              (20+) مصر</option>
+                                                          <option value="+965"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAB4VJREFU
 eF7tnWtvFFUYx/97m712l5bdQreUdrcXoBRaEaRAAbE1qJjKGwwJGDSSiAFCBBWIYaEa8BJNQBMS
 UEmUF0Zf6QcwMb7T7+AnMNGosN37emZ7gSiU7dk5M9Od/ya8ofucy+/8cmaec87MukK7+6q5/X2o
 lCrghwQsI5At/OYSlVfDO9LIndiEcqVqWVtYscMJ/DM9I6OOIRiPoXB9L8rFssOpsPuWELhfRr0B
@@ -1026,7 +1205,10 @@ gXyZmQqtaoyA9MwY8LgxtSaFV6JhTDNRaWwUGF0jICWj/vjotyNrsEVs7fH+kCYZRWDRMraHg/hR
 b0OuyjtEiqOOwIIzY1QkKFfXpfGceGgqz4xZ3Siw5IWz6ajfhx82DqCfrxehKiYReODMmIyE8JPI
 mAP60S+edDBpKFjN/2R8Wjy1d7MnCQ/zFNphMoF5GcXOHo6Kg7BTHQmUmDGbPAysbn4HRrxepPqu
 OAz78rJo7fFRfkjACgK1mfHK+t7PjoqHpnJWtIB1ksAsgT+Kxd//BeUzAl8715dCAAAAAElFTkSu
-QmCC">(965+) الكويت</option><option value="+964"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACQZJREFU
+QmCC">
+                                                              (965+) الكويت</option>
+                                                          <option value="+964"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACQZJREFU
 eF7tnAlUVFUcxj8WEaUQ3CrRPGYplRupp7RFLbUsrTQRNwy3SsnqFC0nzWSo7JiWuZCaWXlUwCiT
 yhZFTdIWzUQos0StNC3XzIBRlu59OjSMwTiIcO+d757jOcPMe/d+///3m3vf+787+mwObVEMNmag
 mjNQXFyc40MYq9kFDm9lgDASBGUyQBiVsYJCCCMZUCYDhFEZKyiEMJIBZTJAGJWxgkIIIxlQJgOE
@@ -1067,7 +1249,10 @@ FmVipBBNMpAjd1gRRk3cMlwmYTTcYJ3CI4w6uWW4VsJouME6hUcYdXLLcK2E0XCDdQqPMOrkluFa
 CaPhBusUHmHUyS3DtRJGww3WKTzCqJNbhmsljIYbrFN4hFEntwzXShgNN1in8AijTm4ZrpUwGm6w
 TuERRp3cMlwrYTTcYJ3CI4w6uWW4VsJouME6hUcYdXLLcK2E0XCDdQqPMOrkluFaCaPhBusUHmHU
 yS3DtRJGww3WKTzCqJNbhmsljIYbrFN4hFEntwzXShgNN1in8AijTm4ZrpUwGm6wTuERRp3cMlwr
-YTTcYJ3CI4w6uWW4VgvGOYYHyfD0yMCf/wKJe9LjMtILrAAAAABJRU5ErkJggg==">(964+) العراق</option><option value="+973"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAACDxJREFU
+YTTcYJ3CI4w6uWW4VgvGOYYHyfD0yMCf/wKJe9LjMtILrAAAAABJRU5ErkJggg==">
+                                                              (964+) العراق</option>
+                                                          <option value="+973"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABiCAYAAAA82GORAAAABHNCSVQICAgIfAhkiAAACDxJREFU
 eF7tndlzVFUQxj/+Nv0T9EWrLMsXK6VYBRZGUwoSQDESIMomCcgWIgRCWELCGoQQICwpWcqABLJM
 JpnMvmQyM/fOjN2XmuEOLyaFVXOWPg/Aw1Dp+/Uvfeeee/rrFWVaUHiVSyUkTg8gcvAYMjfuAGqH
 q7CSaodGGI6vUB1Gv4SF4Bzm9xxE4mQfnNmQ2upKdMtSQDsY/VcX52q5rxOZ2w8A113WhcuH1VNA
@@ -1105,7 +1290,10 @@ r5IjReeraimrrgpYDWMxnfG6BNlib3H0cV0TIT+cvbzK4yvoD2ssvfjVYm7sOWLHTyO8+6D0UCv0
 W2ANjG4ihfTgkDeEKMe2J7KUU8BoGLkK8mFb3m/kgxZy6FY5/moCMhJGnjWdGR5BkNoPxHRebQD9
 0RkDI1dBdoaY37nf27aRfUR9IKzubuj+AFOk2X9sFDrZ0AiH3rbI0lcBLSsjV0GXJh/M/rwTUa6C
 9mwG6EvaEiLXCkZuxs/e/wvjHzSgRIMpZZmlQAXGfpUvi0dvTK3+XgaUq5yk/yO2cjn4L5qzy3ty
-SYS+AAAAAElFTkSuQmCC">(973+) البحرين</option><option value="+974"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACc5JREFU
+SYS+AAAAAElFTkSuQmCC">
+                                                              (973+) البحرين</option>
+                                                          <option value="+974"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAACc5JREFU
 eF7tndlT20cSxzv/5L7nD9jU1qYqtVvZZJOsU0ntbpwYexNnnTgLJnZ84HDY3Ic5xCFAgCR0gA4k
 EEggISEJCXSx3VMl+yfKu095mJ7peXH5her59qc0v+np450rXMBskckptxf8j0cgPrkI5fQJsx2I
 uW9RIPoORxidG2k1m5Bc8ECgbwxiEy6o5griaZ4K8IfRqXuzXofouAu2n4zA/qIHLs/KPN1ip9Vm
@@ -1150,7 +1338,10 @@ Ms2A0Sl8JZeHpGsD/I+GsAfPqtyk+VBpHozOd+kyppjREPRg3yh+X+LoNsnk0RlNc2G8/i59hp0l
 KO9x+8kIZLZCOjvFVtvsgPE6mDlMMVu8eR/C/VO2Ol7HfdsDY7s5VKh/Euump1VbZVlaKWA2jAQg
 FWpFJxbxeB5W3W3lu1ErAJ3GmAkj3agTc2vg/+UlJGbxRo0pY7K0V8AcGCk7J+lax262wxCfWsbZ
 gRJr1B4/k96mabhQGm/GPkyUpRYmUlbADL+3wHiX2xZaeOxudffDzCe3oYnPgrL4K4C1nMf/BZ+R
-R7E72HVWAAAAAElFTkSuQmCC">(974+) قطر</option><option value="+966" selected="selected"  data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAGv9JREFU
+R7E72HVWAAAAAElFTkSuQmCC">
+                                                              (974+) قطر</option>
+                                                          <option value="+966" selected="selected"
+                                                              data-content="iVBORw0KGgoAAAANSUhEUgAAAKMAAABtCAYAAADNjtFEAAAABHNCSVQICAgIfAhkiAAAGv9JREFU
 eF7tXQWUFNcSLSy4uxPcg7u7a7DgGtxhWRZnWRZ3d3d3dye4B4JrghNc/r219LAL5J/MCfN/T/YV
 h7O7Mz1vXte7XXKrXncQaZn1gxgxGvi/a+DDpSAGjP/3VTATUA0YMBog2EYDBoy2WQozEQNGgwHb
 aMCA0TZLYSZiwGgwYBsNGDDaZinMRAwYDQZsowEDRtsshZmIAaPBgG00YMBom6UwEzFgNBiwjQYM
@@ -1272,284 +1463,479 @@ XTO2UxowYHRKXeZgV2rAgNGV2jVjO6UBA0an1GUOdqUGDBhdqV0ztlMaMGB0Sl3mYFdqwIDRldo1
 YzulAQNGp9RlDnalBgwYXaldM7ZTGjBgdEpd5mBXasCA0ZXaNWM7pQEDRqfUZQ52pQYMGF2pXTO2
 UxowYHRKXeZgV2rAgNGV2jVjO6UBA0an1GUOdqUGDBhdqV0ztlMaMGB0Sl3mYFdqwIDRldo1Yzul
 AQNGp9RlDnalBgwYXaldM7ZTGjBgdEpd5mBXasCA0ZXaNWM7pQEDRqfUZQ52pQYIxhZZxrvyK8zY
-RgN/SwNBgtz7D+veYpWj02JyAAAAAElFTkSuQmCC">(966+) السعودية</option></select>
-
-
-
-</div>
-</div>
-</div><div class="col-md-12"></div><div class="col-md-6">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-id js-form-item-delegate-id form-group">
-  <label for="edit-delegate-id" class="control-label js-form-required form-required">رقم هوية المفوض</label>
-
-
-<input data-drupal-selector="edit-delegate-id" pattern="^\d{10}$" class="form-text required form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم هوية المفوض هو 10." data-msg-required="هذا الحقل ضروري" data-msg-pattern="رقم هوية المفوض يحتوي على أحرف غير صالحة." type="text" id="edit-delegate-id" name="delegate_id" value="" size="60" maxlength="10" placeholder="رقم الهوية" required="required" aria-required="true" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-6">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-hijri js-form-item-delegate-hijri form-group">
-  <label for="edit-delegate-hijri" class="control-label">تاريخ ميلاد المفوض</label>
-
-
-<input data-drupal-selector="edit-delegate-hijri" class="form-text form-control" data-msg-maxlength="الحد الأقصى لطول الحقل تاريخ ميلاد المفوض هو 128." data-msg-required="هذا الحقل ضروري" type="text" id="edit-delegate-hijri" name="delegate_hijri" value="" size="60" maxlength="128" placeholder="DD / MM / YYYY" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-6">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-residency js-form-item-delegate-residency form-group">
-  <label for="edit-delegate-residency" class="control-label">رقم هوية/إقامة المفوض</label>
-
-
-<input data-drupal-selector="edit-delegate-residency" pattern="^\d{10}$" class="form-text form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم هوية/إقامة المفوض هو 10." data-msg-required="هذا الحقل ضروري" data-msg-pattern="رقم هوية/إقامة المفوض يحتوي على أحرف غير صالحة." type="text" id="edit-delegate-residency" name="delegate_residency" value="" size="60" maxlength="10" placeholder="رقم هوية/إقامة المفوض" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-6">
-<div class="form-inline form-item js-form-item form-type-date js-form-type-date form-item-delegate-birthday js-form-item-delegate-birthday form-group">
-  <label for="edit-delegate-birthday" class="control-label">تاريخ ميلاد المفوض</label>
-
-
-<input type="date" data-drupal-selector="edit-delegate-birthday" data-drupal-date-format="Y-m-d" class="form-date form-control" data-msg-required="هذا الحقل ضروري" id="edit-delegate-birthday" name="delegate_birthday" value="" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-6">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-national-id js-form-item-delegate-national-id form-group">
-  <label for="edit-delegate-national-id" class="control-label">رقم الهوية/بطاقة إثبات الشخصية للمفوض</label>
-
-
-<input data-drupal-selector="edit-delegate-national-id" class="form-text form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم الهوية/بطاقة إثبات الشخصية للمفوض هو 128." data-msg-required="هذا الحقل ضروري" type="text" id="edit-delegate-national-id" name="delegate_national_id" value="" size="60" maxlength="128" placeholder="رقم الهوية/بطاقة إثبات الشخصية للمفوض" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-6">
-<div class="form-inline form-item js-form-item form-type-date js-form-type-date form-item-delegate-national-birthday js-form-item-delegate-national-birthday form-group">
-  <label for="edit-delegate-national-birthday" class="control-label">تاريخ ميلاد المفوض</label>
-
-
-<input type="date" data-drupal-selector="edit-delegate-national-birthday" data-drupal-date-format="Y-m-d" class="form-date form-control" data-msg-required="هذا الحقل ضروري" id="edit-delegate-national-birthday" name="delegate_national_birthday" value="" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}}}" />
-
-
-
-</div>
-</div><div class="col-md-12"><div data-drupal-selector="edit-delegate-br"></div>
-</div><div class="col-md-6">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-delegate-gulf-country js-form-item-delegate-gulf-country form-group">
-  <label for="edit-delegate-gulf-country-id" class="control-label">الدولة</label>
-
-
-<div class="select-wrapper"><select data-init="1" data-drupal-selector="edit-delegate-gulf-country-id" class="form-select form-control" data-msg-required="هذا الحقل ضروري" id="edit-delegate-gulf-country-id" name="delegate_gulf_country" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}}}"><option
-        value="" selected="selected">- اختر -</option><option
-        value="23">عمان</option><option
-        value="25">الإمارات</option><option
-        value="70">الكويت</option><option
-        value="82">البحرين</option><option
-        value="90">قطر</option><option
-        value="96">السعودية</option></select></div>
-
-
-
-</div>
-</div><div class="col-md-12">
-<div class="form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-delegate-terms js-form-item-delegate-terms checkbox">
-
-
-
-
-  <label for="edit-delegate-terms" class="control-label option"><input data-drupal-selector="edit-delegate-terms" class="form-checkbox" data-msg-required="أوافق علي أن خدمة التفويض تقتصر على إعطاء المفوض الصلاحية بزيارة وإجراء الفحص الفني الدوري للمركبة المفوض عليها هذا الحقل ضروري." type="checkbox" id="edit-delegate-terms" name="delegate_terms" value="1" data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:true}}}" />أوافق علي أن خدمة التفويض تقتصر على إعطاء المفوض الصلاحية بزيارة وإجراء الفحص الفني الدوري للمركبة المفوض عليها</label>
-
-
-</div>
-</div></div>
-
-        </div>
-        <h3>معلومات المركبة</h3>
-        <div class="row">
-            <div class="col-md-12"><fieldset data-drupal-selector="edit-registered-vehicle" class="fieldgroup form-composite required js-form-item form-item js-form-wrapper form-wrapper" data-msg-required="هذا الحقل ضروري" id="edit-registered-vehicle--wrapper" required="required" aria-required="true">
-  <legend>
-<span class="fieldset-legend js-form-required form-required">اختر حالة المركبة</span>
-</legend>
-<div class="fieldset-wrapper">
-            <div id="edit-registered-vehicle">
-<div class="form-item js-form-item form-type-radio js-form-type-radio form-item-registered-vehicle js-form-item-registered-vehicle radio">
-
-
-
-
-  <label for="edit-registered-vehicle-1" class="control-label option"><input data-drupal-selector="edit-registered-vehicle-1" class="form-radio" type="radio" id="edit-registered-vehicle-1" name="registered_vehicle" value="1" checked="checked" />تحمل رخصة سير</label>
-
-
-</div>
-
-<div class="form-item js-form-item form-type-radio js-form-type-radio form-item-registered-vehicle js-form-item-registered-vehicle radio">
-
-
-
-
-  <label for="edit-registered-vehicle-0" class="control-label option"><input data-drupal-selector="edit-registered-vehicle-0" class="form-radio" type="radio" id="edit-registered-vehicle-0" name="registered_vehicle" value="0" />تحمل بطاقة جمركية</label>
-
-
-</div>
-</div>
-
-      </div>
-</fieldset>
-</div>
-            <div class="col-md-6"><div id="registration_country_id_wrapper">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-registration-country-id js-form-item-registration-country-id form-group">
-  <label for="edit-registration-country-id" class="control-label">بلد التسجيل</label>
-
-
-<div class="select-wrapper"><select data-init="1" data-drupal-selector="edit-registration-country-id" class="form-select form-control" id="edit-registration-country-id" name="registration_country_id" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}}"><option
-        value="5">سوريا</option><option
-        value="23">عمان</option><option
-        value="25">الإمارات</option><option
-        value="33">الاردن</option><option
-        value="51">مصر</option><option
-        value="70">الكويت</option><option
-        value="73">العراق</option><option
-        value="82">البحرين</option><option
-        value="90">قطر</option><option
-        value="96" selected="selected">السعودية</option></select></div>
-
-
-
-</div>
-</div></div>
-            <div class="col-md-6">
-                <div id="plate_number_ksa_wrapper"><div class="form-item js-form-item form-wrapper js-form-wrapper panel panel-default" data-drupal-selector="edit-plate-number-ksa" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}]}" id="edit-plate-number-ksa">
-
-          <div class="panel-heading">
-                      <div class="panel-title">رقم اللوحة</div>
-          </div>
-  
-        
-
-<div class="panel-body">
-        <div data-drupal-selector="plate-wrapper" class="form-group js-form-wrapper form-wrapper" id="plate-wrapper">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-plate-1 js-form-item-plate-1 form-no-label form-group">
-
-
-<div class="select-wrapper"><select class="form-inline form-control plate-chars form-select form-control" data-minimum-results-for-search="-1" data-drupal-selector="edit-plate-1" id="edit-plate-1" name="plate_1"><option
-        value="" selected="selected">- اختر -</option><option
-        value="A">أ - A</option><option
-        value="B">ب - B</option><option
-        value="J">ح - J</option><option
-        value="D">د - D</option><option
-        value="R">ر - R</option><option
-        value="S">س - S</option><option
-        value="X">ص - X</option><option
-        value="T">ط - T</option><option
-        value="E">ع - E</option><option
-        value="G">ق - G</option><option
-        value="K">ك - K</option><option
-        value="L">ل - L</option><option
-        value="Z">م - Z</option><option
-        value="N">ن - N</option><option
-        value="H">ه - H</option><option
-        value="U">و - U</option><option
-        value="V">ى - V</option></select></div>
-
-
-
-</div>
-
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-plate-2 js-form-item-plate-2 form-no-label form-group">
-
-
-<div class="select-wrapper"><select class="form-inline form-control plate-chars form-select form-control" data-minimum-results-for-search="-1" data-drupal-selector="edit-plate-2" id="edit-plate-2" name="plate_2"><option
-        value="" selected="selected">- اختر -</option><option
-        value="A">أ - A</option><option
-        value="B">ب - B</option><option
-        value="J">ح - J</option><option
-        value="D">د - D</option><option
-        value="R">ر - R</option><option
-        value="S">س - S</option><option
-        value="X">ص - X</option><option
-        value="T">ط - T</option><option
-        value="E">ع - E</option><option
-        value="G">ق - G</option><option
-        value="K">ك - K</option><option
-        value="L">ل - L</option><option
-        value="Z">م - Z</option><option
-        value="N">ن - N</option><option
-        value="H">ه - H</option><option
-        value="U">و - U</option><option
-        value="V">ى - V</option></select></div>
-
-
-
-</div>
-
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-plate-3 js-form-item-plate-3 form-no-label form-group">
-
-
-<div class="select-wrapper"><select class="form-inline form-control plate-chars form-select form-control" data-minimum-results-for-search="-1" data-drupal-selector="edit-plate-3" id="edit-plate-3" name="plate_3"><option
-        value="" selected="selected">- اختر -</option><option
-        value="A">أ - A</option><option
-        value="B">ب - B</option><option
-        value="J">ح - J</option><option
-        value="D">د - D</option><option
-        value="R">ر - R</option><option
-        value="S">س - S</option><option
-        value="X">ص - X</option><option
-        value="T">ط - T</option><option
-        value="E">ع - E</option><option
-        value="G">ق - G</option><option
-        value="K">ك - K</option><option
-        value="L">ل - L</option><option
-        value="Z">م - Z</option><option
-        value="N">ن - N</option><option
-        value="H">ه - H</option><option
-        value="U">و - U</option><option
-        value="V">ى - V</option></select></div>
-
-
-
-</div>
-
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-plate-4 js-form-item-plate-4 form-no-label form-group">
-
-
-<input data-drupal-selector="edit-plate-4" pattern="^\d{4}$" class="form-text required form-control" data-msg-maxlength="الحد الأقصى لطول الحقل هذا الحقل هو 4." data-msg-required="هذا الحقل ضروري" data-msg-pattern="هذا الحقل يحتوي على أحرف غير صالحة." type="text" id="edit-plate-4" name="plate_4" value="" size="4" maxlength="4" required="required" aria-required="true" />
-
-
-
-</div>
-</div>
-<div id="plate_display_wrapper"><div data-drupal-selector="edit-plate-display"></div>
-</div>
-      </div>
-
-
-</div>
-</div>
-                
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-plate-number js-form-item-plate-number form-group">
-  <label for="edit-plate-number" class="control-label">رقم اللوحة</label>
-
-
-<input data-drupal-selector="edit-plate-number" class="form-text form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم اللوحة هو 12." data-msg-required="هذا الحقل ضروري" type="text" id="edit-plate-number" name="plate_number" value="" size="60" maxlength="12" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}],&quot;required&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;optional&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}]}" />
-
-
-
-</div>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6"><div id="plate_type_id_wrapper">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-plate-type-id js-form-item-plate-type-id form-group">
-  <label for="edit-plate-type-id" class="control-label">نوع التسجيل</label>
-
-
-<select class="form-inline form-control select2-icons form-select" data-init="1" data-drupal-selector="edit-plate-type-id" id="edit-plate-type-id" name="plate_type_id" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}]}"><option value="" >اختر نوع التسجيل</option><option value="31" selected="selected"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABZhJREFU
+RgN/SwNBgtz7D+veYpWj02JyAAAAAElFTkSuQmCC">
+                                                              (966+) السعودية</option>
+                                                      </select>
+
+
+
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12"></div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-id js-form-item-delegate-id form-group">
+                                                  <label for="edit-delegate-id"
+                                                      class="control-label js-form-required form-required">رقم
+                                                      هوية المفوض</label>
+
+
+                                                  <input data-drupal-selector="edit-delegate-id"
+                                                      pattern="^\d{10}$"
+                                                      class="form-text required form-control"
+                                                      data-msg-maxlength="الحد الأقصى لطول الحقل رقم هوية المفوض هو 10."
+                                                      data-msg-required="هذا الحقل ضروري"
+                                                      data-msg-pattern="رقم هوية المفوض يحتوي على أحرف غير صالحة."
+                                                      type="text" id="edit-delegate-id"
+                                                      name="delegate_id" value="" size="60"
+                                                      maxlength="10" placeholder="رقم الهوية"
+                                                      required="required" aria-required="true"
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-hijri js-form-item-delegate-hijri form-group">
+                                                  <label for="edit-delegate-hijri"
+                                                      class="control-label">تاريخ ميلاد المفوض</label>
+
+
+                                                  <input data-drupal-selector="edit-delegate-hijri"
+                                                      class="form-text form-control"
+                                                      data-msg-maxlength="الحد الأقصى لطول الحقل تاريخ ميلاد المفوض هو 128."
+                                                      data-msg-required="هذا الحقل ضروري" type="text"
+                                                      id="edit-delegate-hijri" name="delegate_hijri"
+                                                      value="" size="60" maxlength="128"
+                                                      placeholder="DD / MM / YYYY"
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;CITIZEN&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-residency js-form-item-delegate-residency form-group">
+                                                  <label for="edit-delegate-residency"
+                                                      class="control-label">رقم هوية/إقامة المفوض</label>
+
+
+                                                  <input data-drupal-selector="edit-delegate-residency"
+                                                      pattern="^\d{10}$" class="form-text form-control"
+                                                      data-msg-maxlength="الحد الأقصى لطول الحقل رقم هوية/إقامة المفوض هو 10."
+                                                      data-msg-required="هذا الحقل ضروري"
+                                                      data-msg-pattern="رقم هوية/إقامة المفوض يحتوي على أحرف غير صالحة."
+                                                      type="text" id="edit-delegate-residency"
+                                                      name="delegate_residency" value=""
+                                                      size="60" maxlength="10"
+                                                      placeholder="رقم هوية/إقامة المفوض"
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-inline form-item js-form-item form-type-date js-form-type-date form-item-delegate-birthday js-form-item-delegate-birthday form-group">
+                                                  <label for="edit-delegate-birthday"
+                                                      class="control-label">تاريخ ميلاد المفوض</label>
+
+
+                                                  <input type="date"
+                                                      data-drupal-selector="edit-delegate-birthday"
+                                                      data-drupal-date-format="Y-m-d"
+                                                      class="form-date form-control"
+                                                      data-msg-required="هذا الحقل ضروري"
+                                                      id="edit-delegate-birthday" name="delegate_birthday"
+                                                      value=""
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;RESIDENT&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-delegate-national-id js-form-item-delegate-national-id form-group">
+                                                  <label for="edit-delegate-national-id"
+                                                      class="control-label">رقم الهوية/بطاقة إثبات الشخصية
+                                                      للمفوض</label>
+
+
+                                                  <input data-drupal-selector="edit-delegate-national-id"
+                                                      class="form-text form-control"
+                                                      data-msg-maxlength="الحد الأقصى لطول الحقل رقم الهوية/بطاقة إثبات الشخصية للمفوض هو 128."
+                                                      data-msg-required="هذا الحقل ضروري" type="text"
+                                                      id="edit-delegate-national-id"
+                                                      name="delegate_national_id" value=""
+                                                      size="60" maxlength="128"
+                                                      placeholder="رقم الهوية/بطاقة إثبات الشخصية للمفوض"
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-inline form-item js-form-item form-type-date js-form-type-date form-item-delegate-national-birthday js-form-item-delegate-national-birthday form-group">
+                                                  <label for="edit-delegate-national-birthday"
+                                                      class="control-label">تاريخ ميلاد المفوض</label>
+
+
+                                                  <input type="date"
+                                                      data-drupal-selector="edit-delegate-national-birthday"
+                                                      data-drupal-date-format="Y-m-d"
+                                                      class="form-date form-control"
+                                                      data-msg-required="هذا الحقل ضروري"
+                                                      id="edit-delegate-national-birthday"
+                                                      name="delegate_national_birthday" value=""
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}}}" />
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <div data-drupal-selector="edit-delegate-br"></div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div
+                                                  class="form-item js-form-item form-type-select js-form-type-select form-item-delegate-gulf-country js-form-item-delegate-gulf-country form-group">
+                                                  <label for="edit-delegate-gulf-country-id"
+                                                      class="control-label">الدولة</label>
+
+
+                                                  <div class="select-wrapper"><select data-init="1"
+                                                          data-drupal-selector="edit-delegate-gulf-country-id"
+                                                          class="form-select form-control"
+                                                          data-msg-required="هذا الحقل ضروري"
+                                                          id="edit-delegate-gulf-country-id"
+                                                          name="delegate_gulf_country"
+                                                          data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}},&quot;required&quot;:{&quot;:input[name=\u0022delegate_type\u0022]&quot;:{&quot;value&quot;:&quot;GULF_CITIZEN&quot;}}}">
+                                                          <option value="" selected="selected">- اختر
+                                                              -</option>
+                                                          <option value="23">عمان</option>
+                                                          <option value="25">الإمارات</option>
+                                                          <option value="70">الكويت</option>
+                                                          <option value="82">البحرين</option>
+                                                          <option value="90">قطر</option>
+                                                          <option value="96">السعودية</option>
+                                                      </select></div>
+
+
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <div
+                                                  class="form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-delegate-terms js-form-item-delegate-terms checkbox">
+
+
+
+
+                                                  <label for="edit-delegate-terms"
+                                                      class="control-label option"><input
+                                                          data-drupal-selector="edit-delegate-terms"
+                                                          class="form-checkbox"
+                                                          data-msg-required="أوافق علي أن خدمة التفويض تقتصر على إعطاء المفوض الصلاحية بزيارة وإجراء الفحص الفني الدوري للمركبة المفوض عليها هذا الحقل ضروري."
+                                                          type="checkbox" id="edit-delegate-terms"
+                                                          name="delegate_terms" value="1"
+                                                          data-drupal-states="{&quot;required&quot;:{&quot;:input[name=\u0022delegate_delegate\u0022]&quot;:{&quot;value&quot;:true}}}" />أوافق
+                                                      علي أن خدمة التفويض تقتصر على إعطاء المفوض الصلاحية
+                                                      بزيارة وإجراء الفحص الفني الدوري للمركبة المفوض
+                                                      عليها</label>
+
+
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                                  <h3>معلومات المركبة</h3>
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <fieldset data-drupal-selector="edit-registered-vehicle"
+                                              class="fieldgroup form-composite required js-form-item form-item js-form-wrapper form-wrapper"
+                                              data-msg-required="هذا الحقل ضروري"
+                                              id="edit-registered-vehicle--wrapper" required="required"
+                                              aria-required="true">
+                                              <legend>
+                                                  <span
+                                                      class="fieldset-legend js-form-required form-required">اختر
+                                                      حالة المركبة</span>
+                                              </legend>
+                                              <div class="fieldset-wrapper">
+                                                  <div id="edit-registered-vehicle">
+                                                      <div
+                                                          class="form-item js-form-item form-type-radio js-form-type-radio form-item-registered-vehicle js-form-item-registered-vehicle radio">
+
+
+
+
+                                                          <label for="edit-registered-vehicle-1"
+                                                              class="control-label option"><input
+                                                                  data-drupal-selector="edit-registered-vehicle-1"
+                                                                  class="form-radio" type="radio"
+                                                                  id="edit-registered-vehicle-1"
+                                                                  name="registered_vehicle" value="1"
+                                                                  checked="checked" />تحمل رخصة سير</label>
+
+
+                                                      </div>
+
+                                                      <div
+                                                          class="form-item js-form-item form-type-radio js-form-type-radio form-item-registered-vehicle js-form-item-registered-vehicle radio">
+
+
+
+
+                                                          <label for="edit-registered-vehicle-0"
+                                                              class="control-label option"><input
+                                                                  data-drupal-selector="edit-registered-vehicle-0"
+                                                                  class="form-radio" type="radio"
+                                                                  id="edit-registered-vehicle-0"
+                                                                  name="registered_vehicle"
+                                                                  value="0" />تحمل بطاقة جمركية</label>
+
+
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+                                          </fieldset>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div id="registration_country_id_wrapper">
+                                              <div
+                                              <div class="form-item js-form-item form-type-select js-form-type-select form-item-timeslot js-form-item-timeslot form-group">
+                                                  <label for="edit-registration-country-id"
+                                                      class="control-label">بلد التسجيل</label>
+
+
+                                                  <div class="select-wrapper">
+                                                      
+
+                                                      <select data-init="1" 
+                                                          data-drupal-selector="edit-registration-country-id" 
+                                                          class="form-select form-control" 
+                                                          id="edit-registration-country-id" 
+                                                          name="registration_country_id" 
+                                                          data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}}">
+                                                          <option value="5">سوريا</option>
+                                                          <option value="23">عمان</option>
+                                                          <option value="25">الإمارات</option>
+                                                          <option value="33">الاردن</option>
+                                                          <option value="51">مصر</option>
+                                                          <option value="70">الكويت</option>
+                                                          <option value="73">العراق</option>
+                                                          <option value="82">البحرين</option>
+                                                          <option value="90">قطر</option>
+                                                          <option value="96" selected="selected">السعودية</option>
+                                                      </select>
+
+                                                  </div>
+
+
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div id="plate_number_ksa_wrapper">
+                                              <div class="form-item js-form-item form-wrapper js-form-wrapper panel panel-default"
+                                                  data-drupal-selector="edit-plate-number-ksa"
+                                                  data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}]}"
+                                                  id="edit-plate-number-ksa">
+
+                                                  <div class="panel-heading">
+                                                      <div class="panel-title">رقم اللوحة</div>
+                                                  </div>
+
+
+
+                                                  <div class="panel-body">
+                                                      <div data-drupal-selector="plate-wrapper"
+                                                          class="form-group js-form-wrapper form-wrapper"
+                                                          id="plate-wrapper">
+                                                          <div
+                                                              class="form-item js-form-item form-type-select js-form-type-select form-item-plate-1 js-form-item-plate-1 form-no-label form-group">
+
+
+                                                              <div class="select-wrapper"><select
+                                                                      class="form-inline form-control plate-chars form-select form-control"
+                                                                      data-minimum-results-for-search="-1"
+                                                                      data-drupal-selector="edit-plate-1"
+                                                                      id="edit-plate-1" name="plate_1">
+                                                                      <option value=""
+                                                                          selected="selected">- اختر -
+                                                                      </option>
+                                                                      <option value="A">أ - A</option>
+                                                                      <option value="B">ب - B</option>
+                                                                      <option value="J">ح - J</option>
+                                                                      <option value="D">د - D</option>
+                                                                      <option value="R">ر - R</option>
+                                                                      <option value="S">س - S</option>
+                                                                      <option value="X">ص - X</option>
+                                                                      <option value="T">ط - T</option>
+                                                                      <option value="E">ع - E</option>
+                                                                      <option value="G">ق - G</option>
+                                                                      <option value="K">ك - K</option>
+                                                                      <option value="L">ل - L</option>
+                                                                      <option value="Z">م - Z</option>
+                                                                      <option value="N">ن - N</option>
+                                                                      <option value="H">ه - H</option>
+                                                                      <option value="U">و - U</option>
+                                                                      <option value="V">ى - V</option>
+                                                                  </select></div>
+
+
+
+                                                          </div>
+
+                                                          <div
+                                                              class="form-item js-form-item form-type-select js-form-type-select form-item-plate-2 js-form-item-plate-2 form-no-label form-group">
+
+
+                                                              <div class="select-wrapper"><select
+                                                                      class="form-inline form-control plate-chars form-select form-control"
+                                                                      data-minimum-results-for-search="-1"
+                                                                      data-drupal-selector="edit-plate-2"
+                                                                      id="edit-plate-2" name="plate_2">
+                                                                      <option value=""
+                                                                          selected="selected">- اختر -
+                                                                      </option>
+                                                                      <option value="A">أ - A</option>
+                                                                      <option value="B">ب - B</option>
+                                                                      <option value="J">ح - J</option>
+                                                                      <option value="D">د - D</option>
+                                                                      <option value="R">ر - R</option>
+                                                                      <option value="S">س - S</option>
+                                                                      <option value="X">ص - X</option>
+                                                                      <option value="T">ط - T</option>
+                                                                      <option value="E">ع - E</option>
+                                                                      <option value="G">ق - G</option>
+                                                                      <option value="K">ك - K</option>
+                                                                      <option value="L">ل - L</option>
+                                                                      <option value="Z">م - Z</option>
+                                                                      <option value="N">ن - N</option>
+                                                                      <option value="H">ه - H</option>
+                                                                      <option value="U">و - U</option>
+                                                                      <option value="V">ى - V</option>
+                                                                  </select></div>
+
+
+
+                                                          </div>
+
+                                                          <div
+                                                              class="form-item js-form-item form-type-select js-form-type-select form-item-plate-3 js-form-item-plate-3 form-no-label form-group">
+
+
+                                                              <div class="select-wrapper"><select
+                                                                      class="form-inline form-control plate-chars form-select form-control"
+                                                                      data-minimum-results-for-search="-1"
+                                                                      data-drupal-selector="edit-plate-3"
+                                                                      id="edit-plate-3" name="plate_3">
+                                                                      <option value=""
+                                                                          selected="selected">- اختر -
+                                                                      </option>
+                                                                      <option value="A">أ - A</option>
+                                                                      <option value="B">ب - B</option>
+                                                                      <option value="J">ح - J</option>
+                                                                      <option value="D">د - D</option>
+                                                                      <option value="R">ر - R</option>
+                                                                      <option value="S">س - S</option>
+                                                                      <option value="X">ص - X</option>
+                                                                      <option value="T">ط - T</option>
+                                                                      <option value="E">ع - E</option>
+                                                                      <option value="G">ق - G</option>
+                                                                      <option value="K">ك - K</option>
+                                                                      <option value="L">ل - L</option>
+                                                                      <option value="Z">م - Z</option>
+                                                                      <option value="N">ن - N</option>
+                                                                      <option value="H">ه - H</option>
+                                                                      <option value="U">و - U</option>
+                                                                      <option value="V">ى - V</option>
+                                                                  </select></div>
+
+
+
+                                                          </div>
+
+                                                          <div
+                                                              class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-plate-4 js-form-item-plate-4 form-no-label form-group">
+
+
+                                                              <input data-drupal-selector="edit-plate-4"
+                                                                  pattern="^\d{4}$"
+                                                                  class="form-text required form-control"
+                                                                  data-msg-maxlength="الحد الأقصى لطول الحقل هذا الحقل هو 4."
+                                                                  data-msg-required="هذا الحقل ضروري"
+                                                                  data-msg-pattern="هذا الحقل يحتوي على أحرف غير صالحة."
+                                                                  type="text" id="edit-plate-4"
+                                                                  name="plate_4" value=""
+                                                                  size="4" maxlength="4"
+                                                                  required="required"
+                                                                  aria-required="true" />
+
+
+
+                                                          </div>
+                                                      </div>
+                                                      <div id="plate_display_wrapper">
+                                                          <div data-drupal-selector="edit-plate-display">
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+
+                                              </div>
+                                          </div>
+
+                                          <div
+                                              class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-plate-number js-form-item-plate-number form-group">
+                                              <label for="edit-plate-number" class="control-label">رقم
+                                                  اللوحة</label>
+
+
+                                              <input data-drupal-selector="edit-plate-number"
+                                                  class="form-text form-control"
+                                                  data-msg-maxlength="الحد الأقصى لطول الحقل رقم اللوحة هو 12."
+                                                  data-msg-required="هذا الحقل ضروري" type="text"
+                                                  id="edit-plate-number" name="plate_number"
+                                                  size="60" maxlength="12"
+                                                  data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}],&quot;required&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;optional&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}]}" />
+
+
+
+                                          </div>
+
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div id="plate_type_id_wrapper">
+                                              <div
+                                                  class="form-item js-form-item form-type-select js-form-type-select form-item-plate-type-id js-form-item-plate-type-id form-group">
+                                                  <label for="edit-plate-type-id" class="control-label">نوع
+                                                      التسجيل</label>
+
+
+                                                  <select
+                                                      class="form-inline form-control select2-icons form-select"
+                                                      data-init="1"
+                                                      data-drupal-selector="edit-plate-type-id"
+                                                      id="edit-plate-type-id" name="plate_type"
+                                                      data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;value&quot;:&quot;96&quot;},&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:[{&quot;:input[name=\u0022registration_country_id\u0022]&quot;:{&quot;!value&quot;:&quot;96&quot;}},{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}]}">
+                                                      <option value="">اختر نوع التسجيل</option>
+                                                      <option value="خصوصي" selected="selected"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABZhJREFU
 aEPtm1sofUscx3/b/X7JJS8OIsrl4XTEyYtOnAcR50FKxHkjiYT6P7ifJ/FC6vAkDxIpJZeTEE9H
 IomU3FMIyf1+OfOdmt3e29rb2rez/f3X1G72nrVm1sxnfr+ZWd+ZrSIWtra2Mt7e3r6xrzHs44M0
 JXxI4B7o2Kc/IiLiL9yt2tzc/IPFQx9mVW4wRKCHAf1TtbGx8a9KpfpVYWUeATs7uyBY5jkrxlsU
@@ -1575,7 +1961,10 @@ lEr7YWdzOcsFS93z5ZdGlgIlp5zvHiaOx+CskbXfh78KTCjxd3d3vDnvDm75+Pjw4zE4AWfr8D1Y
 psGDWziTCcuEDGdr6/zsMLGsw2EFEd5ZJi5gAws7ezjo6uDgYDOoOPeID+pgzQAtU5yxlPMcQESe
 8/NzrXwC5i4r5N3GMFzd2g0xVHl0JrzD1ON+csAYew+ga54W1szP9Nqfcdj1b5ZYbGzByv1aBPbZ
 HwR+Uh0cHPgzKekfdukXBZDxBJh7nzEvymFnq6bUexTb29u/swsxzJSV/wHJY8r/B+Ti4jLFFKsz
-ZPkP0FvSapPaF2IAAAAASUVORK5CYII=">خصوصي</option><option value="46"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABmdJREFU
+ZPkP0FvSapPaF2IAAAAASUVORK5CYII=">
+                                                          خصوصي</option>
+                                                      <option value="نقل عام"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABmdJREFU
 aEPtm21MU1cYx/8trwKCBMrQiZSVyCYws0lwyRaJg70QCS4bcRIMuA8b+2AkLpLsg0B0WYyRbMHg
 JskS5wdiWEyWoEaXUJNt2caIyWbAZQwEOsaLoDC0BRRod57LTqXtve2hvU1FepPmNKfnPOec333O
 c+79n1MN2HXr1q0im832MfuayT7rKC94eSQwS+jYpyU9Pf0TKq3p7e19i6XfeqwaLOCOwDkGdL+m
@@ -1605,7 +1994,10 @@ c3hbDWbit8jDpDOZutE2hBR+5j/1SPQePOYwreGx6N/RZB+Ni2fSL7FDbUjobYEtMQPa+DTptTEg
 1yw7gzszAcQri7Oq9GtyAJhjMpzAZWUnh7XjN/EwZiMGc4+zcKh1gcmsweUMSOTkTUSY/xFoYvUU
 WQhbC4suB7aQcJdBh4SEvECHXb9kvzw6Art62Kg50kH2B4FNmuHh4US2gc/2B7BNTeurxRaLlRPs
 zwF72Nkqoz0g9vX1vcZ+yLRarcH/AYl5gvQ/oMjISCNTrFhwB/4D6BUyajegw2oAAAAASUVORK5C
-YII=">نقل عام</option><option value="47"  data-content="iVBORw0KGgoAAAANSUhEUgAAASAAAACICAYAAABHuza3AAAABHNCSVQICAgIfAhkiAAAF7ZJREFU
+YII=">
+                                                          نقل عام</option>
+                                                      <option value="نقل خاص"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAASAAAACICAYAAABHuza3AAAABHNCSVQICAgIfAhkiAAAF7ZJREFU
 eF7tnWtwFUd2x88VQuIhkHgK1sQG8TD28sqCF4E/QBaMC8xr1yzEBQbWVQ6C3YIlEYE4QMzDpIhZ
 x1BxEMkXQ0HV4pAyJoArBLZgU2ULL2xBwFmWp3CwXSBgQSAhQNJNn2F71Lc1987j3jmaGZ2pEhK6
 ffp0/0/rd093T8+NgYvrwoULU0XxH4uv78Zisa7iO361dVEFF2UFWIEIKRCPx2+K7twUPPhW/Pxf
@@ -1712,7 +2104,10 @@ LUsS7i0rwAoQKvATkf18KP0lbHRcuXJlYH19/UnxIh/wIowIu2IFWogC2wR8StS+Nnmgj8iEZos0
 aWcLEYS7yQqwAjQK/LZv374jxQwrYQXb8oliIhMaVldXd0AU/g5N29gLK8AKRFiBMgGfnwqeNNm3
 T/pIw4qKip6PHz9GCP1phIXhrrECrIB/CuA22k/FtGtbMhcpn6kqpmKtxe7YPAGhUlHBs/61k2tm
 BViBCClQK/qyXXxtEvC5mKpfjh/qLO4V+r4A0iyxUzZTAKlXhMTirrACrECaCgg24NrOr8QNhrvF
-938XU667Tqp0DCAnlXEZVoAVYAXcKPD/lIGdi/8xKzsAAAAASUVORK5CYII=">نقل خاص</option><option value="56"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABnNJREFU
+938XU667Tqp0DCAnlXEZVoAVYAXcKPD/lIGdi/8xKzsAAAAASUVORK5CYII=">
+                                                          نقل خاص</option>
+                                                      <option value="مقطورة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABnNJREFU
 aEPtm39MU1cUx78tldXCFMcPcQasYkQDbDFzsmQ/jMP9YSCwLMaEYGD7Y9MsBmSBxBjEyH7FaLJh
 XNTsD8MfzLCYmSCoc+I2sx+OMDKEbBIUaqqgdqBIC0hpu3teciuvfY/eltaC60ua29yee+65n3fu
 ue+de6sBu27cuJHncrl2s68Z7BNHdZHLJ4FxQsc+DStXrvyYpDXXr19/m5WnfTaNCExHoI4BfVfT
@@ -1742,7 +2137,10 @@ kJsDMOkUHJ2GU4QZo/0HiYZ2RCV+FLrskSjoWQ7ThXnoHd/jHo2XZ9IvC3R/Il53CS5dKrTRS6XX
 xrBcDnbQ1t4P6F8MbfcT3YDDKtSHix2+1Tjvw+6Kx62J9+B0GbxgmljNMk9tem0fntGG7+SwVjPK
 Ti7b2PlH+XEcoVGHSMjB4Nkcq1mOW+fVQ1RU1Fo67HqU/RLidHaIRjd71JrZHwRSNf39/QlsA/88
 s+ul2WPb3LGExcoh9ueArexsVYs7IPb29r7FfshwOp2R/wGJ3Uvpf0B6vb6FZayGqMl/g5FRapC2
-OIIAAAAASUVORK5CYII="> مقطورة</option><option value="51"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAqCAYAAADPn2cJAAAABHNCSVQICAgIfAhkiAAABFRJREFU
+OIIAAAAASUVORK5CYII=">
+                                                          مقطورة</option>
+                                                      <option value="دراجة نارية"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAqCAYAAADPn2cJAAAABHNCSVQICAgIfAhkiAAABFRJREFU
 aEPtmztII1EUhk98v6O4YizcVRQbtVhSKDayyBbCIgFlK9Eg+EZtLKwUXRBEQRBktVPRwsbFyjQp
 LGQVFBsb8QmLgojxrfGZvf/dnRgnmWSMs6ibeyBkmHvvmZnv/ufMcOeMjphtbGx8cTgcbWwzm/3i
 sU+YTwJ2oGO/yczMzG/orVtfXzex/x8+h4oO3giMMqBm3dra2k+dTpcvWD2PQFBQkAHKPGJu9JIr
@@ -1762,7 +2160,10 @@ l2pHxCC88WgGsMnJyVzh3h7H1J5rwMFUC8affgKmP9QUxgiYAqaGBDR0JZQpYGpIQENXPpWJ8hgs
 ALASQw0P+3+6QkXH4eGhsxrOrTwmPj6el8egAk6YMgFUwwEmnmMlc4OJmkwoE9VwQp3KMC8vL/m6
 AtYUFGGiAbWZWMhFoWtISIiA6sJUKnZFXaYrSHSRlLnNtj/I5wGhDpjCHggAplT1JucSHBz8EcWu
 31nDnxVcYf4S+MU+EHiv293dfceWuCzMi9FfT4E8joW3jaXEr+ytp9X5DLS5ufmZNWQzKYvvgNSp
-g38HFBERYWXv5m0YIh4o1YFT1es3j+yMTXOqrvIAAAAASUVORK5CYII=">دراجة نارية</option><option value="53"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABmdJREFU
+g38HFBERYWXv5m0YIh4o1YFT1es3j+yMTXOqrvIAAAAASUVORK5CYII=">
+                                                          دراجة نارية</option>
+                                                      <option value="مركبة اجرة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABmdJREFU
 aEPtm21MU1cYx/8trwKCBMrQiZSVyCYws0lwyRaJg70QCS4bcRIMuA8b+2AkLpLsg0B0WYyRbMHg
 JskS5wdiWEyWoEaXUJNt2caIyWbAZQwEOsaLoDC0BRRod57LTqXtve2hvU1FepPmNKfnPOec333O
 c+79n1MN2HXr1q0im832MfuayT7rKC94eSQwS+jYpyU9Pf0TKq3p7e19i6XfeqwaLOCOwDkGdL+m
@@ -1792,7 +2193,10 @@ c3hbDWbit8jDpDOZutE2hBR+5j/1SPQePOYwreGx6N/RZB+Ni2fSL7FDbUjobYEtMQPa+DTptTEg
 1yw7gzszAcQri7Oq9GtyAJhjMpzAZWUnh7XjN/EwZiMGc4+zcKh1gcmsweUMSOTkTUSY/xFoYvUU
 WQhbC4suB7aQcJdBh4SEvECHXb9kvzw6Art62Kg50kH2B4FNmuHh4US2gc/2B7BNTeurxRaLlRPs
 zwF72Nkqoz0g9vX1vcZ+yLRarcH/AYl5gvQ/oMjISCNTrFhwB/4D6BUyajegw2oAAAAASUVORK5C
-YII="> مركبة اجرة</option><option value="50"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABflJREFU
+YII=">
+                                                          مركبة اجرة</option>
+                                                      <option value="تصدير"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABflJREFU
 aEPtm0tIXEkUhk8nSjQ+xsgYRPGFUSHqYjI+RgMGiQMRRQeUgK9kdroQRUhgFkZRV6IbRRizirMQ
 EYQBiThgBDcyKiKocSFqfD+IRkaNxpCoU39BNd23723LazfdJl0gV6qrqk9995xTVedUG4iVhYWF
 7LOzsz/Yv7Hszw91rnIugWOgY3/dd+7caUBrw/z8/G/s+fe5XV0NrBH4iwH93TA3N/evwWD4Ra0l
@@ -1820,7 +2224,10 @@ QK8CTGzHsHFHsbi4hfNoVFSUMWEmM2l7tbkKMK1e3EJU58OHD5Senm636JEsfGeHef36dUpMTDRO
 x0IzxcqLE42fnx//c5TJ4+4QblYEBQXJ8tfVDjsN3NyQLUiyeXp68uuEpuFBAXOJDRSmHAwTceTN
 YcQZv379ygV3lgJ4t27dIlx0VRamqT/hsuuf7APtrJGzzMS55VhlYbpQA0sP/Mg08B8m68/OLa9z
 SsfMe5dp6mN2t2rQ+PMBtpL/yj6IZekC1++A5N4b/x0Q+7HAINsi8XzM/6Aa1WqPoa7tAAAAAElF
-TkSuQmCC">تصدير</option><option value="48"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAqCAYAAADPn2cJAAAABHNCSVQICAgIfAhkiAAABFRJREFU
+TkSuQmCC">
+                                                          تصدير</option>
+                                                      <option value="دراجة نارية ترفيهية"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAqCAYAAADPn2cJAAAABHNCSVQICAgIfAhkiAAABFRJREFU
 aEPtmztII1EUhk98v6O4YizcVRQbtVhSKDayyBbCIgFlK9Eg+EZtLKwUXRBEQRBktVPRwsbFyjQp
 LGQVFBsb8QmLgojxrfGZvf/dnRgnmWSMs6ibeyBkmHvvmZnv/ufMcOeMjphtbGx8cTgcbWwzm/3i
 sU+YTwJ2oGO/yczMzG/orVtfXzex/x8+h4oO3giMMqBm3dra2k+dTpcvWD2PQFBQkAHKPGJu9JIr
@@ -1840,7 +2247,10 @@ l2pHxCC88WgGsMnJyVzh3h7H1J5rwMFUC8affgKmP9QUxgiYAqaGBDR0JZQpYGpIQENXPpWJ8hgs
 ALASQw0P+3+6QkXH4eGhsxrOrTwmPj6el8egAk6YMgFUwwEmnmMlc4OJmkwoE9VwQp3KMC8vL/m6
 AtYUFGGiAbWZWMhFoWtISIiA6sJUKnZFXaYrSHSRlLnNtj/I5wGhDpjCHggAplT1JucSHBz8EcWu
 31nDnxVcYf4S+MU+EHiv293dfceWuCzMi9FfT4E8joW3jaXEr+ytp9X5DLS5ufmZNWQzKYvvgNSp
-g38HFBERYWXv5m0YIh4o1YFT1es3j+yMTXOqrvIAAAAASUVORK5CYII=">دراجة نارية ترفيهية</option><option value="49"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAoCAYAAABtla08AAAABHNCSVQICAgIfAhkiAAABmlJREFU
+g38HFBERYWXv5m0YIh4o1YFT1es3j+yMTXOqrvIAAAAASUVORK5CYII=">
+                                                          دراجة نارية ترفيهية</option>
+                                                      <option value="هيئة دبلوماسية"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAoCAYAAABtla08AAAABHNCSVQICAgIfAhkiAAABmlJREFU
 aEPtW2tMVEcU/jatlooPLF0wUhoeragLMUYF2hg1amzBxkcwqWKillhMACEkJjQkavRXiSYG8BlM
 0ET5owQRhB9qGqObLsLGilCzogFMcRHQurwEWaVzRu9273J3d1juKpKdZDIwe86ZM989Z2bnu7Ma
 sPLo0aOfhoeHf2N/6lgNoD5fcYvACybRqNFofo+MjKzUPHz4cAPrKHOr5hNwhcBGTVNT058M1Xgf
@@ -1870,7 +2280,10 @@ mxtviszT6zIfA5DZEdlID0/nWMiurOys34mcxTn4MfRHrwPlboCPAcjSxaVYMGPBSCAvPLmA2pe1
 KF1T6m6eXv98vAM5c9JM1C6rteEgi0g63ew17YX+Xz2/1jc3YK7XAXM2AF3r0z/VI0PngllVwTt9
 ux7PBp8JWzJ2GTFoHcSV2CsInBwoA3LERVPzgBnVHdVo6lXg6YSHHJsg8aPWN1b4feI3NkMqas/+
 fDaWfrEUC2csdLRq8V19VgFo6eqz7zL+2MHcqCEbvp+HeISk7Och/wFth+1FvotqqAAAAABJRU5E
-rkJggg=="> هيئة دبلوماسية</option><option value="52"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABmdJREFU
+rkJggg==">
+                                                          هيئة دبلوماسية</option>
+                                                      <option value="حافلة عامة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABmdJREFU
 aEPtm21MU1cYx/8trwKCBMrQiZSVyCYws0lwyRaJg70QCS4bcRIMuA8b+2AkLpLsg0B0WYyRbMHg
 JskS5wdiWEyWoEaXUJNt2caIyWbAZQwEOsaLoDC0BRRod57LTqXtve2hvU1FepPmNKfnPOec333O
 c+79n1MN2HXr1q0im832MfuayT7rKC94eSQwS+jYpyU9Pf0TKq3p7e19i6XfeqwaLOCOwDkGdL+m
@@ -1900,7 +2313,10 @@ c3hbDWbit8jDpDOZutE2hBR+5j/1SPQePOYwreGx6N/RZB+Ni2fSL7FDbUjobYEtMQPa+DTptTEg
 1yw7gzszAcQri7Oq9GtyAJhjMpzAZWUnh7XjN/EwZiMGc4+zcKh1gcmsweUMSOTkTUSY/xFoYvUU
 WQhbC4suB7aQcJdBh4SEvECHXb9kvzw6Art62Kg50kH2B4FNmuHh4US2gc/2B7BNTeurxRaLlRPs
 zwF72Nkqoz0g9vX1vcZ+yLRarcH/AYl5gvQ/oMjISCNTrFhwB/4D6BUyajegw2oAAAAASUVORK5C
-YII=">حافلة عامة</option><option value="54"  data-content="iVBORw0KGgoAAAANSUhEUgAAASAAAACICAYAAABHuza3AAAABHNCSVQICAgIfAhkiAAAF7ZJREFU
+YII=">
+                                                          حافلة عامة</option>
+                                                      <option value="حافلة خاصة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAASAAAACICAYAAABHuza3AAAABHNCSVQICAgIfAhkiAAAF7ZJREFU
 eF7tnWtwFUd2x88VQuIhkHgK1sQG8TD28sqCF4E/QBaMC8xr1yzEBQbWVQ6C3YIlEYE4QMzDpIhZ
 x1BxEMkXQ0HV4pAyJoArBLZgU2ULL2xBwFmWp3CwXSBgQSAhQNJNn2F71Lc1987j3jmaGZ2pEhK6
 ffp0/0/rd093T8+NgYvrwoULU0XxH4uv78Zisa7iO361dVEFF2UFWIEIKRCPx2+K7twUPPhW/Pxf
@@ -2007,7 +2423,10 @@ LUsS7i0rwAoQKvATkf18KP0lbHRcuXJlYH19/UnxIh/wIowIu2IFWogC2wR8StS+Nnmgj8iEZos0
 aWcLEYS7yQqwAjQK/LZv374jxQwrYQXb8oliIhMaVldXd0AU/g5N29gLK8AKRFiBMgGfnwqeNNm3
 T/pIw4qKip6PHz9GCP1phIXhrrECrIB/CuA22k/FtGtbMhcpn6kqpmKtxe7YPAGhUlHBs/61k2tm
 BViBCClQK/qyXXxtEvC5mKpfjh/qLO4V+r4A0iyxUzZTAKlXhMTirrACrECaCgg24NrOr8QNhrvF
-938XU667Tqp0DCAnlXEZVoAVYAXcKPD/lIGdi/8xKzsAAAAASUVORK5CYII=">حافلة خاصة</option><option value="55"  data-content="iVBORw0KGgoAAAANSUhEUgAAAR4AAACMCAYAAACqEMYqAAAABHNCSVQICAgIfAhkiAAAFthJREFU
+938XU667Tqp0DCAnlXEZVoAVYAXcKPD/lIGdi/8xKzsAAAAASUVORK5CYII=">
+                                                          حافلة خاصة</option>
+                                                      <option value="مؤقتة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAR4AAACMCAYAAACqEMYqAAAABHNCSVQICAgIfAhkiAAAFthJREFU
 eF7tnX9sVkW6x6eyyI+CApdy1UL4VbyIUF1BKIteXW10LQSqcmGlBAgRQbpCiBBcAtwCKggkXiAo
 hH+EC3/U4IqsVK4RrbhxS5VkFXS5IrSmlETgVkGoYA298xyZ47zTc/qec94z7zvn9DtJ0/Z9Z+aZ
 833m/bzP/Doni/lIx48fH8+z/wf/uT0rK6sn/00/nXxUgaxQAArEQIHm5ubTnAHn+KWc5H//5cYb
@@ -2110,7 +2529,10 @@ Ey3AQy/wjWO5fDmc9vX0TtUYykMBKAAFuAI/8gnl3/MJ5UOyGr/uErv26okTJ4bx+Z6/cfh4u7kG
 tIUCUAAKOCtwlb/8OJ9Q3qO+3QI81yKfHvxm1H/lf/8OikIBKAAF/CrAh1fHeKRTzI9K/a9TWUfw
 UEZe8Dd8tetPPPpZgejHr+zIDwXapgKcGz/zK9/UrVu3/8zJyfnBTQVX8IgCNTU1N/38888vcvg8
 xl+7sW3KiauGAlAgiQJ0W9L9PMr5M5/POZZMraTgkSvgu5zp0aH3cwgN42S7jf8ezP/H3p9kKuN9
-KBAzBWgoxT///+S/j/DfH3LgfMyB8+s9kZNc7/8DbZUECsYX1oAAAAAASUVORK5CYII=">مؤقتة</option><option value="57"  data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABplJREFU
+KBAzBWgoxT///+S/j/DfH3LgfMyB8+s9kZNc7/8DbZUECsYX1oAAAAAASUVORK5CYII=">
+                                                          مؤقتة</option>
+                                                      <option value="مركبة أشغال عامة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAFMAAAApCAYAAABJCxWnAAAABHNCSVQICAgIfAhkiAAABplJREFU
 aEPtm2tIVVkUx//H6+OmNVpZ2JSNpqOUxiBFTV+KqabJshdF0PSaGKr5EEVgMD3F+lBRxFTS1KcY
 KsIQelAoocEUUyJ96TmEZrcse2FqqV0f3TtrnXFf7r2ec933cTpld8PhyL5rn73376y19jprbxVQ
 efjwYZ7T6fyd/syiK4HrwqVXAnZGR1dxenr6LpZWampq5tP9bK9NwwK+CPxFQH9RqqurbyiK8r2m
@@ -2140,36 +2562,62 @@ a4bwUSILzxl34ctEFp5lhW/UqvtiV3PZkCEUcn0+NAoFJNlnfN4wKWSx0x7PmJMn1RjS7PLRYAZ4
 GswAjhTy/KMokojbvduFogdM/qWDYNpPnEC/0aPRjw4SmGXy7U+for22Fl9Nnmzou2u7dw8dFCtL
 FTo53PnyJaIozxBLHw+K20liAdNGD/rG+2Fdt2/jw5MnUn0YIeSkExUO2tSymHjg1nteCh1yjZo0
 CYrGPrrFYsnhw65/UqPfjADyBT2zjv5BYKRSX1+fSBv4ZTTxcV/Q5EM2VTLvN/TPAYvpbFWFKwaq
-ra39kX7IcjgcxuxbhGz4n8yD1P8DslqtFZSxesOj+g/k1bpqwRyP+gAAAABJRU5ErkJggg==">مركبة أشغال عامة</option></select>
+ra39kX7IcjgcxuxbhGz4n8yD1P8DslqtFZSxesOj+g/k1bpqwRyP+gAAAABJRU5ErkJggg==">
+                                                          مركبة أشغال عامة</option>
+                                                  </select>
 
 
 
-</div>
-</div></div>
-        </div><!-- .row -->
-        <div class="row">
-            <div class="col-md-6">
-<div class="form-inline form-item js-form-item form-type-number js-form-type-number form-item-custom-cert-no js-form-item-custom-cert-no form-group">
-  <label for="edit-customer-cert-no" class="control-label">رقم البطاقة الجمركية</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div><!-- .row -->
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div
+                                              class="form-inline form-item js-form-item form-type-number js-form-type-number form-item-custom-cert-no js-form-item-custom-cert-no form-group">
+                                              <label for="edit-customer-cert-no" class="control-label">رقم
+                                                  البطاقة الجمركية</label>
 
 
-<input data-drupal-selector="edit-customer-cert-no" class="form-number form-control" data-msg-maxlength="الحد الأقصى لطول الحقل رقم البطاقة الجمركية هو 15." data-msg-required="هذا الحقل ضروري" data-msg-step="The value in رقم البطاقة الجمركية has to be divisible by 1." data-msg-pattern="رقم البطاقة الجمركية يحتوي على أحرف غير صالحة." type="number" id="edit-customer-cert-no" name="custom_cert_no" value="" step="1" data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}},&quot;required&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}},&quot;invisible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;optional&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}}}" />
+                                              <input data-drupal-selector="edit-customer-cert-no"
+                                                  class="form-number form-control"
+                                                  data-msg-maxlength="الحد الأقصى لطول الحقل رقم البطاقة الجمركية هو 15."
+                                                  data-msg-required="هذا الحقل ضروري"
+                                                  data-msg-step="The value in رقم البطاقة الجمركية has to be divisible by 1."
+                                                  data-msg-pattern="رقم البطاقة الجمركية يحتوي على أحرف غير صالحة."
+                                                  type="number" id="edit-customer-cert-no"
+                                                  name="custom_cert_no" value="" step="1"
+                                                  data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}},&quot;required&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}},&quot;invisible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;optional&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}}}" />
 
 
 
-</div>
-</div>
-        </div>
-        <h3>مركز الخدمة</h3>
-        <div class="row">
-            <div class="col-sm-6"><div id="vehicle_class_id_wrapper">
-<div class="form-item js-form-item form-type-select-icons js-form-type-select-icons form-item-vehicle-class-id js-form-item-vehicle-class-id form-group">
-  <label for="edit-vehicle-class-id" class="control-label">نوع المركبة</label>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <h3>مركز الخدمة</h3>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div id="vehicle_class_id_wrapper">
+                                              <div
+                                                  class="form-item js-form-item form-type-select-icons js-form-type-select-icons form-item-vehicle-class-id js-form-item-vehicle-class-id form-group">
+                                                  <label for="edit-vehicle-class-id"
+                                                      class="control-label">نوع المركبة</label>
 
 
 
 
-<select class="form-inline form-control select2-icons form-select selectmenu selecticons" data-disable-refocus="true" data-init="1" data-danger="{&quot;3&quot;:false,&quot;8&quot;:false,&quot;5&quot;:true,&quot;6&quot;:false,&quot;15&quot;:false,&quot;16&quot;:true,&quot;7&quot;:false,&quot;1&quot;:false,&quot;9&quot;:true,&quot;10&quot;:false,&quot;11&quot;:true,&quot;12&quot;:false,&quot;13&quot;:false,&quot;21&quot;:true,&quot;14&quot;:false,&quot;18&quot;:true,&quot;20&quot;:true,&quot;19&quot;:false,&quot;17&quot;:false}" data-details="{&quot;3&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f \u0648 \u0644\u0627 \u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 9 \u0631\u0643\u0627\u0628&quot;,&quot;8&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f \u0648 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;5&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 12 \u0637\u0646&quot;,&quot;6&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0631\u0643\u0627\u0628 \u0648\u062a\u062a\u0631\u0627\u0648\u062d \u0633\u0639\u062a\u0647\u0627 \u0645\u0646 10 \u0631\u0643\u0627\u0628 \u0648\u0628\u062d\u062f \u0623\u0642\u0635\u0649 14 \u0631\u0627\u0643\u0628 \u0628\u062f\u0648\u0646 \u0627\u0644\u0633\u0627\u0626\u0642 \u0639\u0644\u0649 \u0627\u0644\u0627 \u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u0646 5 \u0637\u0646&quot;,&quot;15&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;16&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u062a\u0631\u0627\u0648\u062d \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0628\u062d\u062f \u0623\u062f\u0646\u064a 3.5 \u0637\u0646 \u0648\u0628\u062d\u062f \u0627\u0642\u0635\u0649 12 \u0637\u0646&quot;,&quot;7&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0631\u0643\u0627\u0628   \u0648\u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 26 \u0631\u0627\u0643\u0628 \u0628\u062f\u0648\u0646 \u0627\u0644\u0633\u0627\u0626\u0642 \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u0646 5 \u0637\u0646&quot;,&quot;1&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0630\u0627\u062a \u0639\u062c\u0644\u062a\u064a\u0646 \u0648\u0645\u062c\u0647\u0632\u0629 \u0628\u0645\u062d\u0631\u0643 \u0622\u0644\u064a \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0623\u0648 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0648\u063a\u064a\u0631 \u0645\u0635\u0645\u0645\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0633\u064a\u0627\u0631\u0629&quot;,&quot;9&quot;:&quot;\u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a \u0627\u0644\u0645\u0635\u0645\u0645\u0629 \u0644\u0623\u064a\u0629 \u0623\u063a\u0631\u0627\u0636 \u062e\u0644\u0627\u0641 \u0646\u0642\u0644 \u0627\u0644\u0627\u0634\u062e\u0627\u0635 \u0627\u0648 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0645\u062b\u0644 \u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a\u0629 \u0648\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0623\u0634\u063a\u0627\u0644 \u0627\u0644\u0639\u0627\u0645\u0629 \u0648\u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0641\u0627\u0631\u063a \u0639\u0644\u0649 \u0633\u0628\u0639\u0629 \u0627\u0637\u0646\u0627\u0646 \u0648\u0646\u0635\u0641 \u0643\u0645\u0627 \u0623\u0646\u0647\u0627 \u062a\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0637\u0631\u0642 \u0641\u064a \u0627\u0644\u062a\u0646\u0642\u0644\u0627\u062a&quot;,&quot;10&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0630\u0627\u062a \u062b\u0644\u0627\u062b \u0639\u062c\u0644\u0627\u062a \u0623\u0648 \u0623\u0643\u062b\u0631 \u0648\u0645\u062c\u0647\u0632\u0629 \u0628\u0645\u062d\u0631\u0643 \u0622\u0644\u064a \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0623\u0648 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0648\u063a\u064a\u0631 \u0645\u0635\u0645\u0645\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0633\u064a\u0627\u0631\u0629&quot;,&quot;11&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0644\u064a\u0633 \u0644\u0647\u0627 \u0645\u062d\u0631\u0643 \u062a\u062c\u0631\u0647\u0627 \u0645\u0631\u0643\u0628\u0629 \u0622\u0644\u064a\u0629 \u0623\u062e\u0631\u0649 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0628\u063a\u0631\u0636 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629\u060c \u0648\u064a\u062a\u0631\u0627\u0648\u062d \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0628\u062d\u062f \u0623\u062f\u0646\u064a 3.5 \u0637\u0646&quot;,&quot;12&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0623\u062c\u0631\u0629 \u0644\u0627 \u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 9 \u0631\u0643\u0627\u0628&quot;,&quot;13&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0644\u062a\u0623\u062c\u064a\u0631 \u0648 \u0644\u0627 \u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 9 \u0631\u0643\u0627\u0628&quot;,&quot;21&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0646\u0642\u0644 \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0642\u0631\u0646 \u0645\u0639 \u0642\u0627\u0637\u0631\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0635\u064a\u0646\u064a\u0629 \u062c\u0631 \u0648\u064a\u0633\u062a\u0646\u062f \u062c\u0632\u0621 \u0645\u0646 \u0648\u0632\u0646\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0642\u0627\u0637\u0631\u0629 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0644\u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0634\u062e\u0635\u064a\u0629\u060c \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;14&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0631\u0643\u0627\u0628 \u0648\u062a\u062a\u0631\u0627\u0648\u062d \u0633\u0639\u062a\u0647\u0627 \u0645\u0646 15 \u0631\u0627\u0643\u0628 \u0648\u0628\u062d\u062f \u0623\u0642\u0635\u0649 26 \u0631\u0627\u0643\u0628 \u0628\u062f\u0648\u0646 \u0627\u0644\u0633\u0627\u0626\u0642 \u0639\u0644\u0649 \u0627\u0644\u0627 \u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0627\u062c\u0645\u0627\u0644\u064a \u0639\u0646 5 \u0637\u0646&quot;,&quot;18&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0644\u064a\u0633 \u0644\u0647\u0627 \u0645\u062d\u0631\u0643 \u062a\u062c\u0631\u0647\u0627 \u0645\u0631\u0643\u0628\u0629 \u0622\u0644\u064a\u0629 \u0623\u062e\u0631\u0649 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0628\u063a\u0631\u0636 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;20&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0646\u0642\u0644\u060c \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0642\u0631\u0646 \u0645\u0639 \u0642\u0627\u0637\u0631\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0635\u064a\u0646\u064a\u0629 \u062c\u0631 \u0648\u064a\u0633\u062a\u0646\u062f \u062c\u0632\u0621 \u0645\u0646 \u0648\u0632\u0646\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0642\u0627\u0637\u0631\u0629 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0644\u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0634\u062e\u0635\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;19&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0646\u0642\u0644 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f\u060c \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0642\u0631\u0646 \u0645\u0639 \u0642\u0627\u0637\u0631\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0635\u064a\u0646\u064a\u0629 \u062c\u0631 \u0648\u064a\u0633\u062a\u0646\u062f \u062c\u0632\u0621 \u0645\u0646 \u0648\u0632\u0646\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0642\u0627\u0637\u0631\u0629 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0644\u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0634\u062e\u0635\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;17&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f\u060c \u0644\u064a\u0633 \u0644\u0647\u0627 \u0645\u062d\u0631\u0643 \u062a\u062c\u0631\u0647\u0627 \u0645\u0631\u0643\u0628\u0629 \u0622\u0644\u064a\u0629 \u0623\u062e\u0631\u0649 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0628\u063a\u0631\u0636 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;}" data-drupal-selector="edit-vehicle-class-id" id="edit-vehicle-class-id" name="vehicle_class_id" data-drupal-states="{&quot;disabled&quot;:[{&quot;:input[name=\u0022customer_name\u0022]&quot;:{&quot;filled&quot;:false}},&quot;or&quot;,{&quot;:input[name=\u0022customer_mobile_no\u0022]&quot;:{&quot;filled&quot;:false}}],&quot;enabled&quot;:{&quot;:input[name=\u0022customer_name\u0022]&quot;:{&quot;filled&quot;:true},&quot;:input[name=\u0022customer_mobile_no\u0022]&quot;:{&quot;filled&quot;:true}}}"><option value="">اختر نوع المركبة</option><option value="3" selected="selected" data-content="iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAABHNCSVQICAgIfAhkiAAAAxRJREFU
+                                                  <select
+                                                      class="form-inline form-control select2-icons form-select selectmenu selecticons"
+                                                      data-disable-refocus="true" data-init="1"
+                                                      data-danger="{&quot;3&quot;:false,&quot;8&quot;:false,&quot;5&quot;:true,&quot;6&quot;:false,&quot;15&quot;:false,&quot;16&quot;:true,&quot;7&quot;:false,&quot;1&quot;:false,&quot;9&quot;:true,&quot;10&quot;:false,&quot;11&quot;:true,&quot;12&quot;:false,&quot;13&quot;:false,&quot;21&quot;:true,&quot;14&quot;:false,&quot;18&quot;:true,&quot;20&quot;:true,&quot;19&quot;:false,&quot;17&quot;:false}"
+                                                      data-details="{&quot;3&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f \u0648 \u0644\u0627 \u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 9 \u0631\u0643\u0627\u0628&quot;,&quot;8&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f \u0648 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;5&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 12 \u0637\u0646&quot;,&quot;6&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0631\u0643\u0627\u0628 \u0648\u062a\u062a\u0631\u0627\u0648\u062d \u0633\u0639\u062a\u0647\u0627 \u0645\u0646 10 \u0631\u0643\u0627\u0628 \u0648\u0628\u062d\u062f \u0623\u0642\u0635\u0649 14 \u0631\u0627\u0643\u0628 \u0628\u062f\u0648\u0646 \u0627\u0644\u0633\u0627\u0626\u0642 \u0639\u0644\u0649 \u0627\u0644\u0627 \u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u0646 5 \u0637\u0646&quot;,&quot;15&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;16&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639\u060c \u0648\u064a\u062a\u0631\u0627\u0648\u062d \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0628\u062d\u062f \u0623\u062f\u0646\u064a 3.5 \u0637\u0646 \u0648\u0628\u062d\u062f \u0627\u0642\u0635\u0649 12 \u0637\u0646&quot;,&quot;7&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0631\u0643\u0627\u0628   \u0648\u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 26 \u0631\u0627\u0643\u0628 \u0628\u062f\u0648\u0646 \u0627\u0644\u0633\u0627\u0626\u0642 \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0639\u0646 5 \u0637\u0646&quot;,&quot;1&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0630\u0627\u062a \u0639\u062c\u0644\u062a\u064a\u0646 \u0648\u0645\u062c\u0647\u0632\u0629 \u0628\u0645\u062d\u0631\u0643 \u0622\u0644\u064a \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0623\u0648 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0648\u063a\u064a\u0631 \u0645\u0635\u0645\u0645\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0633\u064a\u0627\u0631\u0629&quot;,&quot;9&quot;:&quot;\u0627\u0644\u0645\u0631\u0643\u0628\u0627\u062a \u0627\u0644\u0645\u0635\u0645\u0645\u0629 \u0644\u0623\u064a\u0629 \u0623\u063a\u0631\u0627\u0636 \u062e\u0644\u0627\u0641 \u0646\u0642\u0644 \u0627\u0644\u0627\u0634\u062e\u0627\u0635 \u0627\u0648 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0645\u062b\u0644 \u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a\u0629 \u0648\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0623\u0634\u063a\u0627\u0644 \u0627\u0644\u0639\u0627\u0645\u0629 \u0648\u0627\u0644\u0632\u0631\u0627\u0639\u064a\u0629 \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0641\u0627\u0631\u063a \u0639\u0644\u0649 \u0633\u0628\u0639\u0629 \u0627\u0637\u0646\u0627\u0646 \u0648\u0646\u0635\u0641 \u0643\u0645\u0627 \u0623\u0646\u0647\u0627 \u062a\u0633\u062a\u062e\u062f\u0645 \u0627\u0644\u0637\u0631\u0642 \u0641\u064a \u0627\u0644\u062a\u0646\u0642\u0644\u0627\u062a&quot;,&quot;10&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0630\u0627\u062a \u062b\u0644\u0627\u062b \u0639\u062c\u0644\u0627\u062a \u0623\u0648 \u0623\u0643\u062b\u0631 \u0648\u0645\u062c\u0647\u0632\u0629 \u0628\u0645\u062d\u0631\u0643 \u0622\u0644\u064a \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0623\u0634\u062e\u0627\u0635 \u0623\u0648 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0648\u063a\u064a\u0631 \u0645\u0635\u0645\u0645\u0629 \u0639\u0644\u0649 \u0634\u0643\u0644 \u0633\u064a\u0627\u0631\u0629&quot;,&quot;11&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0644\u064a\u0633 \u0644\u0647\u0627 \u0645\u062d\u0631\u0643 \u062a\u062c\u0631\u0647\u0627 \u0645\u0631\u0643\u0628\u0629 \u0622\u0644\u064a\u0629 \u0623\u062e\u0631\u0649 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0628\u063a\u0631\u0636 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629\u060c \u0648\u064a\u062a\u0631\u0627\u0648\u062d \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0628\u062d\u062f \u0623\u062f\u0646\u064a 3.5 \u0637\u0646&quot;,&quot;12&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0623\u062c\u0631\u0629 \u0644\u0627 \u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 9 \u0631\u0643\u0627\u0628&quot;,&quot;13&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0644\u062a\u0623\u062c\u064a\u0631 \u0648 \u0644\u0627 \u062a\u0632\u064a\u062f \u0633\u0639\u062a\u0647\u0627 \u0639\u0646 9 \u0631\u0643\u0627\u0628&quot;,&quot;21&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0646\u0642\u0644 \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0642\u0631\u0646 \u0645\u0639 \u0642\u0627\u0637\u0631\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0635\u064a\u0646\u064a\u0629 \u062c\u0631 \u0648\u064a\u0633\u062a\u0646\u062f \u062c\u0632\u0621 \u0645\u0646 \u0648\u0632\u0646\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0642\u0627\u0637\u0631\u0629 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0644\u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0634\u062e\u0635\u064a\u0629\u060c \u0648\u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;14&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0631\u0643\u0627\u0628 \u0648\u062a\u062a\u0631\u0627\u0648\u062d \u0633\u0639\u062a\u0647\u0627 \u0645\u0646 15 \u0631\u0627\u0643\u0628 \u0648\u0628\u062d\u062f \u0623\u0642\u0635\u0649 26 \u0631\u0627\u0643\u0628 \u0628\u062f\u0648\u0646 \u0627\u0644\u0633\u0627\u0626\u0642 \u0639\u0644\u0649 \u0627\u0644\u0627 \u064a\u0632\u064a\u062f \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0627\u062c\u0645\u0627\u0644\u064a \u0639\u0646 5 \u0637\u0646&quot;,&quot;18&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0644\u064a\u0633 \u0644\u0647\u0627 \u0645\u062d\u0631\u0643 \u062a\u062c\u0631\u0647\u0627 \u0645\u0631\u0643\u0628\u0629 \u0622\u0644\u064a\u0629 \u0623\u062e\u0631\u0649 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0628\u063a\u0631\u0636 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;20&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0646\u0642\u0644\u060c \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0642\u0631\u0646 \u0645\u0639 \u0642\u0627\u0637\u0631\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0635\u064a\u0646\u064a\u0629 \u062c\u0631 \u0648\u064a\u0633\u062a\u0646\u062f \u062c\u0632\u0621 \u0645\u0646 \u0648\u0632\u0646\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0642\u0627\u0637\u0631\u0629 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0644\u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0634\u062e\u0635\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;19&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0646\u0642\u0644 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f\u060c \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0642\u0631\u0646 \u0645\u0639 \u0642\u0627\u0637\u0631\u0629 \u0639\u0646 \u0637\u0631\u064a\u0642 \u0635\u064a\u0646\u064a\u0629 \u062c\u0631 \u0648\u064a\u0633\u062a\u0646\u062f \u062c\u0632\u0621 \u0645\u0646 \u0648\u0632\u0646\u0647\u0627 \u0639\u0644\u0649 \u0627\u0644\u0642\u0627\u0637\u0631\u0629 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0644\u0644\u0623\u063a\u0631\u0627\u0636 \u0627\u0644\u0634\u062e\u0635\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;,&quot;17&quot;:&quot;\u0645\u0631\u0643\u0628\u0629 \u0645\u0645\u0644\u0648\u0643\u0629 \u0644\u0644\u0623\u0641\u0631\u0627\u062f\u060c \u0644\u064a\u0633 \u0644\u0647\u0627 \u0645\u062d\u0631\u0643 \u062a\u062c\u0631\u0647\u0627 \u0645\u0631\u0643\u0628\u0629 \u0622\u0644\u064a\u0629 \u0623\u062e\u0631\u0649 \u0648\u0645\u0639\u062f\u0629 \u0644\u0646\u0642\u0644 \u0627\u0644\u0628\u0636\u0627\u0626\u0639 \u0628\u063a\u0631\u0636 \u0627\u0644\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629\u060c \u0648\u064a\u0642\u0644 \u0648\u0632\u0646\u0647\u0627 \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a \u0645\u0639 \u0627\u0644\u062d\u0645\u0648\u0644\u0629 \u0639\u0646 3.5 \u0637\u0646&quot;}"
+                                                      data-drupal-selector="edit-vehicle-class-id"
+                                                      id="edit-vehicle-class-id" name="vehicle_type"
+                                                      data-drupal-states="{&quot;disabled&quot;:[{&quot;:input[name=\u0022customer_name\u0022]&quot;:{&quot;filled&quot;:false}},&quot;or&quot;,{&quot;:input[name=\u0022customer_mobile_no\u0022]&quot;:{&quot;filled&quot;:false}}],&quot;enabled&quot;:{&quot;:input[name=\u0022customer_name\u0022]&quot;:{&quot;filled&quot;:true},&quot;:input[name=\u0022customer_mobile_no\u0022]&quot;:{&quot;filled&quot;:true}}}">
+                                                      <option value="">اختر نوع المركبة</option>
+                                                      <option value="سيارة خاصة" selected="selected"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAABHNCSVQICAgIfAhkiAAAAxRJREFU
 WEe9V71aE0EUvUOhLT6B+ACg1BZgK4VJYU0oTGsswcK1MFsCLRSGJ9ikgMYmKawN8ADGN8AyKfZ6
 ZibZzOxudm+yxPk+fr5k9p577j33ZxU9xgmiTXqqTonpFSn8VDlMXVJ8Tsf1vsSMklwqvNOOakTq
 OxzfrGzLM8BHINEps1mNQNj7QsSBBeEexRTQ5/qwDHTh9yaT1EJAYBcn5t0ye6sR0EBPTNQRfe07
@@ -2184,7 +2632,10 @@ tUvahDrYEPWq3Ei2RPRf6b4uJpTGVXgvsCeLO2uj2IBVMq6ZHrB7BKiF9yjt17kbptN/sX3ui52T
 XEwH0n1mjvuD1MZPZ4WfDrJ06nRVTBxJzYw5qZP4tPSdIlxG3/eqNL1K6MWJzZjeA0OiMc1r4n8R
 0DhuLXq4hG6pGeDFiehsJuHsMidL5WBtEsrb/x3Nw3H7EjU9eQTmRaxUizjWjHE29LAL7P9rLmK9
 /1N8JcHNX6cTxnkqXmMbXQF38fuA3sMZL+mmJnTQeQAJBo/ePtMxWhL3H7lmsjOdRzOIAAAAAElF
-TkSuQmCC">سيارة خاصة</option><option value="8" data-content="iVBORw0KGgoAAAANSUhEUgAAACwAAAAWCAYAAAC7ZX7KAAAABHNCSVQICAgIfAhkiAAABEpJREFU
+TkSuQmCC">
+                                                          سيارة خاصة</option>
+                                                      <option value="مركبة نقل خفيفة خاصة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAACwAAAAWCAYAAAC7ZX7KAAAABHNCSVQICAgIfAhkiAAABEpJREFU
 SEvNV01vG1UUvXfcuIFS4lIKEUJiumKB2qbqilUnCwRNF7Z/QRwJuk26I63UTIqaWeLsqnbReIPE
 AnkiEQuJRdxfgBskVCSkmAUgoDQDQsX58FzOfTN27HgaOXGl9kkTO37v3Xfeued+DNOgw1ueI5IC
 zNgJpuqYG6fZPD6fzeBDm3HLGUrzKrGcJiGXmGrGltAYMX9ugBIV8fgA7B76nD0bDw/Y81cB6gRt
@@ -2204,7 +2655,10 @@ U7RH5xWwfuHp3vNkGfotvLwdArSsqr6wroCUslj5cx7RDDcOPGR84vU5FAOaht0iiEOV5XHj0d9c
 9Np7qi6IjUqz9g1acneHHWkUBk9eR1lMaZXJMLNvmFjwtTL+DYPuoTFr0088Qtdy59VzAOuYOiBN
 t/Lolh0RgkxhehEz6prqnt7At5lHDxGGy7SNDcOpi/iOtwt0akhxA736mP4FOVd4nSzLpUbzPg2h
 DlhWFkBxmeTyv/8bh8nF+vrTEa0iJdpCICS1lgel2/Qxxv5ke6tmJw20zhzcYbe/V6SIDbvdXh4U
-WD/rTSBGbt9v+f9mgQn+9T9kwwAAAABJRU5ErkJggg==">مركبة نقل خفيفة خاصة</option><option value="5" data-content="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAcCAYAAADV0GlvAAAABHNCSVQICAgIfAhkiAAABQlJREFU
+WD/rTSBGbt9v+f9mgQn+9T9kwwAAAABJRU5ErkJggg==">
+                                                          مركبة نقل خفيفة خاصة</option>
+                                                      <option value="نقل ثقيل"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAcCAYAAADV0GlvAAAABHNCSVQICAgIfAhkiAAABQlJREFU
 WEflWT1sHEUUfnNAHFFgR3Q0OSoQYHPu6HzXhQPJdyUVdmE3IMXusClyKbiFynaBkOxIOSokKPYs
 JZYQhc81QnESoPXRIMpLhw+xj+/N7OzP7d7unkgi/4yUnHd35s1737z35s03ioq2L9wKqRemSXGV
 iMsYViamih6+2bimf9v7W/i+VlTks+/HO7TRXCPHha7qASmaCeZktU2bi+v2WeUq8+X+TWJtnBg/
@@ -2227,7 +2681,10 @@ WNc3PTWFoEM3IGQDERYIMwe6iXfgb5PUt4XATbLYdtVHD2F2FUTAZrM8EQ5h3unpcjzanO4hHqup
 IE0yiWXcmbq4ZwnzjQZNXzOUyeN5LDrCRhhsDbow8gOza4y2aLKUXYJUV1/qyN2GYbTXAUSCKM3V
 OQyrHmK1A9ceEHtSVQoIMR4kV1ZaB+MlMA5eIWCUSh0YLslZ9Ma27l8zxK4ofEEAKP1eQ7bP1LgN
 2auJldV1CRQczTHiYYxV+rw5PtkWnUwnUMwxmvMEhCHmsFWzTvwWBHgE5h5/wWMURz0Bl5JLHQ8T
-PA1lNcj+VSEhRu1WXNTYvH5ml5CrCNFfSvp+kTn+A0Nm6uTmlgXNAAAAAElFTkSuQmCC">نقل ثقيل</option><option value="6" data-content="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAWCAYAAABQUsXJAAAABHNCSVQICAgIfAhkiAAAAyRJREFU
+PA1lNcj+VSEhRu1WXNTYvH5ml5CrCNFfSvp+kTn+A0Nm6uTmlgXNAAAAAElFTkSuQmCC">
+                                                          نقل ثقيل</option>
+                                                      <option value="حافلة خفيفة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAWCAYAAABQUsXJAAAABHNCSVQICAgIfAhkiAAAAyRJREFU
 WEftV79PU1EUPqdANaaJhamTwqADMaFsJA6U1ZjQ/gXCAIkTOBaXdpAyONS4ydCSoKOvJvhja90c
 TMAfgxvt5MCgrFLe8Tv3lde+1/aVhJeUGE/Svvae+9797nd+vO8y+S1nxelKZI1E0sSU7PIPc0Do
 gIiLtLG4ozDYg+WJlaQIWxibJJIvuNbw+T1MvO7aopgoRcw3cS1TNr3sAR/detk4pWhiOvb+1Y2r
@@ -2242,7 +2699,10 @@ Mq/Ao+j/KotFPuKq6lIXEPxfoMcZyNOQbNOC/FY1K8cOQZAGxDN4ulGPXav4wD8Dm+ueSW3JsAxf
 3/yL7QQR9b7hyVWPSCFNo7ZN4uekzmdnEuUQLv+pCZP4Om2kxz24zvS0plJYZsjzvWvOwIs0POCd
 9EU9ZMrek1QnGDdtOOcWjnPS2seudxCRpbCwI5paoPqyVFXrsFyolPC9RLbM9quv/uBNbrVSyiki
 p2A1lQhRCrPjnNWSNgPWc6o58mlqBJIUDN4wYGlKAbSxOopq3S2q0Kg36yjgItZCp4GxdppWo+iz
-zl9WJsmYd1Q4FAAAAABJRU5ErkJggg==">حافلة خفيفة</option><option value="15" data-content="iVBORw0KGgoAAAANSUhEUgAAACwAAAAWCAYAAAC7ZX7KAAAABHNCSVQICAgIfAhkiAAABEpJREFU
+zl9WJsmYd1Q4FAAAAABJRU5ErkJggg==">
+                                                          حافلة خفيفة</option>
+                                                      <option value="مركبة نقل خفيفة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAACwAAAAWCAYAAAC7ZX7KAAAABHNCSVQICAgIfAhkiAAABEpJREFU
 SEvNV01vG1UUvXfcuIFS4lIKEUJiumKB2qbqilUnCwRNF7Z/QRwJuk26I63UTIqaWeLsqnbReIPE
 AnkiEQuJRdxfgBskVCSkmAUgoDQDQsX58FzOfTN27HgaOXGl9kkTO37v3Xfeued+DNOgw1ueI5IC
 zNgJpuqYG6fZPD6fzeBDm3HLGUrzKrGcJiGXmGrGltAYMX9ugBIV8fgA7B76nD0bDw/Y81cB6gRt
@@ -2262,7 +2722,10 @@ U7RH5xWwfuHp3vNkGfotvLwdArSsqr6wroCUslj5cx7RDDcOPGR84vU5FAOaht0iiEOV5XHj0d9c
 9Np7qi6IjUqz9g1acneHHWkUBk9eR1lMaZXJMLNvmFjwtTL+DYPuoTFr0088Qtdy59VzAOuYOiBN
 t/Lolh0RgkxhehEz6prqnt7At5lHDxGGy7SNDcOpi/iOtwt0akhxA736mP4FOVd4nSzLpUbzPg2h
 DlhWFkBxmeTyv/8bh8nF+vrTEa0iJdpCICS1lgel2/Qxxv5ke6tmJw20zhzcYbe/V6SIDbvdXh4U
-WD/rTSBGbt9v+f9mgQn+9T9kwwAAAABJRU5ErkJggg==">مركبة نقل خفيفة</option><option value="16" data-content="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAcCAYAAADV0GlvAAAABHNCSVQICAgIfAhkiAAABQlJREFU
+WD/rTSBGbt9v+f9mgQn+9T9kwwAAAABJRU5ErkJggg==">
+                                                          مركبة نقل خفيفة</option>
+                                                      <option value="نقل متوسط"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAEIAAAAcCAYAAADV0GlvAAAABHNCSVQICAgIfAhkiAAABQlJREFU
 WEflWT1sHEUUfnNAHFFgR3Q0OSoQYHPu6HzXhQPJdyUVdmE3IMXusClyKbiFynaBkOxIOSokKPYs
 JZYQhc81QnESoPXRIMpLhw+xj+/N7OzP7d7unkgi/4yUnHd35s1737z35s03ioq2L9wKqRemSXGV
 iMsYViamih6+2bimf9v7W/i+VlTks+/HO7TRXCPHha7qASmaCeZktU2bi+v2WeUq8+X+TWJtnBg/
@@ -2285,7 +2748,10 @@ WNc3PTWFoEM3IGQDERYIMwe6iXfgb5PUt4XATbLYdtVHD2F2FUTAZrM8EQ5h3unpcjzanO4hHqup
 IE0yiWXcmbq4ZwnzjQZNXzOUyeN5LDrCRhhsDbow8gOza4y2aLKUXYJUV1/qyN2GYbTXAUSCKM3V
 OQyrHmK1A9ceEHtSVQoIMR4kV1ZaB+MlMA5eIWCUSh0YLslZ9Ma27l8zxK4ofEEAKP1eQ7bP1LgN
 2auJldV1CRQczTHiYYxV+rw5PtkWnUwnUMwxmvMEhCHmsFWzTvwWBHgE5h5/wWMURz0Bl5JLHQ8T
-PA1lNcj+VSEhRu1WXNTYvH5ml5CrCNFfSvp+kTn+A0Nm6uTmlgXNAAAAAElFTkSuQmCC">نقل متوسط</option><option value="7" data-content="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAYCAYAAABdlmuNAAAABHNCSVQICAgIfAhkiAAABwVJREFU
+PA1lNcj+VSEhRu1WXNTYvH5ml5CrCNFfSvp+kTn+A0Nm6uTmlgXNAAAAAElFTkSuQmCC">
+                                                          نقل متوسط</option>
+                                                      <option value="حافلة كبيرة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAYCAYAAABdlmuNAAAABHNCSVQICAgIfAhkiAAABwVJREFU
 WEftWFtslEUUPjO73V0KtkshDTex1SCBUCzyQsVLm4hoSaR90RhRMOES1EQwJNgaanmwaxAihhfD
 ReBFQiLZQlTUYFhiJGpEoI1ogqZFLoIUaCmX7m2O38y//7+73W27jSGW2Albds/MP/8533znmzMj
 KFtrDPrJJxcTczm6S/CpzDpOG5n77MrsEET4d5e0dvgZQoDrqa62PdPtQBCgiJ0JgExMk7zHaZLv
@@ -2317,7 +2783,10 @@ NQULVoWYQhlZ0idQ/QHkpB5yPYwVsI84tnYxcluKV3Gq0NcfVovH88mnS3++SRFX3LGL6D3EeU6x
 OSiu5DT4diHS6owZ2pstyWska1ez9DVdi2wwzYDMW5SBa6emYMiInBFGscvymZfgjxb4rPdXOcV1
 JwYFgo3w8R3LRbEZKaZTvRK/8DHiXU5h2LwmlkL8DpnyARd0JqY+Li4NtgP6a4lccwKs5HANUgS7
 X5aD9IBz3skB9s6X+g4t8AK7mp1qmj3CxAThThv4IcZAezPbwEDZz5g7dac+CWXk950MfrBzW0BU
-GoYwdrIImNN7QS0C6DHlGNOJTyhD3FPe+w/WaIss+UJGpwAAAABJRU5ErkJggg==">حافلة كبيرة</option><option value="1" data-content="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAYAAAD1PDaSAAAABHNCSVQICAgIfAhkiAAADfFJREFU
+GoYwdrIImNN7QS0C6DHlGNOJTyhD3FPe+w/WaIss+UJGpwAAAABJRU5ErkJggg==">
+                                                          حافلة كبيرة</option>
+                                                      <option value="الجراجات ثنائية العجلات"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAcCAYAAAD1PDaSAAAABHNCSVQICAgIfAhkiAAADfFJREFU
 WEetWAlUU9fWvrmZA0kgAcIkQYZgGEQmARVUhKLMIFgVa+1THGnf01bRtlZtxWrR2vcriFPRKtSi
 KIIoZVCUQcJgGWQGGcIUIIEkhMzJfy6/uGKf7etb/7trnZWVc/bZ+7v77P3tfS4K+pPnEqeHVToi
 2NbOn/YXypRsMh7T5mpCzbsR7p6GQqGm/mzvf3NNq9USgD5koIFdPuqPlO941LApv3s0dUQiozBI
@@ -2380,62 +2849,48 @@ Di6uwmBbxsXbUZ4pr20iL0ZKqe5xyGjuAyV+2sfXwrC26gP/lUhb++Y819+rWVU1JLgGKp6lsR4B
 MiJgqolYLDyjVGr4MqXPxIwcmk8ltbINyHsebPAt+wsg/5IIcoUD1TgJXO8oDGCXTsRxMCCUhFKl
 /oRM7qQCPf1CUEHJEHpH0ealY7P5pqsZ6Y9jczgH2ianwybBhxmkx0VikUbEtoMvS5mZER7IlyXB
 X0LzHwgdfdq8pJQrPMAVSTxBh2eB3D1BsyRiUoi1wO41kDt3kFvTnMp3Zg5yZUKOBwwMcqxgIFet
-N7z7H+D5y6JImQfCiF3k8xfS0yvBQK5iby7Lc8r+F619mU6ebypNAAAAAElFTkSuQmCC">الدراجات ثنائية العجلات</option><option value="9" data-content="/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkI
-CQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQ
-EBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAAmADwDAREA
-AhEBAxEB/8QAHAAAAgICAwAAAAAAAAAAAAAABggFBwADAQIJ/8QAMhAAAQQCAQMDAgQEBwAAAAAA
-AgEDBAUGEQcAEiEIEzEiQRQVMmFRcYGRFhcjJUJS0f/EABsBAAIDAQEBAAAAAAAAAAAAAAUGAAME
-BwEC/8QAOBEAAgECBQIDBQYEBwAAAAAAAQIDBBEABRIhMQZBEyJRMmFxgaEUI0KRscEVYqLwJDRS
-U9Hh8f/aAAwDAQACEQMRAD8A9U+piYzqYmOFVERVVdInUxMUVl3qVelXtfivElDHunbO0/Jm8gsn
-HGaYJnaRe0LgCpPFoV32aT40q9MNPkgWNpq1tNhq0ixe3rY7D54Sq7q0vOlLlSByzaPEa4j1Wva4
-BLHbtt7zia/yz5mykd55zdIrGHP1wMRgBCQF/gMp3veVP7f+Z/t1DT/5enufVzf+kWGNn8IzetH+
-OrCoP4YlC/1HU36YrnlPgLjHEso49urCpl29XYXZUV0trYyJTj5S2lGO6Rmf0djoD5HtT6vP20Uo
-M3q6iGeNWCsF1LYAW0nccb3B73wv5z0zltDU0k0iF0Z9D6mZidYspJJ2sR2tzg1yT0x4NVY7azOM
-QvccvmoTx1rlfezRFJIgqtIoE6o9vdpO1E1rwnWCDPaiSVVq9LpcXuq8d+2DFX0hRQU8j5brjlAO
-nS7+1bbbURa/b0xYHEuY/wCP+M8azEnBN6zrWXZKimkSQg9ryJ/JwTT+nQ3Mab7HVSQdgTb4dvpg
-7klf/E8uhq+7KCfjwfrfFVcq8k2eS2N7TVF7Y0WGYm8EK/tatP8AcbKxLXbWwV/4F9QoZ/KKuvCb
-Vb5ZqXIaIV9Wup23ReRbgEjuSeBx3PuX8yr580qJKWncxwRG0jr7TN/toe1ttR57fEMpcNxiwzep
-wfIcJ5CxOyyJmU5W2b2ZPPP97TSuK4TYn9JaRV8+O7xpfOhlP1pWvVJTVFOFD3tcLuAL2sBcbYyp
-0/RvMsLrKjNezeKxNwL3tfnHTKuaY1/6Tq+Hd5k0OU2NTGenxUldkybAGYjD6iuvJONtnv7qnf8A
-bfTnT5YYc5Zo0+7DGxtsG03H5Ej6YFVvUC1PS6JNN98yKWF7MyB9LfMgG/zxanNuJ1cHgj8RgVex
-GDC/wmRUjcYdA3+ENHdj9/LXueflVLa787D5XUO+YWqDfxLq1/5tv1thm6hoo48k1UKgeDpkS3A0
-G/1F/wA74timtYd7UQbuvc74thGalMF/2bcFCFf7KnQeWNonMbcg2/LDRBMlTEs0fssAR8CLjAT6
-gMYk5Zw/k1dXqYz40T8xgkH6xkxiR9vt/dSbQf69b8onFPWxs3BNj8Dsf1wG6no2rcpmjj9oDUvr
-dfMLfMWxrn87YHjvFlPyllds1Ch29ezLYjh9Tz7ptoSstBvZEirpfsmtkqJtevUymomrHpIVuVJF
-+w35J/v3Y+ZOpKGlyyPM6p9KuoIHcki9gO5/TubYj/TRXWULjIZ0uCUCBdWc25poLjiG5FrpLqus
-gap4Ql71LSfCGn32nVueOjVelTcqArH1YCx/4xR0jFJHl2tl0q7M6L3CMdSg/nf54A+KuNE5U9Ou
-JSAyGTS2jt1IygpzLIukc38U/ojEtIWkJET4/QP8usHWNCa6sMIcr4ZXTbe2lRbb64wdMUf27I4Z
-NWlmZnJ/mLNz/fbFh4Zxc1g2aMy4eNM23vQiKbldnZk/ZuSFVUUOwgVEFURE+khTS/tpV6ly8UlQ
-GVNW27k3a/wt++GSnoxTTXC323Ym7XwkeG02BX2X8c1nJfuN0ErFCjuSu8m2or7kqYLDjpoqdoo4
-o+VVE2qd30767XUy1EUM70vth727kALcD5f9b44TQU9DU1dHHmO0RitfgAlnCknsL2917X2vhq8G
-5HtsS4/hcd8tcc5af5dXflblvWVp2ddOjCPtg4LrHcSdzfbvuFF2vnztOk+rokqak1NHKu5vpJ0s
-DyRY24OOnZdm0tDQLl+a08nlXSXVS6MvAN1udxbkYAeHvUHmlfS41wzheAOZJf1saY0ZWMpa1Pwj
-LqpHIfcH59pR2i61pP4+COZZPA8kldPJoQkcDVuRvx78A8i6orIoYcoo4PElUMPMdHlU+Xkf6bYI
-+T+SvV7UYtaXkbjLGcerq+K5IlSisWpzzTYjslEVNBVfnwoF/LrNQ0OSyTLGZWZibAWIH6fvghnG
-b9VwUzzrTJGigknUGIA9NwPocV/xZxZTcjVFLi+KVt+7HKvEchyu8iE3+FimncddVtnsG1NXDQnB
-TwKkuy7kTojX170TvNMVvfyop5I/E5G5tYWHr8MAsmyaHNYo6alVyNP3kri2lTuY4gdhe5uQNhc3
-N8MD6UbiXeenvDJs0yJxuI9DFVLf+mxIdZBP6A2Kft0udQRrFmUqr6g/mAT9Th66KnapyGmd+QCP
-krFR9Bhfsa5cvMe4Xo+M6V65on8chSTyqYxDIJrBLMJtiDEVwe1X3nHW07032Cql5UVRGOfLo5q5
-6uSzByNAvsfLcs1uwAO3c7YRaTPJqXJ4suhLRmMN4pA8w85ColxbUxI3F9I35BxGQbjJ6CxceYyu
-wopzUtuJKnw8ukWrlXJcNG2ks2Hx9mQ17mmzNlNAqp8roSw0ua5Vmsr0tOyyMl7roC3A50Ebg/G/
-y5x5or6AiVnaMkgahK0hUnYeKrDSy32JXj38EM40yHKMQs7OqySJiLCQahzFZdfkUOwcbNgJBumu
-ozLneXuKSeF38aT79MVdDDUorxFjdg4KlebW/ER2wAyiqqaGR4qgRjShiKyCQiwYk+wrXN//ADvg
-ww/1Acg8Q8fQsHwybhmSDEcebhtM11ykgfeeI0Tb8dltREnF1st6TXWKpyemzGpNROHS9r7pbYW7
-Mx7emC1D1PX5FQLRUZjktewCzX8xJ/EiCwJ9cZlEeLMyiROurJMhua+Y5Ty7+/yaTWhLnN6WTFr2
-YyIjLDZGid56b2v230Lqs8ocnjjjqpBCsm6qFDbdmYnk4vlopKypeQ/eyISrSPIyAsPaWMJ7Kgm1
-ztgkuK3hqXgsB+JiOUP5JcTZtQ9j9hlksG4T8MVKasl1XO1GWQTvIteRIfCbXVxqaumkeSaVViRQ
-5fQvsni23J+m+NUsGUzUaeHDIZpGZPDaV/Kye3qN7aVG5NtwRsO0LiVxcYrDI+Prd2otggzJtN+V
-3Ui1pbdYQe7IgPRpSe408jPkSTW0XY6+9VNmFBn8fjxsJY9QViVCupbYNcdr8g4ogFVlPlpiY5NL
-Mml2kjfQLshV9w2ngi3uxO+mLmTLsa4niYquKsmzTTJLDBm26JmBn76qX233PEnjXhE++1XRnuWQ
-T1hm17sAe3bb9saOj8+qqTK1pfC2QsBzfc6t/mxwzvKuAhyXg1hiSWR10h9Wn4kwAQ1jyWXBcaNR
-X9SIYJtPuir8fPSnl9X9hqFmtcC4I9QRY46NnWWDN6J6XVpJsQfQggg277jf3YX/AB3065XeZNMi
-5BExOogS5jMjI3qqVKkPT0aeF/2GW3QEWGnHWwMvqJU7UQV0nb1bRUWT5FNJX0CuZXBA1Wst+eCb
-4UkyTMcxk8Cr8NY7gyFCxLaSGsAQAoJAJ3J22w1vQ7HQsZ1MTCtcjeni/aySQVVBxm9pbG3kWtdH
-tpkqK7AlSVEn2i9gCR2ORiJIOxJNqiKm1Vd9bR5T1AsT5irB4ha62swHF7kb4QKvJa6hncUoR45G
-LKHLAqze0PKDdb722IxPWnprvWsOgz4d/Wzs1j2VncWj01swr7MrEEbmxyRv6wbJsQESRNp7aKiD
-tO0hLmdNWGSlqEPgOoSw5AXg/Hc3+OLW6VqIaZJopAalWd2JB0MZBZ1NtwLAAHnbgdtPCHBVtVZD
-UZXdM0ldU4+Ut+srq2S/KcdmyG0acffeeAPAtj2gAjpPn52qj4afL8jo3oMuDecgsWtwNwBYnFmU
-ZPVTVUdbV6FSPVpVSTdmFizEgcDYAD388sb1gw7Y/9k=">مركبات أشغال عامة</option><option value="10" data-content="iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAAABHNCSVQICAgIfAhkiAAACnBJREFU
+N7z7H+D5y6JImQfCiF3k8xfS0yvBQK5iby7Lc8r+F619mU6ebypNAAAAAElFTkSuQmCC">
+                                                          الدراجات ثنائية العجلات</option>
+                                                      <option value="مركبات اشغال عامة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADYAAAArCAYAAAAzDXuYAAAABHNCSVQICAgIfAhkiAAAB59JREFU
+aEPNWk1vE1cUfc+EILULEtFKlbposi9gfgHOrriVYv+CJguQusLZ1SARQ1V7SbKFBeYXjKmAdhfz
+CxJKVXXXdFe1SASpQkoA355zn9/MeDxO7MkYuBIyHs/HO+/ee+65d2JN0hrBnDllbxsxFWPNnjG2
+berLN4fOe9cHWsEK1vJt9Fi5b+rV9qhl2KEfWp0tY+QCjtfwr4ibXQXIjjmQVdOoAuh7slbQ0DWJ
+2cGGY11mA8B4LNUGgTlvvTAiVXOt2tErWsFGHxxAAZw//q7xKTB6DBFkBN5Tj40JrBUs4MI/cdES
+Lur2gfGG6zi2+V6954BhHd7k5vjAnIf24O4GPANP6Xd3w32ZN6cQAmKwY/Z0rt5rBsjnwvnDg0BK
++J0b3/eY2cUaCM45IGHDOdYMeOIugMHdMWA81kOIvsbnKQBn7hmDcxGe9SoektEYJWK3jZW/sGnj
+5/AReZZCHvCQ2GVzrUICMaYZ1IwFSxp5iuNfIP+WzPXqDjxZCr1XsA3z/TJCNYM1O4GS1bUqvDGB
+0QEWGzsiz9I8hrCwgYYeWZAAjN3qh2J3AJySzTG85++NnC6fub5n7cz2UdCs6S09vPxbFxs+IbAk
+gfiH1yvWOCCD4Fy4Ajzolx6dxHutDonqKXa9Ur5zlimAy6UhpkA6v00QcaA4vpUdmFsoY93ViTgw
+/ubAtQHiYhiWPP5jUISntxAec/jWhYerh9a9kOVksXzmRslae0/kzYXHV37f+ebulyWCeHT514GI
++vruOTkuMFfDsJNDwPwWNoM2QnRZwRWQ9CQAIy8VlIVqEZQNn6fJ+IoIY7P02c2Nj9/06LkHjy4/
+W+Gp0wTW0GJYryyOBMYVeHBkTIOc9ARA7xUUaFQP4+A8YRyYYvnzdaqJ2quThYXu6o6y4jSBIWdC
+wqCs2gLIYaLx4Cw2QeQJgOE6H65QMGnAfGhD3Xw1X985MTMLb5k1hJ2rm1MFFpdWTgiPBsaVtAKE
+LsLSgPbFIhR78LgByBSPkTAENQubQMLAbs09uvKMZBHa9DwWhRJVfVeB9VBrWL/SzAtU/U1VCXJN
+PwdDMUYYlz69USyIDUIymDowtgeCgmxBQE5JY/cBbFS+OI/xnPUwXJNM6s7xCkMJ46PXvW1r5Ykn
+jOl6zPU89xAq9/EgeAeLtaDtUcC42H2EKjVkPFxV+6HIx/MyhTB6bw+Kv3z3x24yCPINxTgo6sRI
+Fawq2PR8EW1xfB5GaoU5VkO5YE3rF3B4PSKMbRHpCmtlillji9aajZ6o8A2tYC1ychLl4UGxNalX
+2WA6a3XwbCho17YMU3ez8wIe3TQ9NKJxemdoCsjDs6SSC5R5vVos3z3bwcJBNNlsfGCtB1w0dlhV
+ejsCpb0Zcos1CotkF+1UBS3aSYatelg3wYEnEMG5HpjrGAy/M8yyQXJX/Tczs6P1TrUiREC9goga
+NotFrLhQg0zalzUnfLnImJGeHcBdgNvV9sIiB8XgWniCAHiN4Hr2ccnWJwZsElCUUMnzBz1GWZc+
+tnBF14lY7DJ24AC7Pov/E8QB8mTUnCPUhijMlF7NgKAx+IG+TCrv4wFbAxgtMykimEqFax+af0Rq
+QmuX7455F1dEU3c4TjQefByMz03fKx0DmKDkoCz0G1BbGsox5nJKX5YyzNGCfH5AIsXRNR+wxoFg
+EkQTX7wLy2gglBGYb2UGN/dtjR1AGBVjAfN3oLil/ovXIcqsWeQilXuSaFw4OyY8wO+cdMVZNCOw
+Q/PRR8hEwNJ6sFn2WrIIai+lSisFBhq3IJCkBPtggMXbjh4ZUEGRGSsjBzfRbARdb1+CmcJFt+uY
+Ax6Ws5NQZRRVbjQwkcc0tJgnSutzmm8MscMmwcNKhQI6mtxSd44io3cKTPOsX7sOmZGHa4r6LOpM
+MlU7VB8fTChm28H+mC55MSSZhguK6YChXqqpuslo/t7DY7j0rjjLY1wD+UQ9pWkFVUJmpdZ0eUA5
+FunQfXYPMO0MMhkFNKXbGHUs0/37F/kScZx7ZL52eI6fn8e4KFUknK+PYWF4sns4ytBdUGy7nE8z
+ToS78R/yBZZ8ZPOnRF7FTrA9bgLKQKF0FCzMUKjka6Zn00cT8vZlsrZOBxhbIYHsitqcI9eewwno
+OrS70Jlo/sD8i0JtUKk71UAaHK6ypxux65MgE+FrZJBO2jOcRs0XmJ/7Y+fKn1zvWnviNtT53quT
+J1a7f6+3FVxeNvoZ5znozReYl1UQz+U759BqCKZcdoGfj5/fAj3r3GNNX0tR/QvIgCMFHnODo/sY
+DjW0H9Q5CoyduAprbanYdWzq9Yc9A6PCfIE5IXwVM/t5dr9of/FdWKfmH/97q9afi/gZyqJOuGbR
+3HJuQmBRBw4QIbu6l5DR7JJvdY56xlK+wGLiGW9QFtwbFPNSCrLy8z+3Fpyn+m/9nQ6lVzBv1GKN
+36lLw78K2O1HLTyuNM/zomvglTKGrv4ZBdurPHz+Q0k3CNOyfIFxJaoLMQUWDIf85JhzRs5VMCDF
+GemUPVnu8X6n9dXx8DP41wS1/IFpQ6rsxxrGwc9cjPYBOgdz93RSzL+31tISdfX5A/Pr1mlwZh04
+OXrONmPvFv4HgqD1gYfcRrEAAAAASUVORK5CYII=">
+                                                          مركبات أشغال عامة</option>
+                                                      <option value="دراجية ثلاثية او رباعية العجلات"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAAABHNCSVQICAgIfAhkiAAACnBJREFU
 WEetWAtwlNUVPvf+/24IpAJJJDxGw0tegqXl4RR5yCMEgkBCMEypDFJKaUWoIpaQhGEL2V0Qykgr
 Viq11jrIRGA3BCTAQFKoYisM2EYYkGdUIOQBSYFkH/+9/e6/m31AgAj8M5C797/3nO+c851zz/0Z
 NT4bDluosvxvpGs/Cs1JjKSsJa91LNnS6kLzDzKwb/s5EX+dOAtLkYITbzGbssf/s3Ey4i2m7Nvn
@@ -2483,7 +2938,10 @@ DR95rOOjPs6prFSfAdSHE8b6IcwjKG/ygfvlfpDciAZuRURQzgzyaD+Lykp1v+W43wpaAmBuVcmd
 qB97UFxLcWTgwA0+QvaHoDGw7hh52gD4yGZd2e4I3r71FyhB6wDqU0ThM4QuXFL9QMFxknDZkTxi
 QvDC6/o9Fr8ApO0i20SkNfpzOkzXtelkn/jdA3krxFt8I5Fmi6OKcwR7MJSqUZXz8ZlgX7hfWe7u
 RxZKArhwVyl5LbVM/JIWDom+QT8owpU7QQ2vuruiQQw+ktWT9HxDS7PMr5D/BzhBbxjNtpyUAAAA
-AElFTkSuQmCC">دراجة ثلاثية او رباعية العجلات</option><option value="11" data-content="iVBORw0KGgoAAAANSUhEUgAAADUAAAAjCAYAAAA0aUL2AAAABHNCSVQICAgIfAhkiAAAA6FJREFU
+AElFTkSuQmCC">
+                                                          دراجة ثلاثية او رباعية العجلات</option>
+                                                      <option value="مقصورة ثقيلة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADUAAAAjCAYAAAA0aUL2AAAABHNCSVQICAgIfAhkiAAAA6FJREFU
 WEftWUFPE1EQnimIiRfwFwhXI1B/AeUomtD+AksiJJ6kN4sH2oPdI+UKJiy/YBsTqjfqL7BCYrxR
 bt7AgyZi6fjN23ZpaVm27Uow2Xfszs6bb+ab7+2bMvkty0mT8AYxTfja3ZaHQlU6k3n2jadQOiEW
 JjW+7csknmeJJO8PyioJiXyitVTitmMiy0GMvB+Baq/UwtZ0mpgfBK1eo362+/Hlt5qf/ZN300kw
@@ -2500,7 +2958,10 @@ sDVzikoZACL1x+WVr1XQDUDlh+mVNgk2le28JLpzwoJTgc85U80gi+E3m1r1n6UHcdSyaYlEk15K
 J6JRUFKq5ZVDGwE2RUQ2dWMyfcYneL0G8ZhK7MQn7v1p5JCI2s/RmF35vg7xUBERlfe+kh4eKAVn
 OdoDs8juKr1e3PRyonwXqKKpjkx5Z5CyhPgV7Drl21VFtQeYHiJyTbLDBWXEwKjcePPvn1rzkybh
 xnEpwA5VRMVatDRKZmTeFZU+V7igdHMj7VREUElPFNwzKOdJ+eUg9cxpnU1uEx437e0+8Rjz8EG1
-R6EAr/s8Gsb+CsR/AcLZx1h7qdywAAAAAElFTkSuQmCC">مقطورة ثقيلة</option><option value="12" data-content="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAeCAYAAABTwyyaAAAABHNCSVQICAgIfAhkiAAABZxJREFU
+R6EAr/s8Gsb+CsR/AcLZx1h7qdywAAAAAElFTkSuQmCC">
+                                                          مقطورة ثقيلة</option>
+                                                      <option value="سيارات الأجرة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAeCAYAAABTwyyaAAAABHNCSVQICAgIfAhkiAAABZxJREFU
 WEfNWE9Mm2UYf56vBWZMXM2ChphISTwoyr9dvJhYPDhAIm1i4pHODHYwUXazLA440CYeHJwWBhkl
 0dNmPjSjuGTJigdvZkjdTotAQjIPmuGFibbf4+95v7a0/CltrQlv0tB+vN/7/J5/v+d5XqZar0m7
 kyy+nz9WaJtYuigS2qilKK7lYeasmB0g4nsksmB+Mw8SSTeAJ2sp6/8DrmBd5PdOJvCY7Sfhq8TU
@@ -2526,7 +2987,10 @@ bshHEiEhu/pf+Nyn7afDEkJ5h0J01ZTmPyahiA7BtVjS0tt4pVPbhwNyfp8EOWjIFiwUH63kew2S
 Zu9nDnZ2bu/yxAy/o8GQ6UeYERqQxTJieorYot6btEBzVaa6lZOjoCKhkZwcBo06Fo0bOdFFFCqQ
 K3Jgv5DD29pc6DCP5Lqx/IvRb3EVIahkoMRIKF4d6uxbR8lxlYJHwTTIgcMq+dH9eMxG2TfXB5rZ
 cJNoggbw8ZtbqtFQ+D+Bzr2s9Mb8dqVySg8ShmcJ1kWDo8VBldAWs8bXaSCHYjl6UaQ9Uwk5x09A
-NTFr7Q/5F4f8Pvos6qFXAAAAAElFTkSuQmCC">سيارات الأجرة</option><option value="13" data-content="iVBORw0KGgoAAAANSUhEUgAAADUAAAAgCAYAAACy/TBYAAAABHNCSVQICAgIfAhkiAAABwdJREFU
+NTFr7Q/5F4f8Pvos6qFXAAAAAElFTkSuQmCC">
+                                                          سيارات الأجرة</option>
+                                                      <option value="سيارات التأجير"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADUAAAAgCAYAAACy/TBYAAAABHNCSVQICAgIfAhkiAAABwdJREFU
 WEfNmW1sU1UYgN8zBwPD2IhzfBjogIiLrqxbAKNMVxAJbMhaNRHFZBsMlV+U+IcPI8VoS+KPFv+M
 AGHFCPoHukU2jB+hTWaioNDRJaKE2A3lY7LYDhTGxo7ve+693W3vvW3ZTOhJmub2vOfc85z385wy
 yObm9pcAy6kDzi3AwQIMPxxC+I0fFgI+0gbb7ZFkBJa1TC6/gzHm5AAFRmvExcc4Y7tgW91etUz2
@@ -2558,7 +3022,10 @@ i1VVCLwftVGkGeQ63ok3pkvlW1Jxx3a/Deu5MvSX+NxkUvTZsmgeeFeYtaa0Bw2Fo7vLHl8zr7i3
 v6pUJKhUTVv7uf2oAeE7cxMOfdKxA2826E4hqS/dW3T6ZR/zoe+YKEioazpFXKkgnirKH+puWr7S
 yIeSp9eDknwMgw1qxQHb1raBdOzw4G9W9LUg+pp1DBy6Q+g2qcjb8Wn/naH8l+bPGPpkpXkCBoqY
 58ylazuDv5TcHr6XpxwpMn2n/tHD5ZcSsqZhXTiIYBkcOzJdgJBTB6HkgWOodIzPU+IMheem0b9P
-Agjk/d+BFAiR7CltkDWIhI9/1YAv1cnaaOP+A6kpOS/hr9jeAAAAAElFTkSuQmCC">سيارات التأجير</option><option value="21" data-content="iVBORw0KGgoAAAANSUhEUgAAADsAAAAfCAYAAABZGLWTAAAABHNCSVQICAgIfAhkiAAAA0tJREFU
+Agjk/d+BFAiR7CltkDWIhI9/1YAv1cnaaOP+A6kpOS/hr9jeAAAAAElFTkSuQmCC">
+                                                          سيارات التأجير</option>
+                                                      <option value="نصف مقصورة ثقيلة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADsAAAAfCAYAAABZGLWTAAAABHNCSVQICAgIfAhkiAAAA0tJREFU
 WEftWc1rU0EQn01bWynaFhU8iE1BoQgp6UXFi683TcEm/gM20BZ6kXiMlySHNkcjKIVGMP0LXnpo
 9OYTL0UEYwsieInQQw9W24IfadOMs/vSZN/LS5PmFRrqW8jn7Ozsb34zs5sJg3ga4X8YiG+ZA/Yk
 Ml3FLH0BDLQTgxVhHBjrF3iqwxhjEA5ETwzYWVUjsLcdsMR1TWZ9SU8akIdEIZiZ+py1Yv/uC4+f
@@ -2574,7 +3041,10 @@ Vf3ErNoQ2CtPHk7k8eyt/cn9Xe+DPR3r4qOpQLkvd32I2mGV667vDF7YKZ7xSetodPWjB3IW3Yb1
 EdIEhCqshYyup6RHIY4U/qVLBFfOYx9EA/pxQsPArDKn5Lrbf+hNZdMwgLWLcl9fMMiPM9ZzVEtW
 1sGnlK8hed3jBct3IsKS/wthARjxW7mjb/bGwTJj/lsxe/3Z/WUXK9yw8nLTx0sjlMVVN1XTKE1V
 BDgBhEIzT9W1g8LZVZIJh+AnmpcW/1zQeU/viT02ppsRsgTJUlZm/wE5S73tMQe9OAAAAABJRU5E
-rkJggg==">نصف مقطورة ثقيلة</option><option value="14" data-content="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAWCAYAAABQUsXJAAAABHNCSVQICAgIfAhkiAAAAyRJREFU
+rkJggg==">
+                                                          نصف مقطورة ثقيلة</option>
+                                                      <option value="حافلة متوسطة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAWCAYAAABQUsXJAAAABHNCSVQICAgIfAhkiAAAAyRJREFU
 WEftV79PU1EUPqdANaaJhamTwqADMaFsJA6U1ZjQ/gXCAIkTOBaXdpAyONS4ydCSoKOvJvhja90c
 TMAfgxvt5MCgrFLe8Tv3lde+1/aVhJeUGE/Svvae+9797nd+vO8y+S1nxelKZI1E0sSU7PIPc0Do
 gIiLtLG4ozDYg+WJlaQIWxibJJIvuNbw+T1MvO7aopgoRcw3cS1TNr3sAR/detk4pWhiOvb+1Y2r
@@ -2589,7 +3059,10 @@ Mq/Ao+j/KotFPuKq6lIXEPxfoMcZyNOQbNOC/FY1K8cOQZAGxDN4ulGPXav4wD8Dm+ueSW3JsAxf
 3/yL7QQR9b7hyVWPSCFNo7ZN4uekzmdnEuUQLv+pCZP4Om2kxz24zvS0plJYZsjzvWvOwIs0POCd
 9EU9ZMrek1QnGDdtOOcWjnPS2seudxCRpbCwI5paoPqyVFXrsFyolPC9RLbM9quv/uBNbrVSyiki
 p2A1lQhRCrPjnNWSNgPWc6o58mlqBJIUDN4wYGlKAbSxOopq3S2q0Kg36yjgItZCp4GxdppWo+iz
-zl9WJsmYd1Q4FAAAAABJRU5ErkJggg==">حافلة متوسطة</option><option value="18" data-content="iVBORw0KGgoAAAANSUhEUgAAACsAAAAjCAYAAAANDvOtAAAABHNCSVQICAgIfAhkiAAAA4lJREFU
+zl9WJsmYd1Q4FAAAAABJRU5ErkJggg==">
+                                                          حافلة متوسطة</option>
+                                                      <option value="مقصورة خفيفة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAACsAAAAjCAYAAAANDvOtAAAABHNCSVQICAgIfAhkiAAAA4lJREFU
 WEftWM9rE0EUfhODgiDEowcxRfAgxqZ/QePRVmj2XLBbkF5Nj40H04PJRTReG6EJePC2m0s9Go9F
 ocGCNzHeRIR2QaH0xz6/N5vEbWk32TbtFszAkrDzduab9773vZlRFNQKVoIuxp4SsUmKEoG2p9fZ
 wvyLtGBUVeAcJauMfhNPFc/m6eEJHDlNpKYA+F4PsPY3GNWxqlxEQL1pS5Y4qtwLLLdDUIgUbNFq
@@ -2606,7 +3079,10 @@ CozHwVagZ2VyqYy4lvKDZebZlbn1ahesLEiaooLQLhisf8YODdrkzyynE5d33Rzxrq3Dp4uLWuub
 BpKUC1kdkYmllCm/Gqg0ncRYdIcGbRz9g9WDWDYyeBx1eqy7M5P3en+hE+YqQpsM9Ko3TsbjtypT
 fmp+n72oBOHEewj3w4HV3gUnWeRFVVGmW5CuBAbOYQGKXCTNQY08CnmXl36Oa70VWawJnw9+Gg5s
 x4uXIDdEyFRwmPk7/sstn/Cq1dOrfgPxMOM7T6cRGM1RePtwNQkPNhSawRr/Ba9N+4nErLaAAAAA
-AElFTkSuQmCC">مقطورة خفيفة</option><option value="20" data-content="iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAYAAAB3oa15AAAABHNCSVQICAgIfAhkiAAAAuNJREFU
+AElFTkSuQmCC">
+                                                          مقطورة خفيفة</option>
+                                                      <option value="نصف مقصورة خفيفة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAYAAAB3oa15AAAABHNCSVQICAgIfAhkiAAAAuNJREFU
 WEftV81rE0EUf7MJqaLYBARFCiagKH7U5CJKEVNPtfWQvenJFJqCCNKcJAo2uTTHVlEKptD6F2xQ
 G711vUhPWhMrFRRz8mTBiGk1bjO+t7vZ7OaDdivUWDOwMPPmzez7zfvNe/MYJNMc/tnGE2wbAeAF
 4LDQ8s5g4AZgpzQ7zR7g/AXcEoMtDyApoY1s7v8B0J/qzjOAztlI1lPrnf6Hx/yMOV+jPIrzE3a8
@@ -2620,7 +3096,10 @@ xJmKzqYArG+yVWO+MAjLv3ya8Cf3qCc4JoXQWEkTovExUYuASQmjoVFx+VCeR1nQXMSgLP73AJR5
 AG6LCwhgBAGM64bIEAshNSQ3dDCqL7y6t0SsEtNWXZ5oCODs/YE7DkGJ0kKXUNy90/HNSX3zHTh+
 b2hTeeLjas/+H2XPTcMvxGUG/hpP5jUKUc1raTKO0AN6qxyAPjQo1DPZN+N2fjbxT9MwA6jZ2N7Q
 Qg17S6vaJqptOQCVHnhxKxeSLjPABI7zIABxOoh9ii4ylFDPRRcXP7oPmm4a6VRXtv4Gx55AxP09
-93AAAAAASUVORK5CYII=">نصف مقطورة خفيفة</option><option value="19" data-content="iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAYAAAB3oa15AAAABHNCSVQICAgIfAhkiAAAAjxJREFU
+93AAAAAASUVORK5CYII=">
+                                                          نصف مقطورة خفيفة</option>
+                                                      <option value="نصف مقطورة خفيفة خاصة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAYAAAB3oa15AAAABHNCSVQICAgIfAhkiAAAAjxJREFU
 WEdjZGjf8J9hyIL/jYzDyAP/PzL8Z7gw6CODkUGAgYFRH+JO5Bj4//8gQ1Wgw6D3QPt6oBsZ9496
 YMBiajQGBizooRaPxsBoDFAYAqNJiMIApFj7MI4BUDuIqYDiEKK1AUz/DRj+/5+A2ZSgtcU0MX94
 NKfXN6AHjiLHsQhx9pvqIPE7X203v/mjcg7EtuCbX8/AyMDw7a8Aw6UvgY1EB+p/hgQGRkZ5otXj
@@ -2631,7 +3110,10 @@ fGUgpARsXw8sDeE9LkWg+AOgmANyJwYo1jBwHvj335ChOvAC0AMFQA/0Qx1ygKEyAJg01gswsDOe
 B4opQGMrENhL3ICq9n8jVg9YTvGuY2b6UwjSyMb0lYeT+RMLiI2cB7QnpZBVT9z9bi3x459gOTxe
 QGmZkcEALSYfQJIQqM+LAg4AecAYgAJYAEC58CRkPd1jgQDLM6T0B1GB7AE0g0njoiQN0rQiVCMl
 Nbp7AJw8gBkXliFBmZmBYQKQ/4CBiQGUph2AbFDpcoDhF1AdGyjjAjEoP0DUbgAmJ2gNjPASAK20
-WbXw9EEvAAAAAElFTkSuQmCC">نصف مقطورة خفيفة خاصة</option><option value="17" data-content="iVBORw0KGgoAAAANSUhEUgAAACkAAAAgCAYAAACPb1E+AAAABHNCSVQICAgIfAhkiAAABN5JREFU
+WbXw9EEvAAAAAElFTkSuQmCC">
+                                                          نصف مقطورة خفيفة خاصة</option>
+                                                      <option value="مقطورة خفيفة خاصة"
+                                                          data-content="iVBORw0KGgoAAAANSUhEUgAAACkAAAAgCAYAAACPb1E+AAAABHNCSVQICAgIfAhkiAAABN5JREFU
 WEfNWL1uG0cQnjkbUpEi8hPk0qWIFOoJRHWJHETkE5guKCCVzl2kFKKLkKWoKoAUQPQT3NmIiXTm
 G1iWjCCdmC5d5CKFCOsm38weyaP4c0eIdrIASelud/bbmW+/nVkmbbVwhZb5kIRKxLRiz/I2kSe0
 X25SIzwj4q+mDOviufuwF9EP3z3Pa177sXVuhE18F/EJ5hlsfffKncSGj1/9TG5CBbwoYMYSCQsx
@@ -2654,141 +3136,192 @@ YJB6iwE+XsNTfe4lOaGtR3c7mzyVk/VpXz9L4BcNEvKFFAs7EiA1rFqqXgIYflEi6+0FqkQrtBoR
 KACpAiWy+DUE6TTtEANU01ZgEF4BJ9KeyLKm71VahD+zGnrZZAfhNsDq5Y5LYqJTE3OVqtzXLM54
 Dd+az7mVububUq7SNg3eyUzLThW9QqFYF9q12nrJ20aoMQ+OyRjg++lhxuKHnrQrDwjtSIMQ5wjH
 xDkaoXpQVWN406ZCr5cOytkcHuzbHeWku/LQDxwAtc+50kwWpJPqzM7jHf4Fig3valzfgbcAAAAA
-SUVORK5CYII=">مقطورة خفيفة خاصة</option></select>
+SUVORK5CYII=">
+                                                          مقطورة خفيفة خاصة</option>
+                                                  </select>
 
 
 
-</div>
-</div></div>
-            <div class="col-sm-6"><div id="service_id_wrapper">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-service-id js-form-item-service-id form-group">
-  <label for="edit-service-id" class="control-label">نوع خدمة الفحص</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div id="service_id_wrapper">
+                                              <div
+                                                  class="form-item js-form-item form-type-select js-form-type-select form-item-service-id js-form-item-service-id form-group">
+                                                  <label for="edit-service-id" class="control-label">نوع
+                                                      خدمة الفحص</label>
+                                                  <div class="input-group">
+                                                      <div class="select-wrapper"><select
+                                                              class="select2-init form-select form-control"
+                                                              data-drupal-selector="edit-service-id"
+                                                              id="edit-service-id" name="service_type"
+                                                              data-drupal-states="{&quot;enabled&quot;:{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;filled&quot;:true}},&quot;disabled&quot;:{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;filled&quot;:false}}}">
+                                                              <option value="" selected="selected">
+                                                                  اختر نوع خدمة الفحص</option>
+                                                              <option value="خدمه الفحص الدوري">خدمه الفحص الدوري
+                                                              </option>
+                                                              <option value="خدمة اعادة الفحص">خدمة اعادة الفحص
+                                                              </option>
+                                                          </select></div><span
+                                                          class="input-group-addon"><span
+                                                              class="icon glyphicon glyphicon-refresh ajax-progress ajax-progress-throbber"
+                                                              aria-hidden="true"></span></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-12">
+                                          <div data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022service_id\u0022]&quot;:{&quot;value&quot;:114}}}"
+                                              id="edit-service-note"
+                                              class="form-item js-form-item form-type-item js-form-type-item form-item-service-note js-form-item-service-note form-no-label form-group">
+                                              هذه الخدمة مخصصة لمن قام بإجراء فحص مسبق خلال 14 يوم عمل الماضية
+                                              ولم يستنفذ جميع محاولات إعادة الفحص
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div id="zone_id_wrapper">
+                                              <div class="form-item js-form-item form-type-select js-form-type-select form-item-timeslot js-form-item-timeslot form-group">
+                                                  <label for="zone_id_wrapper" class="control-label">المنطقة</label>
+                                                  <div class="select-wrapper">
+                                                      <select
+                                                          class="form-select form-control"
+                                                          data-drupal-selector="edit-location"
+                                                          data-msg-required="هذا الحقل ضروري"
+                                                          id="input-group-addon"
+                                                          name="aria">
+                                                          <option value="" selected="selected" disabled>إختر المنطقة...</option>
+                                                          <option value="الرياض">الرياض</option>
+                                                          <option value="مكة المكرمة">مكة المكرمة</option>
+                                                          <option value="المدينة المنورة">المدينة المنورة</option>
+                                                          <option value="القصيم">القصيم</option>
+                                                          <option value="المنطقة الشرقية">المنطقة الشرقية</option>
+                                                          <option value="عسير">عسير</option>
+                                                          <option value="الحدود الشمالية">الحدود الشمالية</option>
+                                                          <option value="حائل">حائل</option>
+                                                          <option value="تبوك">تبوك</option>
+                                                          <option value="جازان">جازان</option>
+                                                          <option value="الباحة">الباحة</option>
+                                                          <option value="الجوف">الجوف</option>
+                                                          <option value="نجران">نجران</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div><!-- .row -->
+                                  
+                                  
+                                  
+                                  <h3>موعد الخدمة</h3>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div id="appointment_date_wrapper" class="form-item js-form-item form-type-select js-form-type-select form-item-timeslot js-form-item-timeslot form-group">
+                                              <div
+                                                  class="form-item js-form-item form-type-date js-form-type-date form-item-appointment-date js-form-item-appointment-date form-group">
+                                                  <label for="edit-appointment-date"
+                                                      class="control-label">تاريخ الفحص</label>
 
 
-<div class="input-group"><div class="select-wrapper"><select class="select2-init form-select form-control" data-drupal-selector="edit-service-id" id="edit-service-id" name="service_id" data-drupal-states="{&quot;enabled&quot;:{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;filled&quot;:true}},&quot;disabled&quot;:{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;filled&quot;:false}}}"><option
-        value="" selected="selected">اختر نوع خدمة الفحص</option><option
-        value="110">خدمة الفحص الدوري</option><option
-        value="114">خدمة اعادة الفحص</option></select></div><span class="input-group-addon"><span class="icon glyphicon glyphicon-refresh ajax-progress ajax-progress-throbber" aria-hidden="true"></span></span></div>
+                                                  <div class="input-group" style="    width: 100%;">
+                                                      <input type="date"
+                                                          min="2024-04-01"
+                                                          date_date_format="d/m/Y"
+                                                          class="form-date form-control"
+                                                          name="appointment_date"
+                                                          class="input-group-addon">
+                                                        </span></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div id="timeslot_wrapper">
+                                              <div
+                                                  class="form-item js-form-item form-type-select js-form-type-select form-item-timeslot js-form-item-timeslot form-group">
+                                                  <label for="edit-timeslot" class="control-label">موعد الخدمة</label>
+                                                  <div class="select-wrapper">
+                                                      <select
+                                                          class="form-select form-control"
+                                                          id="edit-timeslot"
+                                                          name="timeslot">
+                                                          <option value="" selected="selected">موعد الخدمة</option>
+                                                          <script>
+                                                              
+                                                              for(let i = 7 ; i <= 22 ; i++)
+                                                              {
+                                                                  for(var x = 10 ; x <= 55 ; x+=20)
+                                                                  {
+                                                                      document.write('<option value="'+i+':'+x+'">'+i+':'+x+'</option>');
+                                                                  }
+                                                              }
+                                                          </script>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div><!-- .row -->
+                                  <div class="hidden d-none">
+                                      <div
+                                          class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-ajax-loader js-form-item-ajax-loader form-no-label form-group">
+
+
+                                          <input class="d-none hidden form-text form-control"
+                                              data-disable-refocus="true"
+                                              data-drupal-selector="edit-ajax-loader"
+                                              data-msg-maxlength="الحد الأقصى لطول الحقل هذا الحقل هو 128."
+                                              type="text" id="edit-ajax-loader" name="ajax_loader"
+                                              value="1" size="60" maxlength="128" />
 
 
 
-</div>
-</div></div>
-            <div class="col-sm-12">
-<div data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022service_id\u0022]&quot;:{&quot;value&quot;:114}}}" id="edit-service-note" class="form-item js-form-item form-type-item js-form-type-item form-item-service-note js-form-item-service-note form-no-label form-group">
+                                      </div>
+                                  </div>
+                                  <div class="alert text-danger" role="alert">
+                                      <span class="glyphicon glyphicon-exclamation-sign"
+                                          aria-hidden="true"></span>
+                                      الحضور على الموعد يسهم في سرعة و جودة الخدمة و في حال عدم الحضور، لن
+                                      يسمح بحجز موعد آخر إلا بعد 48 ساعة وحسب الاوقات المتاحة
+                                  </div>
+                                  <div data-drupal-selector="edit-actions"
+                                      class="form-actions form-group js-form-wrapper form-wrapper"
+                                      id="edit-actions">
+                                      <div data-drupal-selector="edit-captcha" class="captcha"><input
+                                              data-drupal-selector="edit-captcha-sid" type="hidden"
+                                              name="captcha_sid" value="3366395" /><input
+                                              data-drupal-selector="edit-captcha-token" type="hidden"
+                                              name="captcha_token"
+                                              value="ybnmmbhYwYEz6Rf5eadyiE1RJfPxVmFF6rJ0qQetMtg" /><input
+                                              data-drupal-selector="edit-captcha-response" type="hidden"
+                                              name="captcha_response" value="Google no captcha" />
+                                          <div class="g-recaptcha"
+                                              data-sitekey="6LfiCOIcAAAAAH1LQ0UiOMqGc8sQ-PPuLSieK0sb"
+                                              data-theme="light" data-type="image"></div><input
+                                              data-drupal-selector="edit-captcha-cacheable" type="hidden"
+                                              name="captcha_cacheable" value="1" />
+                                      </div>
+                                      <button
+                                          class="button js-form-submit form-submit btn-default btn"
+                                          type="submit"
+                                          value="التالي">التالي</button>
+                                  </div>
+
+                              </div><!-- #book-apply -->
+                          </div><!-- .col -->
+                      </div><!-- .row -->
+
+                  </form>
 
 
-هذه الخدمة مخصصة لمن قام بإجراء فحص مسبق خلال 14 يوم عمل الماضية ولم يستنفذ جميع محاولات إعادة الفحص
+              </div>
 
-
-
-</div>
-</div>
-            <div class="col-sm-12">
-                <p id="vehicle-details"></p>
-                <p>
-                    إذا لم تكن متأكدًا من نوع المركبة ، فيمكنك العثور عليها في <a href="/ar/book/vehicle-types" class="vehicle-types-link use-ajax" data-dialog-type="modal" data-dialog-options="{&quot;dialogClass&quot;:&quot;vehicle-types-modal&quot;}" data-drupal-selector="edit-vehicle-types-link" id="edit-vehicle-types-link">أنواع المركبات</a>
-                </p>
-            </div>
-            <div class="col-sm-12"><div id="dangerous_wrapper" class="checkbox-slider">
-<div class="form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-dangerous js-form-item-dangerous checkbox">
-
-
-
-
-  <label for="edit-dangerous" class="control-label option"><input data-drupal-selector="edit-dangerous" class="form-checkbox" type="checkbox" id="edit-dangerous" name="dangerous" value="1" data-drupal-states="{&quot;invisible&quot;:[{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:3}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:8}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:6}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:15}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:7}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:1}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:10}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:12}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:13}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:14}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:19}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:17}}],&quot;visible&quot;:[{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:5}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:16}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:9}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:11}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:21}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:18}},{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;value&quot;:20}}]}" />المركبة تحمل مواد خطرة</label>
-
-
-</div>
-</div></div>
-        </div><!-- .row -->
-        <div class="row" id="location_wrapper"><div data-drupal-selector="edit-location" class="form-group js-form-wrapper form-wrapper" id="edit-location"><input data-drupal-selector="edit-location" type="hidden" name="location" value="" /><div id="zone_id_wrapper" class="col-md-6">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-zone-id js-form-item-zone-id form-group">
-  <label for="edit-zone-id" class="control-label">المنطقة</label>
-
-
-<div class="input-group"><div class="select-wrapper"><select class="select2-init form-select form-control" data-drupal-selector="edit-zone-id" id="edit-zone-id" name="zone_id" data-drupal-states="{&quot;enabled&quot;:{&quot;:input[name=\u0022service_id\u0022]&quot;:{&quot;filled&quot;:true}},&quot;disabled&quot;:{&quot;:input[name=\u0022service_id\u0022]&quot;:{&quot;filled&quot;:false}}}"><option
-        value="">اختر المنطقة</option></select></div><span class="input-group-addon"><span class="icon glyphicon glyphicon-refresh ajax-progress ajax-progress-throbber" aria-hidden="true"></span></span></div>
-
-
-
-</div>
-</div><div id="center_id_wrapper" class="col-md-6">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-center-id js-form-item-center-id form-group">
-  <label for="edit-center-id" class="control-label">مركز الفحص</label>
-
-
-<div class="input-group"><div class="select-wrapper"><select class="select2-init form-select form-control" locations="[]" data-init="1" data-drupal-selector="edit-center-id" id="edit-center-id" name="center_id" data-drupal-states="{&quot;enabled&quot;:{&quot;:input[name=\u0022customer_name\u0022]&quot;:{&quot;filled&quot;:true},&quot;:input[name=\u0022customer_mobile_no\u0022]&quot;:{&quot;filled&quot;:true},&quot;:input[name=\u0022zone_id\u0022]&quot;:{&quot;filled&quot;:true},&quot;0&quot;:[{&quot;[name=\u0022plate_4\u0022]&quot;:{&quot;filled&quot;:true}},{&quot;[name=\u0022plate_number\u0022]&quot;:{&quot;filled&quot;:true}},{&quot;[name=\u0022custom_cert_no\u0022]&quot;:{&quot;filled&quot;:true}}]}}"><option
-        value="" selected="selected">اختر مركز الفحص</option></select></div><span class="input-group-addon"><span class="icon glyphicon glyphicon-refresh ajax-progress ajax-progress-throbber" aria-hidden="true"></span></span></div>
-
-
-
-</div>
-</div></div>
-</div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://maps.google.com/maps?q=24.7136, 46.6753&z=12&output=embed"
-                            title="center location" class="embed-responsive-item"
-                            style="border:0" id="gmap-iframe"></iframe>
-                </div>
-            </div><!-- .col -->
-        </div><!-- .row -->
-        <h3>موعد الخدمة</h3>
-        <div class="row">
-            <div class="col-sm-6"><div id="appointment_date_wrapper">
-<div class="form-inline form-item js-form-item form-type-date js-form-type-date form-item-appointment-date js-form-item-appointment-date form-group">
-  <label for="edit-appointment-date" class="control-label">تاريخ الفحص</label>
-
-
-<div class="input-group"><input type="date" min="2024-06-22" max="2024-06-27" date_date_format="d/m/Y" data-drupal-selector="edit-appointment-date" data-drupal-date-format="Y-m-d" class="form-date form-control" data-msg-max="يجب أن تكون القيمة في تاريخ الفحص أقل من 2024-06-27." data-msg-min="يجب أن تكون القيمة في تاريخ الفحص أكبر من 2024-06-22." id="edit-appointment-date" name="appointment_date" value="" data-drupal-states="{&quot;enabled&quot;:{&quot;:input[name=\u0022center_id\u0022]&quot;:{&quot;empty&quot;:false}},&quot;disabled&quot;:{&quot;:input[name=\u0022center_id\u0022]&quot;:{&quot;empty&quot;:true}}}" /><span class="input-group-addon"><span class="icon glyphicon glyphicon-refresh ajax-progress ajax-progress-throbber" aria-hidden="true"></span></span></div>
-
-
-
-</div>
-</div></div>
-            <div class="col-sm-6"><div id="timeslot_wrapper">
-<div class="form-item js-form-item form-type-select js-form-type-select form-item-timeslot js-form-item-timeslot form-group">
-  <label for="edit-timeslot" class="control-label">موعد الخدمة</label>
-
-
-<div class="select-wrapper"><select data-drupal-selector="edit-timeslot" class="form-select form-control" id="edit-timeslot" name="timeslot" data-drupal-states="{&quot;disabled&quot;:{&quot;:input[name=\u0022appointment_date\u0022]&quot;:{&quot;filled&quot;:false}},&quot;enabled&quot;:{&quot;:input[name=\u0022appointment_date\u0022]&quot;:{&quot;filled&quot;:true}}}"><option
-        value="" selected="selected">موعد الخدمة</option></select></div>
-
-
-
-</div>
-</div></div>
-        </div><!-- .row -->
-        <div class="hidden d-none">
-<div class="form-item js-form-item form-type-textfield js-form-type-textfield form-item-ajax-loader js-form-item-ajax-loader form-no-label form-group">
-
-
-<input class="d-none hidden form-text form-control" data-disable-refocus="true" data-drupal-selector="edit-ajax-loader" data-msg-maxlength="الحد الأقصى لطول الحقل هذا الحقل هو 128." type="text" id="edit-ajax-loader" name="ajax_loader" value="1" size="60" maxlength="128" />
-
-
-
-</div>
-</div>
-        <div class="alert text-danger" role="alert">
-            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-            الحضور على الموعد يسهم في سرعة و جودة الخدمة و في حال عدم الحضور، لن يسمح بحجز موعد آخر إلا بعد 48 ساعة وحسب الاوقات المتاحة
-        </div>
-        <div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions">    <div  data-drupal-selector="edit-captcha" class="captcha"><input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="5793522" /><input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="t_txdb3Im3iA_JfR-0rG44-3Qac2XHJf5XWuX-ci5H4" /><input data-drupal-selector="edit-captcha-response" type="hidden" name="captcha_response" value="Google no captcha" /><div class="g-recaptcha" data-sitekey="6LfiCOIcAAAAAH1LQ0UiOMqGc8sQ-PPuLSieK0sb" data-theme="light" data-type="image"></div><input data-drupal-selector="edit-captcha-cacheable" type="hidden" name="captcha_cacheable" value="1" /></div>
-<button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-default btn" type="submit" id="edit-submit" name="next" value="التالي">التالي</button></div>
-
-    </div><!-- #book-apply -->
-</div><!-- .col -->
-</div><!-- .row -->
-
-</form>
-
-
-</div>
-
-                                </section>
-        </div><!-- .row -->
-    </div><!-- .container -->
+          </section>
+      </div><!-- .row -->
+  </div><!-- .container -->
 </div><!-- .main-container -->
+@endsection
+@section('scripts')
+<script src="{{asset('sites/book.vehicle.local/files/js/js_5OYhckd1fYYNc_a7BNzYsKWbWvY5zL0M1y-k8QkJ6ww.js')}}"></script>
+<script src="{{asset('sites/book.vehicle.local/files/js/js_tWp7Vbx725TNBLMIpypwalPws5E-4IJDqpIQJNYsjmw.js')}}"></script>
+<script src="{{asset('sites/book.vehicle.local/files/js/js_B47x9Et2majyK_Hyhy59LB7GR8JyhjrmyQ7YpXJdCn4.js')}}"></script>
 @endsection

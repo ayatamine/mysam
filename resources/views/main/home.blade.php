@@ -2,7 +2,7 @@
 @section('content')
 
 
-<section class="container mb-5">
+<section class="mb-5">
     <div role="main" class="main-container js-quickedit-main-content">
         <div class="row">
 
@@ -44,9 +44,9 @@
                                 <div id="book-menu">
                                     <h2>خدمة الفحص الفني الدوري</h2>
                                     <h4>يمكنك حجز موعد جديد أو تعديل أو إلغاء موعدك</h4>
-                                    <a class="book-btn" href="/ar/book/apply">حجز موعد</a>
-                                    <a class="edit-btn" href="/ar/book/edit">تعديل موعد</a>
-                                    <a class="delete-btn" href="/ar/book/cancel">إلغاء موعد</a>
+                                    <a class="book-btn" href="{{route('booking_apply')}}">حجز موعد</a>
+                                    <a class="edit-btn" href="{{route('booking_edit')}}">تعديل موعد</a>
+                                    <a class="delete-btn" href="{{route('booking_cancel')}}">إلغاء موعد</a>
                                 </div>
                             </div>
                             <!-- .col -->

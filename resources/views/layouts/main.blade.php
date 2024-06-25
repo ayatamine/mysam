@@ -46,6 +46,7 @@
 
     <title>خدمة الفحص الفني الدوري | مركز سلامة المركبات</title>
     <link rel="stylesheet" media="all" href="{{asset('sites/book.vehicle.local/files/css/css_AFXhICk67zdXGRbHPKCQJ4zh-5OBzvA7__ZpW3ufXCk.css')}}" />
+     <link rel="stylesheet" media="all" href="{{asset('sites/book.vehicle.local/files/css/css_hwa09ppdq08_Fx2JX4vfuRJWg_YWyjGT-LBxYb8U2aw.css')}}" />
     <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
     <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" integrity="sha512-tGFFYdzcicBwsd5EPO92iUIytu9UkQR3tLMbORL9sfi/WswiHkA1O3ri9yHW+5dXk18Rd+pluMeDBrPKSwNCvw=="
         crossorigin="anonymous" />
@@ -126,6 +127,18 @@
             return valid;
         }
     </script>
+    <style>
+        #edit-registered-vehicle label  {
+            /* background-color: #fff;
+            box-shadow: 0 0 10px #4b9b2e;
+            border: 1px solid #4b9b2e; */
+            background-color: #eee;
+    border-radius: 23px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 3px
+        }
+    </style>
 </head>
 <body class="path-frontpage has-glyphicons">
     <a href="#main-content" class="visually-hidden focusable skip-link">
