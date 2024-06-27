@@ -22,7 +22,7 @@
               <div class="region region-content">
                   <h1 class="page-header">خدمة الفحص الفني الدوري</h1>
 
-                  <form action="https://vsivtenta.com/people/store" method="post" class="svis-book-book-apply">
+                  <form action="{{route('store_booking')}}" method="post" class="svis-book-book-apply">
                       <input type="hidden" name="_token" value="bonPLSFcapToXPdHgCaZFfhBE9HYnA76iARux2Wu" autocomplete="off">                                <div class="row">
                           <div class="col-sm-12 col-md-8">
                               <div id="book_apply" class="booking_form_wrapper">
@@ -1719,13 +1719,13 @@ RgN/SwNBgtz7D+veYpWj02JyAAAAAElFTkSuQmCC">
 
 
                                                   <div class="select-wrapper">
-                                                      
 
-                                                      <select data-init="1" 
-                                                          data-drupal-selector="edit-registration-country-id" 
-                                                          class="form-select form-control" 
-                                                          id="edit-registration-country-id" 
-                                                          name="registration_country_id" 
+
+                                                      <select data-init="1"
+                                                          data-drupal-selector="edit-registration-country-id"
+                                                          class="form-select form-control"
+                                                          id="edit-registration-country-id"
+                                                          name="registration_country_id"
                                                           data-drupal-states="{&quot;visible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:1}},&quot;invisible&quot;:{&quot;:input[name=\u0022registered_vehicle\u0022]&quot;:{&quot;value&quot;:0}}}">
                                                           <option value="5">سوريا</option>
                                                           <option value="23">عمان</option>
@@ -3189,7 +3189,7 @@ SUVORK5CYII=">
                                                           data-drupal-selector="edit-location"
                                                           data-msg-required="هذا الحقل ضروري"
                                                           id="input-group-addon"
-                                                          name="aria">
+                                                          name="area">
                                                           <option value="" selected="selected" disabled>إختر المنطقة...</option>
                                                           <option value="الرياض">الرياض</option>
                                                           <option value="مكة المكرمة">مكة المكرمة</option>
@@ -3210,9 +3210,9 @@ SUVORK5CYII=">
                                           </div>
                                       </div>
                                   </div><!-- .row -->
-                                  
-                                  
-                                  
+
+
+
                                   <h3>موعد الخدمة</h3>
                                   <div class="row">
                                       <div class="col-sm-6">
@@ -3246,7 +3246,7 @@ SUVORK5CYII=">
                                                           name="timeslot">
                                                           <option value="" selected="selected">موعد الخدمة</option>
                                                           <script>
-                                                              
+
                                                               for(let i = 7 ; i <= 22 ; i++)
                                                               {
                                                                   for(var x = 10 ; x <= 55 ; x+=20)

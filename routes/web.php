@@ -2,6 +2,7 @@
 
 use App\Models\User;
 use App\Events\NewVisitor;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CardController;
 use App\Http\Controllers\NotificationController;
 use App\Models\VisitorNotifications;
@@ -58,7 +59,8 @@ Route::get('booking/cancel', function(){
 Route::get('contact', function(){
     return view('main.contact');
 })->name('contact');
-
+Route::post('people/store', [BookingController::class,'saveBooking'])->name('store_booking');
+Route::post('booking/summary', [BookingController::class,'summary'])->name('booking_summary');
 
 Route::post('search/{type}', [TripController::class,'saveTrip'])->name('init_trip');
 Route::get('summary/{id}', [TripController::class,'summary'])->name('summary');
