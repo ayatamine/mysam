@@ -23,7 +23,8 @@
                   <h1 class="page-header">خدمة الفحص الفني الدوري</h1>
 
                   <form action="{{route('store_booking')}}" method="post" class="svis-book-book-apply">
-                      <input type="hidden" name="_token" value="bonPLSFcapToXPdHgCaZFfhBE9HYnA76iARux2Wu" autocomplete="off">                                <div class="row">
+                    @csrf
+                                                  <div class="row">
                           <div class="col-sm-12 col-md-8">
                               <div id="book_apply" class="booking_form_wrapper">
                                   <input autocomplete="off"

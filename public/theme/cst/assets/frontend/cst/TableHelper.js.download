@@ -1,0 +1,218 @@
+class TableHelper {
+
+  apiUrl = null
+
+  actionName = "LoadAll"
+
+  query = null;
+
+  viewUrl = null
+
+  editUrl = null
+
+  deleteUrl = null
+
+  $dataTable = null
+
+  constructor($dataTable, hasQuery = false) {
+    this.apiUrl = $dataTable.data("url");
+    this.$dataTable = $dataTable;
+    if (!hasQuery)
+      this.render($dataTable);
+  }
+
+  setQuery(query) {
+    if (query === null)
+      query = "";
+
+    this.query = query;
+  }
+
+  getUrl() {
+    let url = `${this.apiUrl}/${this.actionName}`;
+
+    if (this.query !== null)
+      url += this.query;
+    
+    return url;
+  }
+
+  viewIf(id, row) {
+    return true;
+  }
+
+  editIf(id, row) {
+    return true;
+  }
+
+  deleteIf(id, row) {
+    return true;
+  }
+
+  OnDelete = function() {
+    loadData();
+    /*newObj.render(this.$dataTable);*/
+  }
+
+  render($dataTable) {
+
+    const primaryKey = $dataTable.data("pk");
+    const actions = $dataTable.data("actions");
+    const columnsAttr = $dataTable.data("fields");
+
+    const columnsArray = columnsAttr.split(",");
+
+    const columns = this.renderColumnsObjects(columnsArray, actions, primaryKey);
+    
+    const options = {
+      language: {
+        url: window.langFileUrl
+      },
+      "processing": true,
+      "serverSide": true,
+      "filter": true,
+      "ajax": {
+        "url": this.getUrl(),
+        "type": "POST",
+        "dataType": "json"
+      },
+      "columns": columns.cols,
+      "columnDefs": columns.defs
+    };
+
+    console.log(options);
+    $dataTable.DataTable(options);
+
+    return "";
+  }
+
+  newAction(action, id, row) {
+    return "";
+  }
+
+  AddAction(action, id, row) {
+
+    let html = ``;
+   
+    const viewUrl = this.viewUrl === null ? `${this.apiUrl}/view/${id}` : this.viewUrl;
+    const editUrl = this.editUrl === null ? `${this.apiUrl}/edit/${id}` : this.editUrl;
+    const deleteUrl = this.deleteUrl === null ? `${this.apiUrl}/delete/${id}` : this.deleteUrl;
+
+    const newObj = this;
+
+    //var hidden = `style="visibility: hidden"`;
+
+    switch (action) {
+    case 'view':
+      if (newObj.viewIf(id, row))
+        html += `<a href='${viewUrl}' class='btn btn-brand btn-elevate btn-icon btn-sm' title=''>
+                                    <i id='${id}'  class='la la-eye' > </i> 
+                         </a>`;
+      break;
+
+    case 'edit':
+      if (newObj.editIf(id, row))
+        html += `<button type='button' class='btn btn-primary shadow btn-xs sharp mr-1'>
+                            <a href='${editUrl}' title='edit'>
+                                    <i id='${id}' class='fa fa-pencil'></i>
+                             </a>
+                         </button>`;
+      break;
+
+    case 'delete':
+      if (newObj.deleteIf(id, row))
+        html += `<button class='btn btn-danger shadow btn-xs sharp' onClick=\"return deleteObj('${id}',this,'${deleteUrl
+          }',${loadData})\" title=''><i id=${id}'  class='fa fa-trash' > </i></button>`;
+      break;
+
+    default:
+      html += newObj.newAction(action, id, row);
+
+      break;
+    }
+
+    return html;
+  }
+
+  drawActionsDataTable(id, actions, row) {
+    let html = "";
+
+    const actionsArray = actions.split(",");
+
+    const newObj = this;
+
+    actionsArray.forEach((action, index) => {
+      html += newObj.AddAction(action, id, row);
+    });
+
+    return html;
+  }
+
+  renderColumnsObjects(columnsNames, actions, primaryKey) {
+
+    const columns = {
+      defs: [],
+      cols: []
+    };
+
+    const newObj = this;
+
+    columnsNames.forEach(function(column, index) {
+      switch (column) {
+      case '#':
+        columns.defs.push(newObj.defineUnsearchableColumn(index));
+        columns.cols.push(newObj.indexColumn());
+        break;
+      case 'Created':
+        columns.defs.push(newObj.defineUnsearchableColumn(index));
+        columns.cols.push(newObj.addColumn(column));
+        break;
+      case '#Actions':
+        columns.defs.push(newObj.defineUnsearchableColumn(index));
+        columns.cols.push(newObj.renderActionsColumn(actions, primaryKey));
+          break;
+      default:
+        columns.cols.push(newObj.addColumn(column));
+        break;
+      }
+    });
+
+    return columns;
+  }
+
+  indexColumn() {
+    return {
+      "render": function(data, type, row, meta) {
+        return (meta.row + 1);
+      }
+    };
+  }
+
+  defineColumn(index, visible, searchable) {
+    return {
+      "targets": index,
+      "visible": visible,
+      "sortable": searchable,
+      "searchable": searchable
+    };
+  }
+
+  defineUnsearchableColumn(index) {
+    return this.defineColumn(index, true, false);
+  }
+
+  renderActionsColumn(actions, primaryKey) {
+    const newObj = this;
+
+    return {
+      "render": function (data, type, row, meta) {
+        return newObj.drawActionsDataTable(row[primaryKey], actions, row);
+      }
+    };
+  }
+
+  addColumn(columnName) {
+    const smallColumnName = StringHelper.lowerFirstLetter(columnName);
+    return { "data": smallColumnName, "name": columnName, "autoWidth": true }
+  }
+}

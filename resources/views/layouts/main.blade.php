@@ -47,8 +47,8 @@
     <title>خدمة الفحص الفني الدوري | مركز سلامة المركبات</title>
     <link rel="stylesheet" media="all" href="{{asset('sites/book.vehicle.local/files/css/css_AFXhICk67zdXGRbHPKCQJ4zh-5OBzvA7__ZpW3ufXCk.css')}}" />
      <link rel="stylesheet" media="all" href="{{asset('sites/book.vehicle.local/files/css/css_hwa09ppdq08_Fx2JX4vfuRJWg_YWyjGT-LBxYb8U2aw.css')}}" />
-    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
-    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" integrity="sha512-tGFFYdzcicBwsd5EPO92iUIytu9UkQR3tLMbORL9sfi/WswiHkA1O3ri9yHW+5dXk18Rd+pluMeDBrPKSwNCvw=="
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+         <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css" integrity="sha512-tGFFYdzcicBwsd5EPO92iUIytu9UkQR3tLMbORL9sfi/WswiHkA1O3ri9yHW+5dXk18Rd+pluMeDBrPKSwNCvw=="
         crossorigin="anonymous" />
     <link rel="stylesheet" media="all" href="{{asset('sites/book.vehicle.local/files/css/css_zBOuAC3I8SkUKMcGwgSEgLILmFfnq_xhvkEhao2RoJE.css')}}" />
 
@@ -401,8 +401,8 @@
             }
         </script>
         <script src="{{asset('sites/book.vehicle.local/files/js/js_R2fkxczH-KoUTaSLMjjNmQajPJQwcmhiVsSdqOHL694.js')}}"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
-        <script src="{{asset('sites/book.vehicle.local/files/js/js_3ZM5IWwIME7g7vih3FcPSzEzdemBpReXgsHXeVr3gKk.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+                <script src="{{asset('sites/book.vehicle.local/files/js/js_3ZM5IWwIME7g7vih3FcPSzEzdemBpReXgsHXeVr3gKk.js')}}"></script>
         <script src="{{asset('modules/contrib/google_tag/js/gtm.js?se60hc')}}"></script>
         <script src="{{asset('modules/contrib/google_tag/js/gtag.js?se60hc')}}"></script>
         <script src="{{asset('sites/book.vehicle.local/files/js/js_h6ME9jusHHwIZG7oYzZw9g8TPd-JiKAyc7Jit3zKWwM.js')}}"></script>

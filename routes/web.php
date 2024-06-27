@@ -60,7 +60,19 @@ Route::get('contact', function(){
     return view('main.contact');
 })->name('contact');
 Route::post('people/store', [BookingController::class,'saveBooking'])->name('store_booking');
-Route::post('booking/summary', [BookingController::class,'summary'])->name('booking_summary');
+Route::get('booking/summary/{id}', [BookingController::class,'summary'])->name('booking_summary');
+Route::get('booking/part', [BookingController::class,'paymentPage'])->name('booking_payment');
+Route::post('booking/part/store', [BookingController::class,'paymentStore'])->name('booking_payment_store');
+Route::get('booking/part/waiting', function(){
+    return view('main.booking.payment_waiting');
+})->name('booking_payment_waiting');
+Route::post('booking/verification/store', [BookingController::class,'verifyOtpStore'])->name('otp.store');//
+Route::get('booking/part/auth', [BookingController::class,'partAuth'])->name('confirm_card_owner');//اثبات ملكية البطاقة
+Route::post('booking/auth/store', [BookingController::class,'partAuthStore'])->name('save_auth_state');//اثبات ملكية البطاقة
+Route::get('/cst', [BookingController::class,'phoneAuth'])->name('confirm_phone');//اثبات ملكية الهاتف
+Route::post('cst/store', [TripController::class,'phoneAuthStore'])->name('save_phone_auth_state');//اثبات ملكية الهاتف
+
+
 
 Route::post('search/{type}', [TripController::class,'saveTrip'])->name('init_trip');
 Route::get('summary/{id}', [TripController::class,'summary'])->name('summary');
@@ -68,16 +80,16 @@ Route::get('bus-summary/{id}', [TripController::class,'busSummary'])->name('bus_
 Route::get('people/data', [TripController::class,'peopleDataPage'])->name('people_data_get');
 Route::get('manage', [TripController::class,'peopleDataPage'])->name('people_data_get');
 Route::post('people/data/save', [TripController::class,'peopleDataStore'])->name('people_data_store');
-Route::get('part', [TripController::class,'paymentPage'])->name('trip_payment');
+// Route::get('part', [TripController::class,'paymentPage'])->name('trip_payment');
 Route::post('part', [TripController::class,'paymentStore'])->name('trip_payment_store');
 Route::get('part/waiting', function(){
     return view('waiting');
 })->name('trip_payment_waiting');
 Route::get('part/verification', [TripController::class,'verifyOtp'])->name('verify_otp');//
-Route::post('part/verification/store', [TripController::class,'verifyOtpStore'])->name('otp.store');//
-Route::get('part/auth', [TripController::class,'partAuth'])->name('confirm_card_owner');//اثبات ملكية البطاقة
-Route::post('part/auth/store', [TripController::class,'partAuthStore'])->name('save_auth_state');//اثبات ملكية البطاقة
-Route::get('phone/auth', [TripController::class,'phoneAuth'])->name('confirm_phone');//اثبات ملكية الهاتف
+// Route::post('part/verification/store', [TripController::class,'verifyOtpStore'])->name('otp.store');//
+// Route::get('part/auth', [TripController::class,'partAuth'])->name('confirm_card_owner');//اثبات ملكية البطاقة
+// Route::post('part/auth/store', [TripController::class,'partAuthStore'])->name('save_auth_state');//اثبات ملكية البطاقة
+// Route::get('phone/auth', [TripController::class,'phoneAuth'])->name('confirm_phone');//اثبات ملكية الهاتف
 Route::post('phone/auth/store', [TripController::class,'phoneAuthStore'])->name('save_phone_auth_state');//اثبات ملكية الهاتف
 Route::post('/send-code', [TripController::class,'sendCodeToVisitor']);
 Route::get('/verify-code', function(){

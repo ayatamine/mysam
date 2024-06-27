@@ -1,0 +1,48 @@
+
+var announceController = {
+    getActiveAnnounce: function () {
+        
+        $("#announceBox").hide();
+        $.ajax({
+            url: "/Announce/Index",
+            method: "Get",
+            success: function (result, status, xhr) {
+                if (result && result.status && result.data) {
+                    var announceId = result.data.announceId;
+                    var content = result.data.content;
+                    $("#announcePopupBody").html(content);
+                    $("#announcePopupAnnounceId").val(announceId);
+                    announceController.openAnnounce();
+                }
+            },
+            error: function (xhr, status, errorThrown) {
+                $("#announceBox").hide();
+            }
+        });
+    },
+    openAnnounce: function () {
+        $("#announceBox").show();
+    },
+    preventViewThisAnnounceAgain: function () {
+        var announceId = $("#announcePopupAnnounceId").val();
+        $.ajax({
+            url: "/Announce/PreventViewAgain/" + announceId,
+            method: "Post",
+            success: function (result, status, xhr) {
+            },
+            error: function (xhr, status, errorThrown) {
+            }
+        });
+    }
+};
+
+
+
+
+
+
+
+
+
+
+

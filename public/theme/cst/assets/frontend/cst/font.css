@@ -1,0 +1,35 @@
+@font-face {
+	font-family: loew;
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url(./LoewNextArabic-Light.eot);
+	src: url(./LoewNextArabic-Light.eot?#iefix) format("embedded-opentype"), url(./LoewNextArabic-Light.woff) format("woff"), url(./LoewNextArabic-Light.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: loew;
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url(./LoewNextArabic-Medium.eot);
+	src: url(./LoewNextArabic-Medium.eot?#iefix) format("embedded-opentype"), url(./LoewNextArabic-Medium.woff) format("woff"), url(./LoewNextArabic-Medium.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: loew;
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url(./LoewNextArabic-Bold.eot);
+	src: url(./LoewNextArabic-Bold.eot?#iefix) format("embedded-opentype"), url(./LoewNextArabic-Bold.woff) format("woff"), url(./LoewNextArabic-Bold.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: loew;
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url(./LoewNextArabic-Heavy.eot);
+	src: url(./LoewNextArabic-Heavy.eot?#iefix) format("embedded-opentype"), url(./LoewNextArabic-Heavy.woff) format("woff"), url(./LoewNextArabic-Heavy.ttf) format("truetype")
+}

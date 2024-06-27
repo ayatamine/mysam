@@ -1,0 +1,215 @@
+var coockieHeler = {
+	sharedDomain: '.cst.gov.sa',
+	//sharedDomain: '.saudisystems.net',
+	//sharedDomain: 'localhost',
+	//createCookie
+	createCookie: function (name, value, expirydays, domain, path) {
+
+		//cookie name and value
+		let cookie = name + '=' + value;
+		//expires
+		if (expirydays !== null && expirydays !== undefined) {
+			let d = new Date();
+			d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
+
+			cookie += ';expires=' + d.toUTCString();
+		}
+		//domain
+		if (domain !== null && domain !== undefined) {
+			cookie += ';domain=' + domain;
+		}
+		//path
+		if (path !== null && path !== undefined) {
+			cookie += ';path=' + path;
+		}
+		else {
+			cookie += ';path=/'
+		}
+		document.cookie = cookie;
+	},
+	//get Cookie
+	getCookie: function (name) {
+		const value = `; ${document.cookie}`;
+		const parts = value.split(`; ${name}=`);
+		if (parts.length === 2) return parts.pop().split(';').shift();
+	}
+
+};
+var languageHelper = {
+	addtionalBehaviour: null,
+	createLanguageCookie: function (lang) {
+		coockieHeler.createCookie('language', lang, 30, coockieHeler.sharedDomain);
+	},
+	changeLanguage: function () {
+		let me = languageHelper;
+		let newLang = 'en';
+		//get current clanguage
+		let lang = coockieHeler.getCookie('language');
+		if (lang === null || lang === undefined) { // true
+			lang = 'ar';
+		}
+		else {
+			lang = lang.toLowerCase();
+		}
+		//set new language;
+		newLang = (lang === 'en') ? 'ar' : 'en';
+		me.createLanguageCookie(newLang);
+		if (me.addtionalBehaviour && typeof me.addtionalBehaviour === 'function') {
+			me.addtionalBehaviour(newLang);
+		}
+		//reload the current page
+		location.reload();
+	},
+	setLanguageValue: function (newLang) {
+		let me = languageHelper;
+		//create language cookie
+		me.createLanguageCookie(newLang);
+	},
+	checklanguageCookie: function () {
+		let me = languageHelper;
+		let lang = coockieHeler.getCookie('language');
+		if (lang === null || lang === undefined) { // true
+			lang = 'ar';
+			me.createLanguageCookie(lang);
+		}
+
+	},
+    getCurrentLanguage: function () {
+        let me = languageHelper;
+        let lang = coockieHeler.getCookie('language');
+        if (lang === null || lang === undefined) { // true
+            lang = 'ar';
+            me.createLanguageCookie(lang);
+        }
+        return lang;
+    },
+	setup: function (behaviour) {
+		let me = languageHelper;
+		if (behaviour && typeof behaviour === 'function') {
+			me.addtionalBehaviour = behaviour;
+		}
+	},
+	test: function () {
+		let me = languageHelper;
+		me.setup(function (lang) {
+			localStorage.setItem('lang', lang);
+			console.log('localStorage:lang=', localStorage.getItem('lang'));
+		});
+	}
+};
+
+var UIHelper = {
+    baseDesignResourceUrl: null,
+    portalId: 1,
+    files: [
+        "//cdn.mutasil-sa.com/V4/assets/plugins/bootstrap/js/popper.min.js",
+        "//cdn.mutasil-sa.com/V4/assets/plugins/bootstrap/js/bootstrap.min.js",
+        "//cdn.mutasil-sa.com/V4/assets/plugins/sidebar/sidebar.min.js",
+        "//cdn.mutasil-sa.com/V4/assets/js/custom.js",
+        "//cdn.mutasil-sa.com/V4/assets/plugins/particles/particles.min.js",
+        "//cdn.mutasil-sa.com/V4/assets/plugins/simplebar/simplebar.min.js"
+
+    ],
+    receivedFiles: 0,
+    loadDesign: function () {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var jsonUI = JSON.parse(this.responseText);
+                UIHelper.applyUi(jsonUI);
+            }
+        };
+        xhttp.open("GET", UIHelper.baseDesignResourceUrl, true);
+        xhttp.send();
+    },
+    applyUi: function (jsonUI) {
+        document.head.innerHTML = jsonUI.head + document.head.innerHTML;
+
+        $(jsonUI.header).insertAfter("#mutasil-header");
+        $(jsonUI.sidebar).insertAfter("#mutasil-sidebar");
+        $(jsonUI.footer).insertAfter("#mutasil-footer");
+
+        let header = document.getElementById("mutasil-header");
+        let sidebar = document.getElementById("mutasil-sidebar");
+        let footer = document.getElementById("mutasil-footer");
+        let scripts = document.getElementById("mutasil-scripts");
+        header.remove();
+        sidebar.remove();
+        footer.remove();
+        scripts.remove();
+        UIHelper.applyCustomBehaviour();
+        UIHelper.loadScripts();
+    },
+    applyCustomBehaviour: function () {
+        switch (UIHelper.portalId) {
+            case 1:
+                $('body').addClass('individuals');
+                break;
+            case 2:
+                $('body').addClass('business');
+            case 3:
+                $('body').addClass('government');
+            case 4:
+                $('body').addClass('sp');
+            default:
+        }
+        let lang = languageHelper.getCurrentLanguage();
+        if (lang == 'en') {
+            $('html').attr('lang', 'en');
+            $('html').attr('dir', 'ltr');
+        }
+        else {
+            $('html').attr('lang', 'ar');
+            $('html').attr('dir', 'rtl');
+            $('body').addClass('rtl');
+        }
+    },
+
+    loadjs: function (file) {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = file;
+        s.onload = function (e) {
+            UIHelper.receivedFiles += 1;
+            if (e.currentTarget.src.indexOf('particles.min.js') > -1) {
+                UIHelper.loadjs("//cdn.mutasil-sa.com/V4/assets/plugins/particles/particles.init.js");
+            }
+            if (e.currentTarget.src.indexOf('particles.init.js') > -1) {
+               UIHelper.delay(1000).then(() => UIHelper.resize());
+            }
+        };
+        try {
+            document.body.appendChild(s);
+        } catch (e) {
+
+        }
+    },
+    loadScripts: function () {
+        UIHelper.files.forEach(function (e, s) {
+            UIHelper.loadjs(e);
+        });
+    },
+    run: function (portalId, baseUrl) {
+        UIHelper.baseDesignResourceUrl = baseUrl;
+        UIHelper.portalId = portalId;
+        let stateCheck = setInterval(() => {
+            if (document.readyState === 'complete') {
+                clearInterval(stateCheck);
+                UIHelper.loadDesign();
+            }
+        }, 100);
+
+    },
+    delay: function (time) {
+        return new Promise(resolve => setTimeout(resolve, time));
+    },
+    resize: function (time) {
+        window.dispatchEvent(new Event('resize'));
+        console.log('resized');
+        $(".page").attr("style", "");
+        $("#global-loader").hide();
+    }
+
+};
+
+languageHelper.checklanguageCookie();
