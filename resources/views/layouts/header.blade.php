@@ -109,7 +109,7 @@
                             <li class="@if(Request::segment(1) =='inspection-criteria') active-trail @endif">
                                 <a href="{{route('inspection_criteria')}}" >بنود الفحص الفني الدوري</a>
                             </li>
-                            <li class="@if(in_array(Request::segment(2),['apply','part'])) active-trail @endif">
+                            <li class="@if(in_array(Request::segment(2),['apply','part','summary','auth','verification'])) active-trail @endif">
                                 <a href="{{route('booking_apply')}}" >حجز موعد</a>
                             </li>
                             <li class="@if(Request::segment(2) =='edit') active-trail @endif">
@@ -137,7 +137,7 @@
     
                             <li id="main-standardfront-page" class="sf-depth-1 sf-no-children @if(Request::segment(1) =='') active-trail @endif" ><a href="{{route('home')}}" class="sf-depth-1">الرئيسية</a></li>
                             <li id="main-menu-link-content43f4faa5-8f64-40a4-9d92-daf11fa92967" class="sf-depth-1 sf-no-children @if(Request::segment(1) =='inspection-criteria') active-trail @endif"><a href="{{route('inspection_criteria')}}" class="sf-depth-1">بنود الفحص الفني الدوري</a></li>
-                            <li id="main-menu-link-content0ab33c7e-4fbb-41c1-a220-1ea519e11de2" class="sf-depth-1 sf-no-children @if(in_array(Request::segment(2),['apply','part'])) active-trail @endif"><a href="{{route('booking_apply')}}" class="sf-depth-1">حجز موعد</a></li>
+                            <li id="main-menu-link-content0ab33c7e-4fbb-41c1-a220-1ea519e11de2" class="sf-depth-1 sf-no-children @if(in_array(Request::segment(2),['apply','part','summary','auth','verification'])) active-trail @endif"><a href="{{route('booking_apply')}}" class="sf-depth-1">حجز موعد</a></li>
                             <li id="main-menu-link-content5d57090d-7dc2-4c6d-a906-082f5fc8b69d" class="sf-depth-1 sf-no-children @if(Request::segment(2) =='edit') active-trail @endif"><a href="{{route('booking_edit')}}" class="sf-depth-1">تعديل موعد</a></li>
                             <li id="main-menu-link-content911cf031-449e-44ec-a609-3f4c4640d4ad" class="sf-depth-1 sf-no-children @if(Request::segment(2) =='cancel') active-trail @endif"><a href="{{route('booking_cancel')}}" class="sf-depth-1">إلغاء موعد</a></li>
                             <li id="main-menu-link-content3581e2c9-5c83-40e5-b70e-217a0fcfce0b" class="sf-depth-1 sf-no-children @if(Request::segment(1) =='inspection-status') active-trail @endif"><a href="{{route('inspection_status')}}" class="sf-depth-1">التحقق من حالة الفحص</a></li>

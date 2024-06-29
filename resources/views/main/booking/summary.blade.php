@@ -1,4 +1,6 @@
 @extends('layouts.main')
+@section('title','ملخص الحجز')
+    
 @section('content')
     
 <div role="main" class="main-container js-quickedit-main-content">
@@ -40,13 +42,13 @@
                               
                               <ol class="list-group list-group-numbered">
                                   <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
+                                    <div class="">
                                       <div class="fw-bold">رسوم تقديم الطلب</div>
                                     </div>
                                     <span class="badge text-bg-primary rounded-pill">10 ريال</span>
                                   </li>
                                   <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
+                                    <div class=""> 
                                       <div class="fw-bold">رسوم الفحص الدوري</div>
                                     </div>
                                     <span class="badge text-bg-primary rounded-pill">0 ريال</span>
@@ -54,7 +56,7 @@
                                 </ol>
                                 <h4>سوف يتم تحصيل رسوم الفحص لاحقاً عند الفحص</h4>
 
-                              <a class="book-btn" href="/part">التالــي</a>
+                              <a class="book-btn" href="{{route('booking_payment')}}">التالــي</a>
                           </div>
                       </div>
                       <!-- .col -->

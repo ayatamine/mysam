@@ -3160,7 +3160,7 @@ SUVORK5CYII=">
                                                               data-drupal-states="{&quot;enabled&quot;:{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;filled&quot;:true}},&quot;disabled&quot;:{&quot;:input[name=\u0022vehicle_class_id\u0022]&quot;:{&quot;filled&quot;:false}}}">
                                                               <option value="" selected="selected">
                                                                   اختر نوع خدمة الفحص</option>
-                                                              <option value="خدمه الفحص الدوري">خدمه الفحص الدوري
+                                                              <option value="خدمه الفحص الدوري" selected>خدمه الفحص الدوري
                                                               </option>
                                                               <option value="خدمة اعادة الفحص">خدمة اعادة الفحص
                                                               </option>
@@ -3302,7 +3302,7 @@ SUVORK5CYII=">
                                               name="captcha_cacheable" value="1" />
                                       </div>
                                       <button
-                                          class="button js-form-submit form-submit btn-default btn"
+                                          class="button js-form-submit form-submit btn-default btn my-3"
                                           type="submit"
                                           value="التالي">التالي</button>
                                   </div>
